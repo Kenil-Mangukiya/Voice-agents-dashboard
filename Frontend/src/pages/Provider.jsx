@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 // API base URL - adjust this to match your backend
 const API_BASE_URL = 'http://localhost:3000/api';
@@ -242,326 +242,123 @@ const Provider = () => {
   const [categoryCallCounts, setCategoryCallCounts] = useState({});
   const [tableHeight, setTableHeight] = useState(600); // Default height for call history table
   const [countsLoading, setCountsLoading] = useState(false);
+  const [selectedPhone, setSelectedPhone] = useState(null);
+  const tableRef = useRef(null);
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
 
-  // Mock data for service categories
-  const serviceCategories = [
-    {
-      id: 'mental-health',
+  // Provider phone numbers from storeCalls.js organized by category
+  const providerPhoneNumbers = {
+    'mental-health': {
       name: 'Mental Health',
       description: 'Crisis intervention and mental health support services',
-      providers: 3,
-      callsRouted: 8,
       icon: '🧠',
-      color: 'purple'
+      color: 'purple',
+      phones: [
+        '+18556009276', '+18563630633', '+18887247240', '+18777244747', '+17149916412',
+        '+19163683111', '+18552784204', '+14157810500', '+16282068125', '+16282177000'
+      ]
     },
-    {
-      id: 'domestic-violence',
+    'substance-abuse': {
+      name: 'Substance Use / Addiction',
+      description: 'Detox, treatment, and recovery support services',
+      icon: '💊',
+      color: 'blue',
+      phones: [
+        '+18448047500', '+18662101303', '+18009682636', '+14158341144'
+      ]
+    },
+    'domestic-violence': {
       name: 'Domestic Violence',
       description: 'Safe shelter and support for victims of domestic violence',
-      providers: 3,
-      callsRouted: 7,
       icon: '❤️',
-      color: 'pink'
+      color: 'pink',
+      phones: [
+        '+18007997233', '+18006564673', '+18663319474', '+18779435778',
+        '+17149572737', '+19498319110', '+14156477273'
+      ]
     },
-    {
-      id: 'homelessness',
-      name: 'Homelessness',
-      description: 'Emergency shelter, meals, and housing assistance',
-      providers: 5,
-      callsRouted: 4,
-      icon: '🏠',
-      color: 'orange'
-    },
-    {
-      id: 'substance-abuse',
-      name: 'Substance Abuse',
-      description: 'Detox, treatment, and recovery support services',
-      providers: 4,
-      callsRouted: 16,
-      icon: '💊',
-      color: 'blue'
-    },
-    {
-      id: 'youth-crisis',
-      name: 'Youth Crisis',
+    'youth-crisis': {
+      name: 'Youth Crisis / LGBTQ+ Identity',
       description: 'Emergency support and intervention for youth in crisis',
-      providers: 4,
-      callsRouted: 12,
       icon: '👦',
-      color: 'green'
+      color: 'green',
+      phones: [
+        '+18008435200', '+18004483000', '+18008528336', '+18007862929',
+        '+14082793000', '+14088506125'
+      ]
     },
-    {
-      id: 'elder-concern',
+    'elder-concern': {
       name: 'Elder Concern',
       description: 'Support services and care for elderly individuals',
-      providers: 3,
-      callsRouted: 9,
       icon: '👴',
-      color: 'indigo'
+      color: 'indigo',
+      phones: [
+        '+18884363600', '+18004515155', '+18004917123', '+18774773646',
+        '+18005102020', '+18886701360'
+      ]
     },
-    {
-      id: 'gambling',
-      name: 'Gambling Addiction',
+    'homelessness': {
+      name: 'Homelessness',
+      description: 'Emergency shelter, meals, and housing assistance',
+      icon: '🏠',
+      color: 'orange',
+      phones: [
+        '+18005486047', '+14083852400', '+18005694287', '+18009552232', '+18778473663'
+      ]
+    },
+    'gambling': {
+      name: 'Gambling',
       description: 'Treatment and support for gambling addiction recovery',
-      providers: 2,
-      callsRouted: 6,
       icon: '🎲',
-      color: 'red'
+      color: 'red',
+      phones: [
+        '+18004262537'
+      ]
     },
-    {
-      id: 'escalated-emergency',
+    'escalated-emergency': {
       name: 'Escalated to Emergency',
-      description: 'Calls that were escalated to emergency services (911)',
-      providers: 1,
-      callsRouted: 0,
+      description: 'Calls escalated to emergency services (911)',
       icon: '🚨',
-      color: 'red'
+      color: 'red',
+      phones: []
     }
-  ];
+  };
 
-  // Mock data for providers
-  const providers = {
-    'mental-health': [
-      {
-        id: 1,
-        name: 'Albuquerque Crisis Center',
-        description: '24-hour crisis intervention and mental health support services.',
-        phone: '(505) 247-1121',
-        hours: '24/7',
-        address: '900 Gold Ave SW, Albuquerque, NM 87102',
-        tags: ['24/7', 'crisis intervention', 'walk-in', 'phone support']
-      },
-      {
-        id: 2,
-        name: 'PB&J Family Services',
-        description: 'Comprehensive behavioral health services for families and children.',
-        phone: '(505) 766-9361',
-        hours: 'M-F 8am-5pm',
-        address: '625 Silver Ave SW, Albuquerque, NM 87102',
-        tags: ['family therapy', 'youth services', 'intake required']
-      },
-      {
-        id: 3,
-        name: 'University of NM Psychiatric Center',
-        description: 'Emergency psychiatric evaluation and inpatient treatment.',
-        phone: '(505) 272-1313',
-        hours: '24/7',
-        address: '2211 Lomas Blvd NE, Albuquerque, NM 87106',
-        tags: ['emergency', 'inpatient', 'psychiatric evaluation']
-      }
-    ],
-    'domestic-violence': [
-      {
-        id: 4,
-        name: 'Domestic Violence Resource Center',
-        description: 'Comprehensive support services for domestic violence survivors.',
-        phone: '(505) 248-3165',
-        hours: '24/7',
-        address: '400 Roma Ave NW, Albuquerque, NM 87102',
-        tags: ['24/7', 'shelter', 'legal advocacy', 'counseling']
-      },
-      {
-        id: 5,
-        name: 'Safe House New Mexico',
-        description: 'Emergency shelter and transitional housing for survivors.',
-        phone: '(505) 247-4219',
-        hours: '24/7',
-        address: '123 Main St, Albuquerque, NM 87102',
-        tags: ['emergency shelter', 'transitional housing', 'support groups']
-      },
-      {
-        id: 6,
-        name: 'Family Advocacy Center',
-        description: 'Coordinated response for domestic violence cases.',
-        phone: '(505) 243-2333',
-        hours: 'M-F 8am-5pm',
-        address: '456 Central Ave, Albuquerque, NM 87102',
-        tags: ['legal support', 'case management', 'counseling']
-      }
-    ],
-    'homelessness': [
-      {
-        id: 7,
-        name: 'Albuquerque Rescue Mission',
-        description: 'Emergency shelter, meals, and recovery programs.',
-        phone: '(505) 346-4673',
-        hours: '24/7',
-        address: '525 2nd St SW, Albuquerque, NM 87102',
-        tags: ['emergency shelter', 'meals', 'recovery programs']
-      },
-      {
-        id: 8,
-        name: 'Joy Junction',
-        description: 'Family shelter and comprehensive support services.',
-        phone: '(505) 877-6967',
-        hours: '24/7',
-        address: '4500 2nd St SW, Albuquerque, NM 87105',
-        tags: ['family shelter', 'meals', 'case management']
-      },
-      {
-        id: 9,
-        name: 'Good Shepherd Center',
-        description: 'Day shelter and resource center for homeless individuals.',
-        phone: '(505) 243-2522',
-        hours: 'M-F 7am-5pm',
-        address: '218 Iron Ave SW, Albuquerque, NM 87102',
-        tags: ['day shelter', 'resources', 'case management']
-      },
-      {
-        id: 10,
-        name: 'St. Martin\'s Hospitality Center',
-        description: 'Comprehensive services for homeless and at-risk individuals.',
-        phone: '(505) 243-2522',
-        hours: 'M-F 8am-4pm',
-        address: '1201 3rd St NW, Albuquerque, NM 87102',
-        tags: ['case management', 'resources', 'counseling']
-      },
-      {
-        id: 11,
-        name: 'Albuquerque Health Care for the Homeless',
-        description: 'Medical and behavioral health services for homeless individuals.',
-        phone: '(505) 242-5000',
-        hours: 'M-F 8am-5pm',
-        address: '1217 1st St NW, Albuquerque, NM 87102',
-        tags: ['medical care', 'behavioral health', 'case management']
-      }
-    ],
-    'substance-abuse': [
-      {
-        id: 12,
-        name: 'Albuquerque Treatment Services',
-        description: 'Comprehensive addiction treatment and recovery programs.',
-        phone: '(505) 266-2100',
-        hours: '24/7',
-        address: '500 Walter St NE, Albuquerque, NM 87102',
-        tags: ['detox', 'inpatient', 'outpatient', 'counseling']
-      },
-      {
-        id: 13,
-        name: 'New Mexico Recovery Center',
-        description: 'Evidence-based treatment for substance use disorders.',
-        phone: '(505) 242-5000',
-        hours: 'M-F 8am-8pm',
-        address: '123 Recovery Way, Albuquerque, NM 87102',
-        tags: ['outpatient', 'counseling', 'support groups']
-      },
-      {
-        id: 14,
-        name: 'Serenity House',
-        description: 'Residential treatment and sober living programs.',
-        phone: '(505) 243-2333',
-        hours: '24/7',
-        address: '789 Hope Ave, Albuquerque, NM 87102',
-        tags: ['residential', 'sober living', 'aftercare']
-      },
-      {
-        id: 15,
-        name: 'Recovery Services of New Mexico',
-        description: 'Outpatient treatment and recovery support services.',
-        phone: '(505) 247-4219',
-        hours: 'M-F 8am-6pm',
-        address: '321 Wellness Blvd, Albuquerque, NM 87102',
-        tags: ['outpatient', 'counseling', 'medication-assisted']
-      }
-    ],
-    'youth-crisis': [
-      {
-        id: 16,
-        name: 'Youth Crisis Center of Albuquerque',
-        description: '24/7 crisis intervention and emergency shelter for youth ages 12-17.',
-        phone: '(505) 247-1121',
-        hours: '24/7',
-        address: '900 Gold Ave SW, Albuquerque, NM 87102',
-        tags: ['24/7', 'crisis intervention', 'emergency shelter', 'youth services']
-      },
-      {
-        id: 17,
-        name: 'New Mexico Youth Crisis Line',
-        description: 'Confidential crisis counseling and support for youth and families.',
-        phone: '(505) 247-1121',
-        hours: '24/7',
-        address: 'Crisis Line - No Physical Location',
-        tags: ['crisis line', 'confidential', 'family support', 'counseling']
-      },
-      {
-        id: 18,
-        name: 'Youth Development Inc.',
-        description: 'Comprehensive youth services including crisis intervention and case management.',
-        phone: '(505) 766-9361',
-        hours: 'M-F 8am-6pm',
-        address: '625 Silver Ave SW, Albuquerque, NM 87102',
-        tags: ['case management', 'youth development', 'counseling', 'support groups']
-      },
-      {
-        id: 19,
-        name: 'Teen Crisis Center',
-        description: 'Specialized services for teenagers in crisis situations.',
-        phone: '(505) 243-2333',
-        hours: '24/7',
-        address: '456 Central Ave, Albuquerque, NM 87102',
-        tags: ['teen services', 'crisis intervention', 'peer support', 'family therapy']
-      }
-    ],
-    'elder-concern': [
-      {
-        id: 20,
-        name: 'Albuquerque Senior Services',
-        description: 'Comprehensive support services for elderly individuals and their families.',
-        phone: '(505) 248-3165',
-        hours: 'M-F 8am-5pm',
-        address: '400 Roma Ave NW, Albuquerque, NM 87102',
-        tags: ['senior services', 'case management', 'transportation', 'meal programs']
-      },
-      {
-        id: 21,
-        name: 'Elder Abuse Prevention Center',
-        description: 'Protection and support services for elderly individuals experiencing abuse.',
-        phone: '(505) 247-4219',
-        hours: '24/7',
-        address: '123 Main St, Albuquerque, NM 87102',
-        tags: ['elder abuse', 'protection services', 'legal advocacy', 'counseling']
-      },
-      {
-        id: 22,
-        name: 'Senior Care Network',
-        description: 'Healthcare coordination and support services for elderly individuals.',
-        phone: '(505) 243-2333',
-        hours: 'M-F 8am-6pm',
-        address: '789 Care Ave, Albuquerque, NM 87102',
-        tags: ['healthcare coordination', 'medication management', 'home care', 'respite care']
-      }
-    ],
-    'gambling': [
-      {
-        id: 23,
-        name: 'New Mexico Gambling Addiction Center',
-        description: 'Specialized treatment and recovery programs for gambling addiction.',
-        phone: '(505) 266-2100',
-        hours: 'M-F 8am-8pm',
-        address: '500 Recovery St NE, Albuquerque, NM 87102',
-        tags: ['gambling addiction', 'counseling', 'support groups', 'financial counseling']
-      },
-      {
-        id: 24,
-        name: 'Gamblers Anonymous New Mexico',
-        description: 'Peer support groups and recovery programs for gambling addiction.',
-        phone: '(505) 242-5000',
-        hours: 'Various meeting times',
-        address: '123 Hope Way, Albuquerque, NM 87102',
-        tags: ['peer support', '12-step program', 'meetings', 'recovery support']
-      }
-    ],
-    'escalated-emergency': [
-      {
-        id: 25,
-        name: 'Emergency Services (911)',
-        description: 'Calls that were escalated to emergency services due to immediate safety concerns.',
-        phone: '911',
-        hours: '24/7',
-        address: 'Emergency Dispatch Center',
-        tags: ['emergency', '911', 'immediate response', 'safety']
-      }
-    ]
+  // Convert to array format for compatibility
+  const serviceCategories = Object.entries(providerPhoneNumbers).map(([id, data]) => ({
+    id,
+    name: data.name,
+    description: data.description,
+    providers: data.phones.length,
+    callsRouted: 0, // Will be updated by API calls
+    icon: data.icon,
+    color: data.color
+  }));
+
+  // Helper function to format phone numbers beautifully
+  const formatPhoneNumberBeautiful = (phone) => {
+    if (!phone) return 'N/A';
+    // Format as (XXX) XXX-XXXX
+    const digits = phone.replace(/\D/g, '');
+    if (digits.length === 11 && digits.startsWith('1')) {
+      return `(${digits.slice(1, 4)}) ${digits.slice(4, 7)}-${digits.slice(7)}`;
+    } else if (digits.length === 10) {
+      return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+    }
+    return phone;
+  };
+
+  // Helper function to copy phone number to clipboard
+  const copyToClipboard = async (phone) => {
+    try {
+      await navigator.clipboard.writeText(phone);
+      setToastMessage('Number copied to clipboard');
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 1500);
+    } catch (err) {
+      console.error('Failed to copy phone number:', err);
+    }
   };
 
   // Fetch call counts for all categories
@@ -615,11 +412,11 @@ const Provider = () => {
     try {
       setCallsLoading(true);
       
-      const params = new URLSearchParams({
+    const params = new URLSearchParams({
         page: '1',
         limit: '50',
         sortBy: 'createdAt',
-        sortOrder: 'desc'
+      sortOrder: 'desc'
       });
       
       // Map category IDs to provider names for filtering
@@ -637,6 +434,16 @@ const Provider = () => {
       if (categoryProviderMap[categoryId]) {
         params.append('provider', categoryProviderMap[categoryId]);
       }
+
+      // time filter mapping
+      const daysMap = {
+        'Today': '1',
+        '24 Hours': '1',
+        '7 Days': '7',
+        '30 Days': '30'
+      };
+      const days = daysMap[timeFilter] || '7';
+      params.append('days', days);
       
       const response = await fetch(`${API_BASE_URL}/calls?${params}`);
       
@@ -677,7 +484,17 @@ const Provider = () => {
     setCurrentView('categories');
     setSelectedCategory(null);
     setSearchTerm('');
+    setSelectedPhone(null);
   };
+
+  // Auto-scroll to table when a phone is selected
+  useEffect(() => {
+    if (selectedPhone && tableRef.current) {
+      try {
+        tableRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (e) {}
+    }
+  }, [selectedPhone]);
 
   // Fetch call counts on component mount
   useEffect(() => {
@@ -704,6 +521,20 @@ const Provider = () => {
     return colors[color] || 'bg-gray-100 text-gray-600';
   };
 
+  // Background colors for provider cards per category
+  const getCategoryCardBg = (color) => {
+    const bgColors = {
+      purple: 'bg-purple-50',
+      pink: 'bg-pink-50',
+      orange: 'bg-orange-50',
+      blue: 'bg-blue-50',
+      green: 'bg-green-50',
+      indigo: 'bg-indigo-50',
+      red: 'bg-red-50'
+    };
+    return bgColors[color] || 'bg-gray-50';
+  };
+
   // Function to get category color for provider names (used in modal)
   const getProviderCategoryColor = (providerName, callData = null) => {
     const shortName = getShortProviderName(providerName, callData).toLowerCase();
@@ -720,12 +551,13 @@ const Provider = () => {
     return 'text-gray-600 bg-gray-50 border border-gray-200';
   };
 
-  const filteredProviders = selectedCategory && providers[selectedCategory.id] 
-    ? providers[selectedCategory.id].filter(provider =>
-        provider.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        provider.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredProviders = selectedCategory && providerPhoneNumbers[selectedCategory.id] 
+    ? providerPhoneNumbers[selectedCategory.id].phones.filter(phone =>
+        phone.includes(searchTerm) || formatPhoneNumberBeautiful(phone).includes(searchTerm)
       )
     : [];
+
+  const isEscalatedCategory = selectedCategory?.id === 'escalated-emergency';
 
   if (loading) {
     return (
@@ -739,11 +571,17 @@ const Provider = () => {
   }
 
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col overflow-x-hidden">
       {/* Header */}
       <header className="bg-white border-b border-border px-6 py-4">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-semibold text-foreground">Service Providers</h1>
+          {/* Copy toast */}
+          {showToast && (
+            <div className="fixed top-4 right-4 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50">
+              {toastMessage}
+            </div>
+          )}
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <svg className="w-4 h-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -765,12 +603,12 @@ const Provider = () => {
       </header>
 
       {/* Content */}
-      <main className="flex-1 p-6 bg-gray-50 overflow-y-auto">
+      <main className="flex-1 bg-gray-50 overflow-y-auto overflow-x-hidden px-4 md:px-6 py-4 md:py-6 pb-40">
         {currentView === 'categories' ? (
           <>
             {/* Categories View */}
-            <div className="mb-8">
-              <div className="flex justify-between items-start">
+            <div className="mb-6 md:mb-8">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-2">Service Provider Network</h2>
                   <p className="text-muted-foreground">Browse providers by service category to route calls effectively</p>
@@ -778,22 +616,22 @@ const Provider = () => {
                 <button
                   onClick={fetchCategoryCallCounts}
                   disabled={countsLoading}
-                  className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="self-start md:self-auto flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <svg className={`w-4 h-4 mr-2 ${countsLoading ? 'animate-spin' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
-                  {countsLoading ? 'Refreshing...' : 'Refresh Counts'}
+                  {countsLoading ? 'Refreshing...' : 'Refresh'}
                 </button>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16">
                 {serviceCategories.map((category) => (
                   <div
                     key={category.id}
                     onClick={() => handleCategoryClick(category)}
-                    className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer group relative"
+                  className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer group relative w-full"
                   >
                     {/* Icon */}
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-4 ${getCategoryColor(category.color)}`}>
@@ -832,6 +670,7 @@ const Provider = () => {
                   </div>
               ))}
             </div>
+            <div className="h-16 md:h-20" />
           </>
         ) : (
           <>
@@ -847,12 +686,12 @@ const Provider = () => {
                 Back to all categories
               </button>
               
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 gap-3">
                 <div>
-                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedCategory.name} Providers</h2>
-                  <p className="text-muted-foreground">{filteredProviders.length} providers available</p>
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedCategory.name} Phone Numbers</h2>
+                  <p className="text-muted-foreground">Showing recent call history only</p>
                 </div>
-                <div className={`px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(selectedCategory.color)}`}>
+                <div className={`px-3 py-1 rounded-full text-sm font-medium inline-flex w-max ${getCategoryColor(selectedCategory.color)}`}>
                   {selectedCategory.icon} {selectedCategory.name}
                 </div>
               </div>
@@ -864,7 +703,7 @@ const Provider = () => {
                   </svg>
                   <input
                     type="text"
-                    placeholder="Search by name or tags..."
+                    placeholder="Search by phone number..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full pl-10 pr-4 py-2 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
@@ -873,57 +712,56 @@ const Provider = () => {
               </div>
             </div>
 
-            {/* Provider Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-              {filteredProviders.map((provider) => (
-                <div key={provider.id} className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{provider.name}</h3>
-                  <p className="text-gray-600 text-sm mb-5 leading-relaxed">{provider.description}</p>
-                  
-                  <div className="space-y-3 mb-5">
-                    <div className="flex items-center text-sm">
-                      <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                        <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
+            {/* Phone Numbers Grid - visible for all except Escalated to Emergency */}
+            {!isEscalatedCategory && (
+              filteredProviders.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                  {filteredProviders.map((phone, index) => (
+                    <div
+                      key={index}
+                      className={`p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform ${getCategoryCardBg(selectedCategory.color)} hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] cursor-pointer w-full`}
+                      onClick={() => setSelectedPhone(phone)}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center">
+                            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                          </div>
+                          <span className="text-2xl font-bold text-gray-900 font-mono tracking-wide">{formatPhoneNumberBeautiful(phone)}</span>
+                        </div>
+                        <button
+                          onClick={() => copyToClipboard(phone)}
+                          className="p-2 text-gray-500 hover:text-blue-600 hover:bg-white/70 rounded-lg transition-colors"
+                          title="Copy phone number"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                          </svg>
+                        </button>
                       </div>
-                      <span className="text-gray-900 font-medium">{provider.phone}</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                        <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-900 font-medium">{provider.hours}</span>
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                        <svg className="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-900 font-medium">{provider.address}</span>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    {provider.tags.map((tag, index) => (
-                      <span key={index} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              ) : (
+                <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
+                  <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <h3 className="mt-2 text-sm font-medium text-gray-900">No phone numbers found</h3>
+                  <p className="mt-1 text-sm text-gray-500">
+                    No phone numbers match your search criteria.
+                  </p>
+                </div>
+              )
+            )}
 
             {/* Call History Table */}
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-                <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-semibold text-gray-900">Call History ({calls.length})</h2>
+            <div ref={tableRef} className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-200 bg-gray-50 hidden md:block">
+                <div className="flex -ml-4 justify-between items-center">
+                  <h2 className="text-xl font-semibold text-gray-900">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.length})</h2>
                   <div className="flex items-center space-x-2 text-sm text-gray-500">
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -932,14 +770,27 @@ const Provider = () => {
                   </div>
                 </div>
               </div>
-              <div className="overflow-x-auto overflow-y-auto" style={{ maxHeight: `${tableHeight}px` }}>
+              {selectedPhone && (
+                <div className="px-6 py-3 bg-blue-50 border-b border-blue-200 flex items-start justify-between hidden md:flex">
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 100 2 1 1 0 000-2zm-2 8a1 1 0 102 0v-4a1 1 0 10-2 0v4z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <div className="text-sm font-medium text-blue-800">Showing calls redirected to {formatPhoneNumberBeautiful(selectedPhone)}</div>
+                    </div>
+                  </div>
+                  <button onClick={() => setSelectedPhone(null)} className="text-sm font-medium text-blue-700 hover:text-blue-900">Clear Filter</button>
+                </div>
+              )}
+              <div className="px-0 md:px-0 overflow-x-auto hidden md:block">
                 {callsLoading ? (
                   <div className="flex items-center justify-center py-12">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
                     <span className="ml-2 text-gray-600">Loading calls...</span>
                   </div>
                 ) : (
-                  <table className="w-full min-w-[800px]">
+                  <table className="min-w-[720px] w-full">
                     <thead className="bg-gray-50">
                       <tr>
                         <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 uppercase tracking-wider">Time</th>
@@ -953,7 +804,9 @@ const Provider = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      {calls.map((call) => (
+                      {calls
+                        .filter(call => !selectedPhone || (call.phone_number && call.phone_number.trim() === selectedPhone))
+                        .map((call) => (
                         <tr key={call.id} className="hover:bg-gray-50 transition-colors">
                           <td className="px-4 py-5 whitespace-nowrap text-sm text-gray-600">
                             {formatDateTime(call.createdAt)}
@@ -1028,41 +881,94 @@ const Provider = () => {
                     </svg>
                     <h3 className="mt-2 text-sm font-medium text-gray-900">No calls found</h3>
                     <p className="mt-1 text-sm text-gray-500">
-                      No calls have been routed to {selectedCategory?.name} providers yet.
+                      No calls have been routed to {selectedCategory?.name} phone numbers yet.
                     </p>
                   </div>
                 )}
               </div>
-              
-              {/* Resize Handle */}
-              <div 
-                className="h-2 bg-gray-200 hover:bg-gray-300 cursor-ns-resize flex items-center justify-center group transition-colors"
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  const startY = e.clientY;
-                  const startHeight = tableHeight;
-                  
-                  const handleMouseMove = (e) => {
-                    const deltaY = e.clientY - startY;
-                    const newHeight = Math.max(200, Math.min(800, startHeight + deltaY));
-                    setTableHeight(newHeight);
-                  };
-                  
-                  const handleMouseUp = () => {
-                    document.removeEventListener('mousemove', handleMouseMove);
-                    document.removeEventListener('mouseup', handleMouseUp);
-                  };
-                  
-                  document.addEventListener('mousemove', handleMouseMove);
-                  document.addEventListener('mouseup', handleMouseUp);
-                }}
-              >
-                <div className="w-8 h-1 bg-gray-400 rounded-full group-hover:bg-gray-500 transition-colors"></div>
+
+              {/* Mobile stacked cards (match Calls.jsx style) */}
+              <div className="md:hidden px-4 pb-32">
+                <div className="flex items-center justify-between px-4 py-2">
+                  <div className="text-lg font-semibold text-gray-900">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.length})</div>
+                  <div className="text-xs text-gray-500">Last updated: {new Date().toLocaleTimeString()}</div>
+                </div>
+                {selectedPhone && (
+                  <div className="mt-1 mb-2 px-4 py-3 bg-blue-50 border-t border-b border-blue-200 flex items-start justify-between">
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-blue-600 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 100 2 1 1 0 000-2zm-2 8a1 1 0 102 0v-4a1 1 0 10-2 0v4z" clipRule="evenodd" />
+                      </svg>
+                      <div className="text-sm text-blue-800">Showing calls redirected to {formatPhoneNumberBeautiful(selectedPhone)}</div>
+                    </div>
+                    <button onClick={() => setSelectedPhone(null)} className="text-sm font-medium text-blue-700 hover:text-blue-900">Clear Filter</button>
+                  </div>
+                )}
+                <div className="divide-y divide-gray-200 text-[15px]">
+                {callsLoading ? (
+                  <div className="flex items-center justify-center py-10">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                  </div>
+                ) : (
+                  calls
+                    .filter(call => !selectedPhone || (call.phone_number && call.phone_number.trim() === selectedPhone))
+                    .map((call) => (
+                      <div key={call.id} className="p-4">
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="text-xs text-gray-500">{formatDateTime(call.createdAt)}</div>
+                          <div className="text-xs text-gray-500 font-mono">{formatDuration(call.duration_ms)}</div>
+                        </div>
+                        <div className="text-sm font-semibold text-gray-900 mb-2">
+                          {formatPhoneNumber(call.phone_number || call.from_number)}
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mb-3">
+                          <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${getProviderCategoryColor(call.provider_name, call)}`}>
+                            {getShortProviderName(call.provider_name, call)}
+                          </span>
+                          <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
+                            call.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
+                            call.user_sentiment === 'Neutral' ? 'text-white bg-blue-500' :
+                            call.user_sentiment === 'Negative' ? 'text-white bg-red-500' :
+                            'text-gray-600 bg-gray-200'
+                          }`}>
+                            {call.user_sentiment || 'N/A'}
+                          </span>
+                          <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
+                            call.call_successful === true ? 'text-green-600 bg-green-50 border border-green-200' :
+                            call.call_successful === false ? 'text-red-600 bg-red-50 border border-red-200' :
+                            'text-gray-600 bg-gray-50 border border-gray-200'
+                          }`}>
+                            {call.call_successful === true ? 'Success' : call.call_successful === false ? 'Failed' : 'Unknown'}
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-center">
+                          <button 
+                            onClick={() => setSelectedCall(call)}
+                            className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
+                          >
+                            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    ))
+                )}
+                </div>
               </div>
+
+              {/* Bottom spacer to prevent last section cut off on mobile */}
+              <div className="h-16 md:h-0" />
+              
+              {/* Table uses main page scroll; no internal resizer */}
             </div>
           </>
         )}
       </main>
+      {/* Global bottom spacer to prevent last section cut on mobile browsers */}
+      <div className="h-24 md:h-12" />
 
       {/* Call Details Modal */}
       {selectedCall && (
@@ -1079,7 +985,7 @@ const Provider = () => {
                 </svg>
               </button>
             </div>
-            <div className="p-6 space-y-6">
+            <div className="p-6 pb-56 space-y-6" style={{ paddingBottom: 'calc(14rem + env(safe-area-inset-bottom, 0px))' }}>
               {/* Call Information */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -1168,7 +1074,7 @@ const Provider = () => {
 
               {/* Recording */}
               {selectedCall.recording_url && (
-                <div>
+                <div className="mb-24">
                   <label className="text-sm font-medium text-gray-600">Recording</label>
                   <div className="mt-2">
                     <AudioPlayer audioUrl={selectedCall.recording_url} callId={selectedCall.call_id} />
@@ -1176,6 +1082,7 @@ const Provider = () => {
                 </div>
               )}
 
+              <div className="h-20" />
             </div>
           </div>
         </div>

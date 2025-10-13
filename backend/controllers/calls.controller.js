@@ -16,7 +16,8 @@ const getAllCalls = asyncHandler(async (req, res) => {
       sentiment = '',
       call_successful = '',
       sortBy = 'createdAt',
-      sortOrder = 'desc'
+      sortOrder = 'desc',
+      days = ''
     } = req.query;
 
     // Build filter object
@@ -65,6 +66,16 @@ const getAllCalls = asyncHandler(async (req, res) => {
         } else {
           filter.provider_name = { $regex: provider, $options: 'i' };
         }
+      }
+    }
+
+    // Time range filter (last N days)
+    if (days) {
+      const n = parseInt(days);
+      if (!isNaN(n) && n > 0) {
+        const startDate = new Date();
+        startDate.setDate(startDate.getDate() - n);
+        filter.createdAt = { $gte: startDate };
       }
     }
 
@@ -125,13 +136,13 @@ const getAllCalls = asyncHandler(async (req, res) => {
           totalItems: total,
           itemsPerPage: parseInt(limit)
         }
-      }, "Calls fetched successfully").Json()
+      }, "Calls fetched successfully").toJSON()
     );
 
   } catch (error) {
     console.error("Error fetching calls:", error);
     res.status(500).json(
-      new apiResponse(500, null, "Failed to fetch calls").Json()
+      new apiResponse(500, null, "Failed to fetch calls").toJSON()
     );
   }
 });
@@ -199,13 +210,13 @@ const getCallStats = asyncHandler(async (req, res) => {
         successRate: totalCalls > 0 ? (successfulCalls / totalCalls * 100).toFixed(1) : 0,
         sentimentStats,
         providerStats
-      }, "Call statistics fetched successfully").Json()
+      }, "Call statistics fetched successfully").toJSON()
     );
 
   } catch (error) {
     console.error("Error fetching call statistics:", error);
     res.status(500).json(
-      new apiResponse(500, null, "Failed to fetch call statistics").Json()
+      new apiResponse(500, null, "Failed to fetch call statistics").toJSON()
     );
   }
 });

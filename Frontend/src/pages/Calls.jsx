@@ -6,10 +6,8 @@ const API_BASE_URL = 'http://localhost:3000/api';
 // Helper function to format phone numbers
 const formatPhoneNumber = (phone) => {
   if (!phone) return 'N/A';
-  // Remove all non-digit characters
   const digits = phone.replace(/\D/g, '');
   if (digits.length >= 10) {
-    // Format as 925******66
     const firstThree = digits.slice(0, 3);
     const lastTwo = digits.slice(-2);
     return `${firstThree}******${lastTwo}`;
@@ -20,16 +18,16 @@ const formatPhoneNumber = (phone) => {
 // Helper function to get short provider name
 const getShortProviderName = (providerName, callData = null) => {
   if (!providerName) return 'Unknown';
-  
+
   // Check for emergency escalation indicators
   if (callData) {
     const transcript = callData.transcript || '';
-    
+
     // Very specific emergency detection - user says emergency AND agent says call 911
     const lines = transcript.split('\n');
     let userSaidEmergency = false;
     let agentSaidCall911 = false;
-    
+
     for (const line of lines) {
       const lowerLine = line.toLowerCase();
       if (lowerLine.includes('user:') && lowerLine.includes('emergency')) {
@@ -39,14 +37,14 @@ const getShortProviderName = (providerName, callData = null) => {
         agentSaidCall911 = true;
       }
     }
-    
+
     if (userSaidEmergency && agentSaidCall911) {
       return 'Escalated to Emergency';
     }
   }
-  
+
   const lowerName = providerName.toLowerCase();
-  
+
   if (lowerName.includes('mental') || lowerName.includes('psychiatric')) {
     return 'Mental';
   } else if (lowerName.includes('domestic') || lowerName.includes('violence') || lowerName.includes('abuse')) {
@@ -64,7 +62,7 @@ const getShortProviderName = (providerName, callData = null) => {
   } else if (lowerName.includes('escalated') || lowerName.includes('emergency')) {
     return 'Escalated to Emergency';
   }
-  
+
   return providerName.length > 20 ? providerName.substring(0, 20) + '...' : providerName;
 };
 
@@ -93,7 +91,7 @@ const formatDateTime = (dateString) => {
 // Helper function to format transcript
 const formatTranscript = (transcript) => {
   if (!transcript) return [];
-  
+
   // Split by lines and format each line
   const lines = transcript.split('\n').filter(line => line.trim());
   return lines.map(line => {
@@ -118,15 +116,15 @@ const AudioPlayer = ({ audioUrl, callId }) => {
     if (audioUrl) {
       const audioElement = new Audio(audioUrl);
       setAudio(audioElement);
-      
+
       audioElement.addEventListener('loadedmetadata', () => {
         setDuration(audioElement.duration);
       });
-      
+
       audioElement.addEventListener('timeupdate', () => {
         setCurrentTime(audioElement.currentTime);
       });
-      
+
       audioElement.addEventListener('ended', () => {
         setIsPlaying(false);
         setCurrentTime(0);
@@ -175,14 +173,14 @@ const AudioPlayer = ({ audioUrl, callId }) => {
             </svg>
           )}
         </button>
-        
+
         <div className="flex-1">
           <div className="flex items-center space-x-2 mb-1">
             <span className="text-sm text-muted-foreground">
               {Math.floor(currentTime / 60)}:{(currentTime % 60).toFixed(0).padStart(2, '0')}
             </span>
-            <div className="flex-1 bg-gray-200 rounded-full h-2 relative">
-              <div 
+            <div className="flex-1 bg-gray-200 rounded-full h-2 relative overflow-hidden">
+              <div
                 className="bg-primary h-2 rounded-full transition-all duration-100"
                 style={{ width: `${duration ? (currentTime / duration) * 100 : 0}%` }}
               />
@@ -192,7 +190,7 @@ const AudioPlayer = ({ audioUrl, callId }) => {
             </span>
           </div>
         </div>
-        
+
         <button
           onClick={handleDownload}
           className="flex items-center px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors"
@@ -203,7 +201,7 @@ const AudioPlayer = ({ audioUrl, callId }) => {
           Download
         </button>
       </div>
-      
+
       {/* Sound Waves Animation */}
       <div className="h-8 flex items-center justify-center">
         {isPlaying && (
@@ -247,7 +245,7 @@ const Calls = () => {
     try {
       setLoading(true);
       setError(null);
-      
+
       const params = new URLSearchParams({
         page: pagination.currentPage.toString(),
         limit: pagination.itemsPerPage.toString(),
@@ -255,7 +253,7 @@ const Calls = () => {
         sortBy: 'createdAt',
         sortOrder: 'desc'
       });
-      
+
       if (filter !== 'all') {
         if (['mental-health', 'domestic-violence', 'substance-abuse', 'homelessness', 'youth-crisis', 'elder-concern', 'gambling', 'escalated-emergency'].includes(filter)) {
           // Map filter names to backend provider names
@@ -276,15 +274,15 @@ const Calls = () => {
           params.append('call_successful', filter);
         }
       }
-      
+
       const response = await fetch(`${API_BASE_URL}/calls?${params}`);
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
-      
+
       if (data.success) {
         setCalls(data.data.calls);
         setPagination(data.data.pagination);
@@ -302,6 +300,7 @@ const Calls = () => {
 
   useEffect(() => {
     fetchCalls();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagination.currentPage, searchTerm, filter]);
 
   // Debounced search
@@ -313,31 +312,14 @@ const Calls = () => {
         fetchCalls();
       }
     }, 500);
-    
+
     return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
-
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'completed': return 'text-success bg-success/10';
-      case 'in-progress': return 'text-warning bg-warning/10';
-      case 'pending': return 'text-muted-foreground bg-muted/10';
-      default: return 'text-muted-foreground bg-muted/10';
-    }
-  };
-
-  const getSentimentColor = (sentiment) => {
-    switch (sentiment) {
-      case 'positive': return 'text-sentiment-positive bg-sentiment-positive/10';
-      case 'negative': return 'text-sentiment-negative bg-sentiment-negative/10';
-      case 'neutral': return 'text-sentiment-neutral bg-sentiment-neutral/10';
-      default: return 'text-muted-foreground bg-muted/10';
-    }
-  };
 
   const getCategoryColor = (providerName, callData = null) => {
     const shortName = getShortProviderName(providerName, callData).toLowerCase();
-    
+
     if (shortName.includes('mental')) return 'text-blue-600 bg-blue-50 border border-blue-200';
     if (shortName.includes('domestic') || shortName.includes('violence')) return 'text-pink-600 bg-pink-50 border border-pink-200';
     if (shortName.includes('substance')) return 'text-cyan-600 bg-cyan-50 border border-cyan-200';
@@ -346,22 +328,26 @@ const Calls = () => {
     if (shortName.includes('youth')) return 'text-green-600 bg-green-50 border border-green-200';
     if (shortName.includes('gambling')) return 'text-red-600 bg-red-50 border border-red-200';
     if (shortName.includes('escalated') || shortName.includes('emergency')) return 'text-red-600 bg-red-50 border border-red-200';
-    
+
     return 'text-gray-600 bg-gray-50 border border-gray-200';
   };
 
-  const getPriorityColor = (priority) => {
-    switch (priority) {
-      case 'high': return 'text-destructive bg-destructive/10';
-      case 'medium': return 'text-warning bg-warning/10';
-      case 'low': return 'text-success bg-success/10';
-      default: return 'text-muted-foreground bg-muted/10';
+  // Lock background scroll when modal open
+  useEffect(() => {
+    if (selectedCall) {
+      const prevOverflow = document.documentElement.style.overflow;
+      const prevBodyOverflow = document.body.style.overflow;
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.documentElement.style.overflow = prevOverflow;
+        document.body.style.overflow = prevBodyOverflow;
+      };
     }
-  };
+  }, [selectedCall]);
 
   // No need for client-side filtering since we're doing it on the backend
   const filteredCalls = calls;
-
 
   const exportCsv = (rows) => {
     const headers = ['Time','Caller ID','Niche','Routed Provider','Sentiment','Call Success','Duration'];
@@ -373,7 +359,7 @@ const Calls = () => {
       r.user_sentiment || 'N/A',
       r.call_successful === true ? 'Success' : r.call_successful === false ? 'Failed' : 'Unknown',
       formatDuration(r.duration_ms)
-    ].join(',')); 
+    ].join(','));
     const csv = [headers.join(','), ...toCsv].join('\n');
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
@@ -398,7 +384,7 @@ const Calls = () => {
   }
 
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col overflow-x-hidden">
       {/* Header */}
       <header className="bg-white border-b border-border shadow-sm">
         <div className="px-6 py-6">
@@ -408,8 +394,8 @@ const Calls = () => {
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <select 
-                  value={timeRange} 
+                <select
+                  value={timeRange}
                   onChange={(e) => setTimeRange(e.target.value)}
                   className="bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 >
@@ -425,8 +411,8 @@ const Calls = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-y-auto bg-gray-50">
-        <div className="px-6 py-8">
+      <main className="flex-1 overflow-y-auto overflow-x-hidden bg-gray-50 pb-32">
+        <div className="px-4 py-6 md:px-6 md:py-8">
 
         {/* Overview Section */}
         <div className="mb-6">
@@ -436,208 +422,66 @@ const Calls = () => {
               <p className="text-muted-foreground mt-1">{filteredCalls.length} calls in selected time range</p>
             </div>
           </div>
-          
+
           {/* Search and Export */}
-          <div className="flex items-center justify-between mb-6">
-            <div className="relative flex-1 mr-4">
-                <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-                <input
-                  type="text"
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+            <div className="relative flex-1 w-full">
+              <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input
+                type="text"
                 placeholder="Search by caller ID, provider, or transcript..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                />
-              </div>
-            <button onClick={() => exportCsv(filteredCalls)} className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm bg-white hover:bg-gray-50 transition-colors">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 16v-8m0 8l-3-3m3 3l3-3M4 20h16a2 2 0 002-2V6a2 2 0 00-2-2h-5l-2-2H9L7 4H4a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              />
+            </div>
+            <button
+              onClick={() => exportCsv(filteredCalls)}
+              className="inline-flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg text-sm bg-white hover:bg-gray-50 transition-colors w-full sm:w-auto"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 16v-8m0 8l-3-3m3 3l3-3M4 20h16a2 2 0 002-2V6a2 2 0 00-2-2h-5l-2-2H9L7 4H4a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
               Export CSV
             </button>
-            </div>
-            
+          </div>
+
           {/* Filter Chips */}
-            <div className="flex flex-wrap gap-2 items-center">
+          <div className="flex flex-wrap gap-2 items-center">
+            {[
+              { key: 'all', icon: '🏠', label: 'All Niches' },
+              { key: 'mental-health', icon: '🧠', label: 'Mental Health' },
+              { key: 'domestic-violence', icon: '❤️', label: 'Domestic Violence' },
+              { key: 'homelessness', icon: '🏠', label: 'Homelessness' },
+              { key: 'substance-abuse', icon: '💊', label: 'Substance Abuse' },
+              { key: 'youth-crisis', icon: '👦', label: 'Youth Crisis' },
+              { key: 'elder-concern', icon: '👴', label: 'Elder Concern' },
+              { key: 'gambling', icon: '🎲', label: 'Gambling' },
+              { key: 'escalated-emergency', icon: '🚨', label: 'Escalated to Emergency' },
+              { key: 'redirected', icon: '', label: 'Redirected' },
+              { key: 'booked', icon: '', label: 'Booked' },
+              { key: 'escalated', icon: '', label: 'Escalated' },
+              { key: 'resolved', icon: '', label: 'Resolved' },
+              { key: 'abandoned', icon: '', label: 'Abandoned' },
+              { key: 'positive', icon: '', label: 'Positive' },
+              { key: 'neutral', icon: '', label: 'Neutral' },
+              { key: 'negative', icon: '', label: 'Negative' },
+            ].map(({ key, icon, label }) => (
               <button
-                onClick={() => setFilter('all')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                  filter === 'all' 
-                  ? 'bg-teal-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                key={key}
+                onClick={() => setFilter(key)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
+                  filter === key
+                    ? 'bg-teal-500 text-white shadow-sm'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
                 }`}
               >
-              <span>🏠</span>
-              <span>All Niches</span>
+                {icon && <span>{icon}</span>}
+                <span>{label}</span>
               </button>
-              <button
-                onClick={() => setFilter('mental-health')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                  filter === 'mental-health' 
-                  ? 'bg-blue-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-                }`}
-              >
-              <span>🧠</span>
-              <span>Mental Health</span>
-              </button>
-              <button
-                onClick={() => setFilter('domestic-violence')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                  filter === 'domestic-violence' 
-                  ? 'bg-pink-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>❤️</span>
-              <span>Domestic Violence</span>
-            </button>
-            <button
-              onClick={() => setFilter('homelessness')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                filter === 'homelessness' 
-                  ? 'bg-orange-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>🏠</span>
-              <span>Homelessness</span>
-              </button>
-              <button
-                onClick={() => setFilter('substance-abuse')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                  filter === 'substance-abuse' 
-                  ? 'bg-cyan-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>💊</span>
-              <span>Substance Abuse</span>
-            </button>
-            <button
-              onClick={() => setFilter('youth-crisis')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                filter === 'youth-crisis' 
-                  ? 'bg-green-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>👦</span>
-              <span>Youth Crisis</span>
-            </button>
-            <button
-              onClick={() => setFilter('elder-concern')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                filter === 'elder-concern' 
-                  ? 'bg-indigo-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>👴</span>
-              <span>Elder Concern</span>
-            </button>
-            <button
-              onClick={() => setFilter('gambling')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                filter === 'gambling' 
-                  ? 'bg-red-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>🎲</span>
-              <span>Gambling</span>
-            </button>
-            <button
-              onClick={() => setFilter('escalated-emergency')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
-                filter === 'escalated-emergency' 
-                  ? 'bg-red-600 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              <span>🚨</span>
-              <span>Escalated to Emergency</span>
-            </button>
-            <button
-              onClick={() => setFilter('redirected')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'redirected' 
-                  ? 'bg-blue-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Redirected
-            </button>
-            <button
-              onClick={() => setFilter('booked')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'booked' 
-                  ? 'bg-green-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Booked
-            </button>
-            <button
-              onClick={() => setFilter('escalated')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'escalated' 
-                  ? 'bg-red-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Escalated
-            </button>
-            <button
-              onClick={() => setFilter('resolved')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'resolved' 
-                  ? 'bg-green-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Resolved
-            </button>
-            <button
-              onClick={() => setFilter('abandoned')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'abandoned' 
-                  ? 'bg-yellow-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Abandoned
-            </button>
-            <button
-              onClick={() => setFilter('positive')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'positive' 
-                  ? 'bg-green-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Positive
-              </button>
-              <button
-              onClick={() => setFilter('neutral')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'neutral' 
-                  ? 'bg-blue-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Neutral
-              </button>
-            <button
-              onClick={() => setFilter('negative')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === 'negative' 
-                  ? 'bg-red-500 text-white shadow-sm' 
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
-              }`}
-            >
-              Negative
-              </button>
+            ))}
           </div>
         </div>
 
@@ -654,8 +498,10 @@ const Calls = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-x-auto max-h-[calc(100vh-400px)] overflow-y-auto">
-            <table className="w-full min-w-[800px]">
+
+          {/* Desktop table */}
+          <div className="overflow-x-auto hidden md:block">
+            <table className="w-full min-w-[880px]">
               <thead className="bg-muted/50">
                 <tr>
                   <th className="px-4 py-4 text-left text-sm font-semibold text-foreground uppercase tracking-wider">Time</th>
@@ -703,7 +549,7 @@ const Calls = () => {
                         call.call_successful === false ? 'text-red-600 bg-red-50 border border-red-200' :
                         'text-gray-600 bg-gray-50 border border-gray-200'
                       }`}>
-                        {call.call_successful === true ? 'Success' : 
+                        {call.call_successful === true ? 'Success' :
                          call.call_successful === false ? 'Failed' : 'Unknown'}
                       </span>
                     </td>
@@ -711,8 +557,8 @@ const Calls = () => {
                       {formatDuration(call.duration_ms)}
                     </td>
                     <td className="px-4 py-5 whitespace-nowrap text-center">
-                      <button 
-                        onClick={() => setSelectedCall(call)} 
+                      <button
+                        onClick={() => setSelectedCall(call)}
                         className="inline-flex items-center px-4 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors"
                       >
                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -738,9 +584,65 @@ const Calls = () => {
               </div>
             )}
           </div>
-          
+
+          {/* Mobile cards on small screens */}
+          <div className="md:hidden px-4 pb-40 divide-y divide-border text-[15px] overflow-x-hidden w-full max-w-full box-border">
+            {filteredCalls.length === 0 ? (
+              <div className="text-center py-10">
+                <svg className="mx-auto h-10 w-10 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <p className="mt-2 text-sm text-muted-foreground">No calls match the selected filter.</p>
+              </div>
+            ) : (
+              filteredCalls.map((call) => (
+                <div key={call.id} className="p-4 w-full max-w-full">
+                  <div className="flex items-center justify-between mb-2 max-w-full">
+                    <div className="text-xs text-muted-foreground truncate">{formatDateTime(call.createdAt)}</div>
+                    <div className="text-xs text-muted-foreground font-mono">{formatDuration(call.duration_ms)}</div>
+                  </div>
+                  <div className="text-sm font-semibold text-foreground mb-2 break-words">
+                    {formatPhoneNumber(call.phone_number || call.from_number)}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 mb-3 max-w-full">
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${getCategoryColor(call.provider_name, call)}`}>
+                      {getShortProviderName(call.provider_name, call)}
+                    </span>
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
+                      call.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
+                      call.user_sentiment === 'Neutral' ? 'text-white bg-blue-500' :
+                      call.user_sentiment === 'Negative' ? 'text-white bg-red-500' :
+                      'text-gray-600 bg-gray-200'
+                    }`}>
+                      {call.user_sentiment || 'N/A'}
+                    </span>
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
+                      call.call_successful === true ? 'text-green-600 bg-green-50 border border-green-200' :
+                      call.call_successful === false ? 'text-red-600 bg-red-50 border border-red-200' :
+                      'text-gray-600 bg-gray-50 border border-gray-200'
+                    }`}>
+                      {call.call_successful === true ? 'Success' : call.call_successful === false ? 'Failed' : 'Unknown'}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-center max-w-full">
+                    <button
+                      onClick={() => setSelectedCall(call)}
+                      className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-primary bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors shrink-0"
+                    >
+                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+
           {/* Pagination */}
-          {pagination.totalPages > 1 && (
+          {pagination.totalPages > 1 ? (
             <div className="px-6 py-4 border-t border-border bg-muted/30">
               <div className="flex items-center justify-between">
                 <div className="text-sm text-muted-foreground">
@@ -767,51 +669,60 @@ const Calls = () => {
                 </div>
               </div>
             </div>
-          )}
+          ) : null}
         </div>
         </div>
+        <div className="h-16 md:h-24" />
       </main>
+      <div className="h-24 md:h-12" />
 
       {/* Call Details Modal */}
       {selectedCall && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-card rounded-lg border border-border max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-xl">
-            <div className="px-6 py-4 border-b border-border flex justify-between items-center bg-muted/30">
+        <div
+          className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Call details"
+        >
+          <div className="bg-white rounded-lg border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-xl">
+            <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gray-50 sticky top-0">
               <h3 className="text-lg font-semibold text-foreground">Call Details</h3>
               <button
                 onClick={() => setSelectedCall(null)}
                 className="text-muted-foreground hover:text-foreground transition-colors p-1 rounded-md hover:bg-muted"
+                aria-label="Close"
               >
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
-            <div className="p-6 space-y-6">
+
+            <div className="p-6 pb-8 space-y-6">
               {/* Call Information */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Call ID</label>
-                  <p className="text-foreground font-medium text-lg">{selectedCall.call_id}</p>
+                  <label className="text-sm font-medium text-gray-600">Call ID</label>
+                  <p className="text-foreground font-medium text-lg break-all">{selectedCall.call_id}</p>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Phone Number</label>
-                  <p className="text-foreground font-medium text-lg">{selectedCall.phone_number || selectedCall.from_number || 'N/A'}</p>
+                  <label className="text-sm font-medium text-gray-600">Phone Number</label>
+                  <p className="text-foreground font-medium text-lg break-all">{selectedCall.phone_number || selectedCall.from_number || 'N/A'}</p>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Agent Name</label>
-                  <p className="text-foreground text-lg">{selectedCall.agent_name}</p>
+                  <label className="text-sm font-medium text-gray-600">Agent Name</label>
+                  <p className="text-foreground text-lg">{selectedCall.agent_name || 'N/A'}</p>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Call Time</label>
+                  <label className="text-sm font-medium text-gray-600">Call Time</label>
                   <p className="text-foreground text-lg">{formatDateTime(selectedCall.createdAt)}</p>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Duration</label>
+                  <label className="text-sm font-medium text-gray-600">Duration</label>
                   <p className="text-foreground font-mono text-lg">{formatDuration(selectedCall.duration_ms)}</p>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Disconnection Reason</label>
+                  <label className="text-sm font-medium text-gray-600">Disconnection Reason</label>
                   <p className="text-foreground text-lg">{selectedCall.disconnection_reason || 'N/A'}</p>
                 </div>
               </div>
@@ -819,7 +730,7 @@ const Calls = () => {
               {/* Provider and Sentiment */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Provider</label>
+                  <label className="text-sm font-medium text-gray-600">Provider</label>
                   <div className="mt-2">
                     <span className={`inline-flex items-center px-4 py-2 -ml-2 rounded-full text-base font-medium ${getCategoryColor(selectedCall.provider_name, selectedCall)}`}>
                       {getShortProviderName(selectedCall.provider_name, selectedCall)}
@@ -827,7 +738,7 @@ const Calls = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Sentiment</label>
+                  <label className="text-sm font-medium text-gray-600">Sentiment</label>
                   <div className="mt-2 -ml-2">
                     <span className={`inline-flex items-center px-4 py-2 rounded-full text-base font-medium ${
                       selectedCall.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
@@ -843,8 +754,8 @@ const Calls = () => {
 
               {/* Call Summary */}
               <div>
-                <label className="text-sm font-medium text-muted-foreground">Call Summary</label>
-                <div className="mt-2 p-4 bg-muted/30 rounded-lg border border-border">
+                <label className="text-sm font-medium text-gray-600">Call Summary</label>
+                <div className="mt-2 p-4 bg-gray-50 rounded-lg border border-gray-200">
                   <p className="text-foreground leading-relaxed">{selectedCall.call_summary || 'No summary available'}</p>
                 </div>
               </div>
@@ -852,8 +763,8 @@ const Calls = () => {
               {/* Transcript */}
               {selectedCall.transcript && (
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Transcript</label>
-                  <div className="mt-2 p-4 bg-muted/30 rounded-lg border border-border max-h-60 overflow-y-auto">
+                  <label className="text-sm font-medium text-gray-600">Transcript</label>
+                  <div className="mt-2 p-4 bg-gray-50 rounded-lg border border-gray-200 max-h-60 overflow-y-auto">
                     <div className="space-y-3">
                       {formatTranscript(selectedCall.transcript).map((line, index) => (
                         <div key={index} className="flex">
@@ -867,7 +778,7 @@ const Calls = () => {
                           <span className="text-foreground text-sm leading-relaxed flex-1">
                             {line.message}
                           </span>
-              </div>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -877,13 +788,13 @@ const Calls = () => {
               {/* Recording */}
               {selectedCall.recording_url && (
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground">Recording</label>
+                  <label className="text-sm font-medium text-gray-600">Recording</label>
                   <div className="mt-2">
                     <AudioPlayer audioUrl={selectedCall.recording_url} callId={selectedCall.call_id} />
                   </div>
                 </div>
               )}
-
+              <div className="h-24 md:h-12" />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Navigation = ({ currentPage, onPageChange }) => {
+const Navigation = ({ onClose }) => {
   const navigationItems = [
     {
       id: 'dashboard',
@@ -32,12 +33,17 @@ const Navigation = ({ currentPage, onPageChange }) => {
   ];
 
   return (
-    <div className="w-64 bg-white border-r border-border flex flex-col">
+    <div className="w-64 bg-white border-r border-border flex flex-col h-full">
       {/* Logo */}
-      <div className="p-6 border-b border-border">
+      <div className="p-6 border-b border-border flex items-center justify-between">
         <div className="w-8 h-8 bg-muted rounded flex items-center justify-center">
           <div className="w-4 h-4 bg-primary rounded-sm"></div>
         </div>
+        {onClose && (
+          <button onClick={onClose} className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground">
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        )}
       </div>
 
       {/* Navigation */}
@@ -45,17 +51,15 @@ const Navigation = ({ currentPage, onPageChange }) => {
         <ul className="space-y-2">
           {navigationItems.map((item) => (
             <li key={item.id}>
-              <button
-                onClick={() => onPageChange(item.id)}
-                className={`w-full flex items-center px-3 py-2 rounded-lg transition-colors ${
-                  currentPage === item.id
-                    ? 'text-white bg-primary'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+              <NavLink
+                to={`/${item.id === 'dashboard' ? 'dashboard' : item.id}`}
+                className={({ isActive }) => `w-full flex items-center px-3 py-2 rounded-lg transition-colors ${
+                  isActive ? 'text-white bg-primary' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                 }`}
               >
                 {item.icon}
                 <span className="ml-3">{item.name}</span>
-              </button>
+              </NavLink>
             </li>
           ))}
         </ul>
