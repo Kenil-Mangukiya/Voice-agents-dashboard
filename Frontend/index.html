@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "hsl(220 20% 97%)",
+              foreground: "hsl(220 15% 15%)",
+              card: "hsl(0 0% 100%)",
+              "card-foreground": "hsl(220 15% 15%)",
+              primary: "hsl(185 85% 45%)",
+              "primary-foreground": "hsl(0 0% 100%)",
+              secondary: "hsl(220 15% 92%)",
+              "secondary-foreground": "hsl(220 15% 20%)",
+              muted: "hsl(220 15% 94%)",
+              "muted-foreground": "hsl(220 10% 45%)",
+              accent: "hsl(185 75% 90%)",
+              "accent-foreground": "hsl(185 85% 25%)",
+              destructive: "hsl(0 75% 55%)",
+              "destructive-foreground": "hsl(0 0% 100%)",
+              border: "hsl(220 15% 88%)",
+              input: "hsl(220 15% 88%)",
+              ring: "hsl(185 85% 45%)",
+              success: "hsl(145 65% 45%)",
+              "success-foreground": "hsl(0 0% 100%)",
+              warning: "hsl(40 95% 55%)",
+              "warning-foreground": "hsl(40 20% 15%)",
+              "sentiment-positive": "hsl(145 65% 45%)",
+              "sentiment-neutral": "hsl(220 10% 55%)",
+              "sentiment-negative": "hsl(0 75% 55%)",
+              "niche-mental": "hsl(260 70% 60%)",
+              "niche-domestic": "hsl(340 70% 55%)",
+              "niche-homeless": "hsl(30 80% 55%)",
+              "niche-substance": "hsl(185 85% 45%)"
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
