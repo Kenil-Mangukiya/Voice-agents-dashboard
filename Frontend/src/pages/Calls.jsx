@@ -1,7 +1,8 @@
+
 import React, { useState, useEffect } from 'react';
 
 // API base URL - adjust this to match your backend
-const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
+const API_BASE_URL = 'http://localhost:3007/api';
 
 // Helper function to format phone numbers
 const formatPhoneNumber = (phone) => {
@@ -22,7 +23,7 @@ const getShortProviderName = (providerName, callData = null) => {
   // Check for emergency escalation indicators
   if (callData) {
     const transcript = callData.transcript || '';
-
+    
     // Very specific emergency detection - user says emergency AND agent says call 911
     const lines = transcript.split('\n');
     let userSaidEmergency = false;
@@ -45,19 +46,23 @@ const getShortProviderName = (providerName, callData = null) => {
 
   const lowerName = providerName.toLowerCase();
 
+  // Ensuring correct niche category assignment
   if (lowerName.includes('mental') || lowerName.includes('psychiatric')) {
-    return 'Mental';
+    return 'Mental Health';
   } else if (lowerName.includes('domestic') || lowerName.includes('violence') || lowerName.includes('abuse')) {
     return 'Domestic Violence';
   } else if (lowerName.includes('substance') || lowerName.includes('alcohol') || lowerName.includes('addiction')) {
-    return 'Substance';
-  } else if (lowerName.includes('homeless') || lowerName.includes('housing') || lowerName.includes('shelter') || lowerName.includes('rescue') || lowerName.includes('mission')) {
+    return 'Substance Abuse';
+  } 
+  else if (lowerName.includes('youth crisis') || lowerName.includes('teen') || lowerName.includes('child') || lowerName.includes('adolescent') || lowerName.includes('new day')) {
+    return 'Youth Crisis';
+  }
+  
+  else if (lowerName.includes('homeless') || lowerName.includes('housing') || lowerName.includes('shelter') || lowerName.includes('rescue') || lowerName.includes('mission')) {
     return 'Homelessness';
   } else if (lowerName.includes('elder') || lowerName.includes('senior')) {
     return 'Elder Care';
-  } else if (lowerName.includes('youth') || lowerName.includes('teen') || lowerName.includes('child')) {
-    return 'Youth';
-  } else if (lowerName.includes('lgbtq') || lowerName.includes('identity')) {
+  }  else if (lowerName.includes('lgbtq') || lowerName.includes('identity')) {
     return 'LGBTQ+ Identity';
   } else if (lowerName.includes('gambling') || lowerName.includes('financial')) {
     return 'Gambling';
@@ -67,6 +72,7 @@ const getShortProviderName = (providerName, callData = null) => {
 
   return providerName.length > 20 ? providerName.substring(0, 20) + '...' : providerName;
 };
+
 
 // Helper function to format duration
 const formatDuration = (durationMs) => {
@@ -531,14 +537,16 @@ const Calls = () => {
                       <div className="text-foreground font-medium">
                         {formatCallIdShort(call.call_id)}
                       </div>
-                    </td>
-                    <td className="px-4 py-5 whitespace-nowrap text-center">
-                      <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${getCategoryColor(call.provider_name, call)}`}>
-                        {getShortProviderName(call.provider_name, call)}
-                      </span>
-                    </td>
-                    <td className="px-4 py-5 whitespace-nowrap text-sm text-foreground text-center">
-                      {getShortProviderName(call.provider_name, call)}
+                    </td><td className="px-4 py-5 text-center">
+  <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${getCategoryColor(call.niche || call.provider_name, call)}`}>
+    {call.niche || getShortProviderName(call.provider_name, call)}
+  </span>
+</td>
+
+                    <td className="px-4 py-5 text-sm text-foreground text-center">
+                      <div className="break-words">
+                        {call.provider_name || 'Unknown Provider'}
+                      </div>
                     </td>
                     <td className="px-4 py-5 whitespace-nowrap text-center">
                       <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
@@ -612,8 +620,8 @@ const Calls = () => {
                     {formatCallIdShort(call.call_id)}
                   </div>
                   <div className="flex flex-wrap items-center gap-2 mb-3 max-w-full">
-                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${getCategoryColor(call.provider_name, call)}`}>
-                      {getShortProviderName(call.provider_name, call)}
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${getCategoryColor(call.niche || call.provider_name, call)}`}>
+                      {call.niche || getShortProviderName(call.provider_name, call)}
                     </span>
                     <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
                       call.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
@@ -630,6 +638,9 @@ const Calls = () => {
                     }`}>
                       {call.call_successful === true ? 'Success' : call.call_successful === false ? 'Failed' : 'Unknown'}
                     </span>
+                  </div>
+                  <div className="text-xs text-muted-foreground mb-2 break-words">
+                    <strong>Provider:</strong> {call.provider_name || 'Unknown Provider'}
                   </div>
                   <div className="flex items-center justify-center max-w-full">
                     <button

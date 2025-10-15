@@ -3,16 +3,16 @@ import apiResponse from "../utils/apiResponse.js";
 import apiError from "../utils/apiError.js";
 import asyncHandler from "../utils/asyncHandler.js";
 
+
 /**
- * Get all calls with optional filtering
+ * Get all calls with counts per provider and per niche
  */
 const getAllCalls = asyncHandler(async (req, res) => {
   try {
-    const { 
-      page = 1, 
-      limit = 20, 
-      search = '', 
-      provider = '', 
+    const {
+      page = 1,
+      limit = 20,
+      search = '',
       sentiment = '',
       call_successful = '',
       sortBy = 'createdAt',
@@ -20,57 +20,9 @@ const getAllCalls = asyncHandler(async (req, res) => {
       days = ''
     } = req.query;
 
-    // Build filter object
     const filter = {};
-    
-    if (search) {
-      filter.$or = [
-        { call_id: { $regex: search, $options: 'i' } },
-        { agent_name: { $regex: search, $options: 'i' } },
-        { transcript: { $regex: search, $options: 'i' } },
-        { call_summary: { $regex: search, $options: 'i' } }
-      ];
-    }
 
-    if (provider) {
-      // Special handling for emergency calls
-      if (provider === 'emergency') {
-        // For emergency calls, check for provider_name first, then very specific transcript patterns
-        filter.$or = [
-          { provider_name: { $regex: 'escalated.*emergency', $options: 'i' } },
-          { 
-            $and: [
-              { transcript: { $regex: 'user:.*emergency', $options: 'i' } },
-              { transcript: { $regex: 'agent:.*call 9-1-1|agent:.*call 911', $options: 'i' } }
-            ]
-          }
-        ];
-      } else {
-        // Map provider categories to actual provider name patterns
-        const providerPatterns = {
-          'mental': ['mental', 'psychiatric', 'crisis', 'behavioral'],
-          'domestic': ['domestic', 'violence', 'abuse', 'shelter'],
-          'substance': ['substance', 'alcohol', 'addiction', 'recovery', 'treatment'],
-          'homeless': ['homeless', 'housing', 'shelter', 'rescue', 'mission'],
-          'youth': ['youth', 'teen', 'child', 'adolescent'],
-          'lgbtq': ['lgbtq', 'lgbt', 'queer', 'identity'],
-          'elder': ['elder', 'senior', 'aging'],
-          'gambling': ['gambling', 'financial', 'debt']
-        };
-        
-        if (providerPatterns[provider]) {
-          const patterns = providerPatterns[provider];
-          filter.provider_name = { 
-            $regex: patterns.join('|'), 
-            $options: 'i' 
-          };
-        } else {
-          filter.provider_name = { $regex: provider, $options: 'i' };
-        }
-      }
-    }
-
-    // Time range filter (last N days)
+    // Time range filter
     if (days) {
       const n = parseInt(days);
       if (!isNaN(n) && n > 0) {
@@ -80,35 +32,38 @@ const getAllCalls = asyncHandler(async (req, res) => {
       }
     }
 
-    if (sentiment) {
-      filter.user_sentiment = sentiment;
-    }
+    // Sentiment filter
+    if (sentiment) filter.user_sentiment = sentiment;
 
-    if (call_successful !== '') {
-      filter.call_successful = call_successful === 'true';
-    }
+    // Call success filter
+    if (call_successful !== '') filter.call_successful = call_successful === 'true';
 
-    // Build sort object
-    const sort = {};
-    sort[sortBy] = sortOrder === 'desc' ? -1 : 1;
-
-    // Calculate pagination
-    const skip = (parseInt(page) - 1) * parseInt(limit);
-
-    // Execute query
-    const calls = await CallHistory.find(filter)
-      .sort(sort)
-      .skip(skip)
-      .limit(parseInt(limit))
+    // Fetch all calls matching filters
+    let calls = await CallHistory.find(filter)
+      .sort({ [sortBy]: sortOrder === 'desc' ? -1 : 1 })
       .lean();
-    
-    
 
-    // Get total count for pagination
-    const total = await CallHistory.countDocuments(filter);
+    // Apply search filter (optional)
+    if (search) {
+      const term = search.toLowerCase();
+      calls = calls.filter(call =>
+        (call.call_id && call.call_id.toLowerCase().includes(term)) ||
+        (call.agent_name && call.agent_name.toLowerCase().includes(term)) ||
+        (call.transcript && call.transcript.toLowerCase().includes(term)) ||
+        (call.call_summary && call.call_summary.toLowerCase().includes(term)) ||
+        (call.provider_name && call.provider_name.toLowerCase().includes(term)) ||
+        (call.niche && call.niche.toLowerCase().includes(term)) ||
+        (call.phone_number && call.phone_number.includes(term))
+      );
+    }
 
-    // Format the response
-    const formattedCalls = calls.map(call => ({
+    // Pagination
+    const totalItems = calls.length;
+    const totalPages = Math.ceil(totalItems / parseInt(limit));
+    const paginatedCalls = calls.slice((page - 1) * limit, page * limit);
+
+    // Format calls
+    const formattedCalls = paginatedCalls.map(call => ({
       id: call._id,
       call_id: call.call_id,
       agent_name: call.agent_name,
@@ -123,20 +78,36 @@ const getAllCalls = asyncHandler(async (req, res) => {
       call_successful: call.call_successful,
       from_number: call.from_number,
       to_number: call.to_number,
-      provider_name: call.provider_name,
+      provider_name: call.provider_name || 'Unknown Provider',
+      niche: call.niche || 'Unknown',
       createdAt: call.createdAt,
       updatedAt: call.updatedAt
     }));
+
+    // Calculate total calls per provider & niche
+    const countsPerProvider = {};
+    const countsPerNiche = {};
+
+    calls.forEach(call => {
+      const provider = call.provider_name || 'Unknown Provider';
+      const niche = call.niche || 'Unknown';
+
+      countsPerProvider[provider] = (countsPerProvider[provider] || 0) + 1;
+      countsPerNiche[niche] = (countsPerNiche[niche] || 0) + 1;
+    });
+    console.log('📊 Counts per provider:', countsPerProvider);
 
     res.status(200).json(
       new apiResponse(200, {
         calls: formattedCalls,
         pagination: {
           currentPage: parseInt(page),
-          totalPages: Math.ceil(total / parseInt(limit)),
-          totalItems: total,
+          totalPages,
+          totalItems,
           itemsPerPage: parseInt(limit)
-        }
+        },
+        countsPerProvider, // Total calls per provider
+        countsPerNiche     // Total calls per niche
       }, "Calls fetched successfully").toJSON()
     );
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // API base URL - adjust this to match your backend
-const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
+const API_BASE_URL = 'http://localhost:3007/api';
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);
@@ -601,7 +601,7 @@ const Dashboard = () => {
                     const total = routingData.reduce((sum, item) => sum + item.value, 0);
                     if (total === 0) return null;
 
-                    // If only one segment, render a full circle so it’s visible
+                    // If only one segment, render a full circle so itï¿½s visible
                     if (routingData.length === 1) {
                       const seg = routingData[0];
                       return (

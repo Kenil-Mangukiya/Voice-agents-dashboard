@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // API base URL - adjust this to match your backend
-const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
+const API_BASE_URL = 'http://localhost:3007/api';
 
 // Helper function to format phone numbers
 const formatPhoneNumber = (phone) => {
@@ -15,6 +15,33 @@ const formatPhoneNumber = (phone) => {
     return `${firstThree}******${lastTwo}`;
   }
   return phone;
+};
+
+// Helper function to shorten call IDs like call_12*****31
+const formatCallIdShort = (callId) => {
+  if (!callId || typeof callId !== 'string') return 'N/A';
+  const underscoreIndex = callId.indexOf('_');
+  const prefix = underscoreIndex !== -1 ? callId.slice(0, underscoreIndex + 1) : '';
+  const rest = underscoreIndex !== -1 ? callId.slice(underscoreIndex + 1) : callId;
+  if (rest.length <= 6) return callId; // already short
+  return `${prefix}${rest.slice(0, 2)}*****${rest.slice(-2)}`;
+};
+
+// Helper function to get category color (same as Calls.jsx)
+const getCategoryColor = (providerName, callData = null) => {
+  const shortName = getShortProviderName(providerName, callData).toLowerCase();
+
+  if (shortName.includes('mental')) return 'text-blue-600 bg-blue-50 border border-blue-200';
+  if (shortName.includes('domestic') || shortName.includes('violence')) return 'text-pink-600 bg-pink-50 border border-pink-200';
+  if (shortName.includes('substance')) return 'text-cyan-600 bg-cyan-50 border border-cyan-200';
+  if (shortName.includes('homeless')) return 'text-orange-600 bg-orange-50 border border-orange-200';
+  if (shortName.includes('elder')) return 'text-purple-600 bg-purple-50 border border-purple-200';
+  if (shortName.includes('youth')) return 'text-green-600 bg-green-50 border border-green-200';
+  if (shortName.includes('lgbtq') || shortName.includes('identity')) return 'text-teal-600 bg-teal-50 border border-teal-200';
+  if (shortName.includes('gambling')) return 'text-red-600 bg-red-50 border border-red-200';
+  if (shortName.includes('escalated') || shortName.includes('emergency')) return 'text-red-600 bg-red-50 border border-red-200';
+
+  return 'text-gray-600 bg-gray-50 border border-gray-200';
 };
 
 // Helper function to get short provider name
@@ -53,13 +80,15 @@ const getShortProviderName = (providerName, callData = null) => {
     return 'Domestic Violence';
   } else if (lowerName.includes('substance') || lowerName.includes('alcohol') || lowerName.includes('addiction')) {
     return 'Substance';
-  } else if (lowerName.includes('homeless') || lowerName.includes('housing') || lowerName.includes('shelter') || lowerName.includes('rescue') || lowerName.includes('mission')) {
+  }
+  else if (lowerName.includes('youth crisis') || lowerName.includes('teen') || lowerName.includes('child')) {
+    return 'Youth';
+  }
+   else if (lowerName.includes('homeless') || lowerName.includes('housing') || lowerName.includes('shelter') || lowerName.includes('rescue') || lowerName.includes('mission')) {
     return 'Homelessness';
   } else if (lowerName.includes('elder') || lowerName.includes('senior')) {
     return 'Elder Care';
-  } else if (lowerName.includes('youth') || lowerName.includes('teen') || lowerName.includes('child')) {
-    return 'Youth';
-  } else if (lowerName.includes('gambling') || lowerName.includes('financial')) {
+  }  else if (lowerName.includes('gambling') || lowerName.includes('financial')) {
     return 'Gambling';
   } else if (lowerName.includes('escalated') || lowerName.includes('emergency')) {
     return 'Escalated to Emergency';
@@ -231,8 +260,9 @@ const AudioPlayer = ({ audioUrl, callId }) => {
 };
 
 const Provider = () => {
-  const [currentView, setCurrentView] = useState('categories'); // 'categories' or 'providers'
+  const [currentView, setCurrentView] = useState('categories'); // 'categories', 'specific-providers', or 'provider-details'
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedProvider, setSelectedProvider] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [timeFilter, setTimeFilter] = useState('7 Days');
   const [loading, setLoading] = useState(false);
@@ -240,6 +270,7 @@ const Provider = () => {
   const [callsLoading, setCallsLoading] = useState(false);
   const [selectedCall, setSelectedCall] = useState(null);
   const [categoryCallCounts, setCategoryCallCounts] = useState({});
+  const [providerCallCounts, setProviderCallCounts] = useState({});
   const [tableHeight, setTableHeight] = useState(600); // Default height for call history table
   const [countsLoading, setCountsLoading] = useState(false);
   const [selectedPhone, setSelectedPhone] = useState(null);
@@ -331,16 +362,137 @@ const Provider = () => {
     }
   };
 
-  // Convert to array format for compatibility
-  const serviceCategories = Object.entries(providerPhoneNumbers).map(([id, data]) => ({
-    id,
-    name: data.name,
-    description: data.description,
-    providers: data.phones.length,
-    callsRouted: 0, // Will be updated by API calls
-    icon: data.icon,
-    color: data.color
-  }));
+  // Provider data mapping from JSON
+  const providerData = {
+    "+19889882222": {
+      "issue": "Crisis & Suicide",
+      "provider_name": "988 Suicide & Crisis Lifeline"
+    },
+    "+18556627474": {
+      "issue": "Crisis & Suicide",
+      "provider_name": "988 Suicide & Crisis Lifeline"
+    },
+    "+15052773013": {
+      "issue": "Crisis & Suicide",
+      "provider_name": "NM Crisis and Access Line (NMCAL)"
+    },
+    "+15052560288": {
+      "issue": "Crisis & Suicide",
+      "provider_name": "AGORA Crisis Center (UNM)"
+    },
+    "+15052722800": {
+      "issue": "Crisis & Suicide",
+      "provider_name": "NM Crisis and Access Line (NMCAL)"
+    },
+    "+15058418978": {
+      "issue": "Substance Use & Alcohol",
+      "provider_name": "Bernalillo County CARE Campus Detox (MATS)"
+    },
+    "+15054681555": {
+      "issue": "Substance Use & Alcohol",
+      "provider_name": "Turquoise Lodge Hospital"
+    },
+    "+15052661900": {
+      "issue": "Substance Use & Alcohol",
+      "provider_name": "Alcoholics Anonymous (AA) – Albuquerque Central"
+    },
+    "+15059078311": {
+      "issue": "Substance Use & Alcohol",
+      "provider_name": "Alcoholics Anonymous (AA) – Albuquerque Central"
+    },
+    "+15052474219": {
+      "issue": "Domestic Violence",
+      "provider_name": "S.A.F.E. House (DV Hotline & Shelter)"
+    },
+    "+18007733645": {
+      "issue": "Domestic Violence",
+      "provider_name": "National Domestic Violence Hotline"
+    },
+    "+18007997233": {
+      "issue": "Domestic Violence",
+      "provider_name": "National Domestic Violence Hotline"
+    },
+    "+15052483165": {
+      "issue": "Domestic Violence",
+      "provider_name": "Domestic Violence Resource Center (DVRC)"
+    },
+    "+15058439123": {
+      "issue": "Domestic Violence",
+      "provider_name": "S.A.F.E. House (DV Hotline & Shelter)"
+    },
+    "+15052468972": {
+      "issue": "Domestic Violence",
+      "provider_name": "Domestic Violence Resource Center (DVRC)"
+    },
+    "+15052609912": {
+      "issue": "Youth Crisis / Runaway / Family Issues",
+      "provider_name": "New Day Youth Shelter"
+    },
+    "+18553337233": {
+      "issue": "Youth Crisis / Runaway / Family Issues",
+      "provider_name": "New Day Youth Shelter"
+    },
+    "+15055919444": {
+      "issue": "Youth Crisis / Runaway / Family Issues",
+      "provider_name": "New Day Youth Shelter"
+    },
+    "+18664887386": {
+      "issue": "LGBTQ+ Identity / Distress",
+      "provider_name": "Transgender Resource Center of NM (TGRCNM)"
+    },
+    "+15052009086": {
+      "issue": "LGBTQ+ Identity / Distress",
+      "provider_name": "Transgender Resource Center of NM (TGRCNM)"
+    },
+    "+18666543219": {
+      "issue": "Elder Concern / Isolation / Neglect",
+      "provider_name": "Aging & Disability Resource Center (ADRC)"
+    },
+    "+15058086325": {
+      "issue": "Elder Concern / Isolation / Neglect",
+      "provider_name": "Aging & Disability Resource Center (ADRC)"
+    },
+    "+15053495340": {
+      "issue": "Food / Housing / Money / Basic Needs",
+      "provider_name": "Roadrunner Food Bank"
+    },
+    "+15058426491": {
+      "issue": "Food / Housing / Money / Basic Needs",
+      "provider_name": "Storehouse New Mexico"
+    },
+    "+15057244604": {
+      "issue": "Food / Housing / Money / Basic Needs",
+      "provider_name": "The Rock at Noonday"
+    },
+    "+15053498861": {
+      "issue": "Food / Housing / Money / Basic Needs",
+      "provider_name": "Storehouse New Mexico"
+    },
+    "+18335454357": {
+      "issue": "Gambling / Financial Ruin",
+      "provider_name": "Gambling Addiction Help"
+    }
+  };
+
+  const serviceCategories = Object.entries(providerPhoneNumbers).map(([id, data]) => {
+    const uniqueProviders = new Set();
+    data.phones.forEach(phone => {
+      if (providerData[phone]) {
+        uniqueProviders.add(providerData[phone].provider_name);
+      }
+    });
+  
+    return {
+      id,
+      name: data.name,
+      description: data.description,
+      providers: uniqueProviders.size, // ✅ count of unique providers
+      callsRouted: 0,
+      icon: data.icon,
+      color: data.color
+    };
+  });
+  
 
   // Helper function to format phone numbers beautifully
   const formatPhoneNumberBeautiful = (phone) => {
@@ -367,10 +519,12 @@ const Provider = () => {
     }
   };
 
-  // Fetch call counts for all categories
-  const fetchCategoryCallCounts = async () => {
+  // Function to fetch call counts for categories and providers
+  const fetchCallCounts = async () => {
     try {
       setCountsLoading(true);
+      console.log('🔍 Starting fetchCallCounts...');
+      
       const categoryProviderMap = {
         'mental-health': 'mental',
         'domestic-violence': 'domestic',
@@ -383,32 +537,157 @@ const Provider = () => {
         'escalated-emergency': 'emergency'
       };
 
-      const counts = {};
-      
+      // Fetch category call counts
+      const categoryCounts = {};
       for (const [categoryId, providerKey] of Object.entries(categoryProviderMap)) {
         try {
-          const params = new URLSearchParams({
+          const params = new URLSearchParams({ 
             page: '1',
             limit: '1',
-            provider: providerKey
+            provider: providerKey 
           });
+          
+          console.log(`🔍 Fetching calls for ${categoryId} (${providerKey}): ${API_BASE_URL}/calls?${params}`);
           
           const response = await fetch(`${API_BASE_URL}/calls?${params}`);
           if (response.ok) {
             const data = await response.json();
+            console.log(`📊 Response for ${categoryId}:`, data);
+            
             if (data.success) {
-              counts[categoryId] = data.data.pagination?.totalItems || 0;
+              const count = data.data.pagination?.totalItems || 0;
+              categoryCounts[categoryId] = count;
+              console.log(`✅ ${categoryId}: ${count} calls`);
+            } else {
+              console.error(`❌ API error for ${categoryId}:`, data.message);
+              categoryCounts[categoryId] = 0;
             }
+          } else {
+            console.error(`❌ HTTP error for ${categoryId}:`, response.status);
+            categoryCounts[categoryId] = 0;
           }
         } catch (err) {
-          console.error(`Error fetching count for ${categoryId}:`, err);
-          counts[categoryId] = 0;
+          console.error(`❌ Error fetching ${categoryId}:`, err);
+          categoryCounts[categoryId] = 0;
         }
       }
       
-      setCategoryCallCounts(counts);
+      console.log('📊 Final category counts:', categoryCounts);
+      setCategoryCallCounts(categoryCounts);
+
+      // Fetch provider call counts (same logic but store in different state)
+      const providerCounts = {};
+      for (const [categoryId, providerKey] of Object.entries(categoryProviderMap)) {
+        providerCounts[providerKey] = categoryCounts[categoryId] || 0;
+      }
+      
+      console.log('📊 Final provider counts:', providerCounts);
+      setProviderCallCounts(providerCounts);
+
+    } catch (err) {
+      console.error('❌ Error in fetchCallCounts:', err);
+    } finally {
+      setCountsLoading(false);
+    }
+  };
+
+  const fetchCategoryCallCounts = async () => {
+    try {
+      setCountsLoading(true);
+      const params = new URLSearchParams({
+        page: '1',
+        limit: '1',
+        days: timeFilter === 'Today' || timeFilter === '24 Hours' ? '1' : timeFilter.replace(' Days','')
+      });
+  
+      const response = await fetch(`${API_BASE_URL}/calls?${params}`);
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+  
+      if (data.success) {
+        const countsByCategory = {};
+        const countsByProvider = {};
+  
+        // Use counts returned from backend
+        const countsPerNiche = data.data.countsPerNiche || {};
+        const countsPerProvider = data.data.countsPerProvider || {};
+  
+        Object.entries(countsPerNiche).forEach(([niche, count]) => {
+          // Map backend niche names to frontend category IDs
+          switch(niche) {
+            case 'Mental Health / Suicide / Emotional Distress': countsByCategory['mental-health'] = count; break;
+            case 'Substance Use / Alcohol / Addiction': countsByCategory['substance-abuse'] = count; break;
+            case 'Domestic Violence / Abuse / Unsafe Relationship': countsByCategory['domestic-violence'] = count; break;
+            case 'Youth Crisis / Runaway / Family Issues': countsByCategory['youth-crisis'] = count; break;
+            case 'LGBTQ+ Identity / Distress': countsByCategory['lgbtq-identity'] = count; break;
+            case 'Elder Concern / Isolation / Neglect': countsByCategory['elder-concern'] = count; break;
+            case 'Food / Housing / Money / Basic Needs': countsByCategory['homelessness'] = count; break;
+            case 'Gambling / Financial Ruin': countsByCategory['gambling'] = count; break;
+            case 'Emergency': countsByCategory['escalated-emergency'] = count; break;
+            default: break;
+          }
+        });
+  
+        Object.entries(countsPerProvider).forEach(([providerName, count]) => {
+          countsByProvider[providerName] = count;
+        });
+  
+        setCategoryCallCounts(countsByCategory);
+        setProviderCallCounts(countsByProvider);
+      }
     } catch (err) {
       console.error('Error fetching category call counts:', err);
+    } finally {
+      setCountsLoading(false);
+    }
+  };
+  
+
+  // Fetch call counts for specific providers
+  const fetchProviderCallCounts = async (providers) => {
+    try {
+      setCountsLoading(true);
+      const counts = {};
+      
+      console.log('Fetching call counts for providers:', providers);
+      
+      for (const provider of providers) {
+        try {
+          let totalCalls = 0;
+          
+          console.log(`Processing provider: ${provider.name}`);
+          
+          // Search specifically by provider_name field to get accurate counts
+          const params = new URLSearchParams({
+            page: '1',
+            limit: '1',
+            search: provider.name
+          });
+          
+          console.log(`Searching for provider name: ${provider.name} with URL: ${API_BASE_URL}/calls?${params}`);
+          
+          const response = await fetch(`${API_BASE_URL}/calls?${params}`);
+          if (response.ok) {
+            const data = await response.json();
+            console.log(`Response for provider name ${provider.name}:`, data);
+            if (data.success) {
+              totalCalls = data.data.pagination?.totalItems || 0;
+              console.log(`Provider name search found ${totalCalls} calls`);
+            }
+          }
+          
+          console.log(`Total calls for ${provider.name}: ${totalCalls}`);
+          counts[provider.name] = totalCalls;
+        } catch (err) {
+          console.error(`Error fetching count for ${provider.name}:`, err);
+          counts[provider.name] = 0;
+        }
+      }
+      
+      console.log('Final counts:', counts);
+      setProviderCallCounts(prev => ({ ...prev, ...counts }));
+    } catch (err) {
+      console.error('Error fetching provider call counts:', err);
     } finally {
       setCountsLoading(false);
     }
@@ -474,13 +753,51 @@ const Provider = () => {
     }
   };
 
+  // Helper function to get specific providers for a category
+  const getSpecificProvidersForCategory = (categoryId) => {
+    const categoryPhones = providerPhoneNumbers[categoryId]?.phones || [];
+    const providersMap = new Map();
+    
+    categoryPhones.forEach(phone => {
+      const providerInfo = providerData[phone];
+      if (providerInfo) {
+        const providerName = providerInfo.provider_name;
+        if (!providersMap.has(providerName)) {
+          providersMap.set(providerName, {
+            name: providerName,
+            issue: providerInfo.issue,
+            phones: []
+          });
+        }
+        providersMap.get(providerName).phones.push(phone);
+      }
+    });
+    
+    return Array.from(providersMap.values());
+  };
+
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
-    setCurrentView('providers');
+    setCurrentView('specific-providers');
+    setLoading(true);
+    
+    // Get specific providers for this category and fetch their call counts
+    const specificProviders = getSpecificProvidersForCategory(category.id);
+    fetchProviderCallCounts(specificProviders);
+    
+    // Simulate loading
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  };
+
+  const handleProviderClick = (provider) => {
+    setSelectedProvider(provider);
+    setCurrentView('provider-details');
     setLoading(true);
     
     // Fetch calls for this category
-    fetchCallsForCategory(category.id);
+    fetchCallsForCategory(selectedCategory.id);
     
     // Simulate loading
     setTimeout(() => {
@@ -491,7 +808,14 @@ const Provider = () => {
   const handleBackToCategories = () => {
     setCurrentView('categories');
     setSelectedCategory(null);
+    setSelectedProvider(null);
     setSearchTerm('');
+    setSelectedPhone(null);
+  };
+
+  const handleBackToProviders = () => {
+    setCurrentView('specific-providers');
+    setSelectedProvider(null);
     setSelectedPhone(null);
   };
 
@@ -506,17 +830,20 @@ const Provider = () => {
 
   // Fetch call counts on component mount
   useEffect(() => {
+    console.log('🚀 Component mounted, fetching call counts...');
     fetchCategoryCallCounts();
   }, []);
 
   // Refresh call counts when returning to categories view
   useEffect(() => {
     if (currentView === 'categories') {
+      console.log('🔄 Current view changed to categories, refreshing call counts...');
       fetchCategoryCallCounts();
     }
   }, [currentView]);
 
-  const getCategoryColor = (color) => {
+  // Color function for category cards (different from call history table)
+  const getCategoryCardColor = (color) => {
     const colors = {
       purple: 'bg-purple-100 text-purple-600',
       pink: 'bg-pink-100 text-pink-600',
@@ -568,6 +895,21 @@ const Provider = () => {
       )
     : [];
 
+  // Get filtered specific providers for the intermediate view
+  const filteredSpecificProviders = selectedCategory 
+    ? getSpecificProvidersForCategory(selectedCategory.id).filter(provider =>
+        provider.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        provider.issue.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : [];
+
+  // Get filtered phones for the selected provider
+  const filteredProviderPhones = selectedProvider 
+    ? selectedProvider.phones.filter(phone =>
+        phone.includes(searchTerm) || formatPhoneNumberBeautiful(phone).includes(searchTerm)
+      )
+    : [];
+
   const isEscalatedCategory = selectedCategory?.id === 'escalated-emergency';
 
   if (loading) {
@@ -613,6 +955,7 @@ const Provider = () => {
         </div>
       </header>
 
+
       {/* Content */}
       <main className="flex-1 bg-gray-50 overflow-y-auto overflow-x-hidden px-4 md:px-6 py-4 md:py-6 pb-40">
         {currentView === 'categories' ? (
@@ -637,55 +980,47 @@ const Provider = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16">
-                {serviceCategories.map((category) => (
-                  <div
-                    key={category.id}
-                    onClick={() => handleCategoryClick(category)}
-                  className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer group relative w-full"
-                  >
-                    {/* Icon */}
-                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-4 ${getCategoryColor(category.color)}`}>
-                      {category.icon}
-                    </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{category.name}</h3>
-                    
-                    {/* Description */}
-                    <p className="text-gray-600 text-sm mb-4">{category.description}</p>
-                    
-                    {/* Statistics */}
-                    <div className="flex items-center space-x-4 pt-4 border-t border-gray-100 mt-4">
-                      <div className="flex flex-col items-start">
-                        <span className="text-xl font-bold text-gray-900">{category.providers}</span>
-                        <span className="text-xs text-gray-500">Providers</span>
-                      </div>
-                      <div className="h-8 w-px bg-gray-300"></div> {/* Vertical separator */}
-                      <div className="flex flex-col items-start">
-                        <span className="text-xl font-bold text-teal-500">
-                          {countsLoading ? (
-                            <div className="w-6 h-6 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
-                          ) : (
-                            categoryCallCounts[category.id] || 0
-                          )}
-                        </span>
-                        <span className="text-xs text-gray-500">Calls Routed</span>
-                      </div>
-                    </div>
+{/* Category cards */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16">
+  {serviceCategories.map(category => (
+    <div
+      key={category.id}
+      onClick={() => handleCategoryClick(category)}
+      className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer group relative w-full"
+    >
+      <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-4 ${getCategoryCardColor(category.color)}`}>
+        {category.icon}
+      </div>
 
-                    {/* Navigation Arrow */}
-                    <svg className="absolute top-6 right-6 w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-              ))}
-            </div>
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">{category.name}</h3>
+      <p className="text-gray-600 text-sm mb-4">{category.description}</p>
+
+      <div className="flex items-center space-x-4 pt-4 border-t border-gray-100 mt-4">
+        <div className="flex flex-col items-start">
+          <span className="text-xl font-bold text-gray-900">{category.providers}</span>
+          <span className="text-xs text-gray-500">Providers</span>
+        </div>
+        <div className="h-8 w-px bg-gray-300"></div>
+        <div className="flex flex-col items-start">
+          <span className="text-xl font-bold text-teal-500">
+            {countsLoading ? (
+              <div className="w-6 h-6 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
+            ) : (
+              categoryCallCounts[category.id] || 0
+            )}
+          </span>
+          <span className="text-xs text-gray-500">Calls Routed</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
             <div className="h-16 md:h-20" />
           </>
-        ) : (
+        ) : currentView === 'specific-providers' ? (
           <>
-            {/* Providers View */}
+            {/* Specific Providers View */}
             <div className="mb-6">
               <button
                 onClick={handleBackToCategories}
@@ -699,10 +1034,100 @@ const Provider = () => {
               
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 gap-3">
                 <div>
-                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedCategory.name} Phone Numbers</h2>
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedCategory.name} Providers</h2>
+                  <p className="text-muted-foreground">{filteredSpecificProviders.length} providers available</p>
+                </div>
+                <div className={`px-3 py-1 rounded-full text-sm font-medium inline-flex w-max ${getCategoryCardColor(selectedCategory.color)}`}>
+                  {selectedCategory.icon} {selectedCategory.name}
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <div className="relative">
+                  <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Search by name or tags..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Specific Providers Grid */}
+            {filteredSpecificProviders.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                {filteredSpecificProviders.map((provider, index) => (
+                  <div
+                    key={index}
+                    className={`p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform ${getCategoryCardBg(selectedCategory.color)} hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] cursor-pointer w-full`}
+                    onClick={() => handleProviderClick(provider)}
+                  >
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{provider.name}</h3>
+                        <p className="text-sm text-gray-600 mb-3">{provider.issue}</p>
+                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-4">
+                          <div className="flex flex-col items-start">
+                            <span className="text-xl font-bold text-gray-900">{provider.phones.length}</span>
+                            <span className="text-xs text-gray-500">Phone Number</span>
+                          </div>
+                          <div className="h-8 w-px bg-gray-300"></div>
+                          <div className="flex flex-col items-start">
+                            <span className="text-xl font-bold text-teal-500">
+                              {countsLoading ? (
+                                <div className="w-6 h-6 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
+                              ) : (
+                                providerCallCounts[provider.name] || 0
+                              )}
+                            </span>
+                            <span className="text-xs text-gray-500">Calls Routed</span>
+                          </div>
+                        </div>
+                      </div>
+                      <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
+                <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <h3 className="mt-2 text-sm font-medium text-gray-900">No providers found</h3>
+                <p className="mt-1 text-sm text-gray-500">
+                  No providers match your search criteria.
+                </p>
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            {/* Provider Details View */}
+            <div className="mb-6">
+              <button
+                onClick={handleBackToProviders}
+                className="flex items-center text-muted-foreground hover:text-foreground transition-colors mb-4"
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to {selectedCategory.name} providers
+              </button>
+              
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 gap-3">
+                <div>
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedProvider.name} Phone Numbers</h2>
                   <p className="text-muted-foreground">Showing recent call history only</p>
                 </div>
-                <div className={`px-3 py-1 rounded-full text-sm font-medium inline-flex w-max ${getCategoryColor(selectedCategory.color)}`}>
+                <div className={`px-3 py-1 rounded-full text-sm font-medium inline-flex w-max ${getCategoryCardColor(selectedCategory.color)}`}>
                   {selectedCategory.icon} {selectedCategory.name}
                 </div>
               </div>
@@ -725,9 +1150,9 @@ const Provider = () => {
 
             {/* Phone Numbers Grid - visible for all except Escalated to Emergency */}
             {!isEscalatedCategory && (
-              filteredProviders.length > 0 ? (
+              filteredProviderPhones.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                  {filteredProviders.map((phone, index) => (
+                  {filteredProviderPhones.map((phone, index) => (
                     <div
                       key={index}
                       className={`p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform ${getCategoryCardBg(selectedCategory.color)} hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] cursor-pointer w-full`}
@@ -769,11 +1194,11 @@ const Provider = () => {
             )}
 
             {/* Call History Table */}
-            <div ref={tableRef} className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-200 bg-gray-50 hidden md:block">
-                <div className="flex -ml-4 justify-between items-center">
-                  <h2 className="text-xl font-semibold text-gray-900">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.length})</h2>
-                  <div className="flex items-center space-x-2 text-sm text-gray-500">
+            <div ref={tableRef} className="bg-card rounded-lg border border-border shadow-sm overflow-hidden">
+              <div className="px-6 py-4 border-b border-border bg-muted/30">
+                <div className="flex justify-between items-center">
+                  <h2 className="text-lg font-semibold text-foreground">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.filter(c => selectedProvider && selectedProvider.phones.includes(c.phone_number)).length})</h2>
+                  <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
@@ -794,105 +1219,122 @@ const Provider = () => {
                   <button onClick={() => setSelectedPhone(null)} className="text-sm font-medium text-blue-700 hover:text-blue-900">Clear Filter</button>
                 </div>
               )}
-              <div className="px-0 md:px-0 overflow-x-auto hidden md:block">
+              {/* Desktop table */}
+              <div className="overflow-x-auto hidden md:block">
                 {callsLoading ? (
                   <div className="flex items-center justify-center py-12">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                    <span className="ml-2 text-gray-600">Loading calls...</span>
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                    <span className="ml-2 text-muted-foreground">Loading calls...</span>
                   </div>
                 ) : (
-                  <table className="min-w-[720px] w-full">
-                    <thead className="bg-gray-50">
+                  <table className="w-full">
+                    <thead className="bg-muted/50">
                       <tr>
-                        <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 uppercase tracking-wider">Time</th>
-                        <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 uppercase tracking-wider">Caller ID</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Niche</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Routed Provider</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Sentiment</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Call Success</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Duration</th>
-                        <th className="px-4 py-4 text-center text-sm font-bold text-gray-900 uppercase tracking-wider">Details</th>
+                        <th className="px-4 py-4 text-left text-sm font-semibold text-foreground uppercase tracking-wider w-32">Time</th>
+                        <th className="px-4 py-4 text-left text-sm font-semibold text-foreground uppercase tracking-wider w-32">Caller ID</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-32">Niche</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-64">Routed Provider</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-24">Sentiment</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-24">Call Success</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-20">Duration</th>
+                        <th className="px-4 py-4 text-center text-sm font-semibold text-foreground uppercase tracking-wider w-32">Details</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-gray-200">
+                    <tbody className="divide-y divide-border">
                       {calls
-                        .filter(call => !selectedPhone || (call.phone_number && call.phone_number.trim() === selectedPhone))
+                        .filter(call => {
+                          if (selectedPhone) {
+                            return call.phone_number && call.phone_number.trim() === selectedPhone;
+                          }
+                          if (selectedProvider) {
+                            return selectedProvider.phones.includes(call.phone_number);
+                          }
+                          return true;
+                        })
                         .map((call) => (
-                        <tr key={call.id} className="hover:bg-gray-50 transition-colors">
-                          <td className="px-4 py-5 whitespace-nowrap text-sm text-gray-600">
+                        <tr key={call.id} className="hover:bg-muted/30 transition-colors">
+                          <td className="px-1 py-5 text-sm text-muted-foreground text-center w-32">
                             {formatDateTime(call.createdAt)}
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-sm">
-                            <div className="text-gray-900 font-medium">
-                              {formatPhoneNumber(call.phone_number || call.from_number)}
+                          <td className="px-2 py-5 text-sm text-left w-32">
+                            <div className="text-foreground font-medium ml-1">
+                              {formatCallIdShort(call.call_id)}
                             </div>
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-center">
-                            <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('mental') ? 'text-blue-600 bg-blue-50 border border-blue-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('domestic') ? 'text-pink-600 bg-pink-50 border border-pink-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('substance') ? 'text-cyan-600 bg-cyan-50 border border-cyan-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('homeless') ? 'text-orange-600 bg-orange-50 border border-orange-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('elder') ? 'text-purple-600 bg-purple-50 border border-purple-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('youth') ? 'text-green-600 bg-green-50 border border-green-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('gambling') ? 'text-red-600 bg-red-50 border border-red-200' :
-                              getShortProviderName(call.provider_name, call).toLowerCase().includes('escalated') || getShortProviderName(call.provider_name, call).toLowerCase().includes('emergency') ? 'text-red-600 bg-red-50 border border-red-200' :
-                              'text-gray-600 bg-gray-50 border border-gray-200'
-                            }`}>
-                              {getShortProviderName(call.provider_name, call)}
-                            </span>
+                          <td className="px-4 py-5 text-center w-32">
+                            <div className="flex justify-center">
+                              <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${getCategoryColor(call.niche || call.provider_name, call)}`}>
+                                {call.niche || getShortProviderName(call.provider_name, call)}
+                              </span>
+                            </div>
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-sm text-gray-900 text-center">
-                            {getShortProviderName(call.provider_name, call)}
+                          <td className="px-4 py-5 text-sm text-foreground text-center w-64">
+                            <div className="break-words max-w-64">
+                              {call.provider_name || 'Unknown Provider'}
+                            </div>
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-center">
-                            <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
-                              call.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
-                              call.user_sentiment === 'Neutral' ? 'text-white bg-blue-500' :
-                              call.user_sentiment === 'Negative' ? 'text-white bg-red-500' :
-                              'text-gray-600 bg-gray-200'
-                            }`}>
-                              {call.user_sentiment || 'N/A'}
-                            </span>
+                          <td className="px-4 py-5 text-center w-24">
+                            <div className="flex justify-center">
+                              <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
+                                call.user_sentiment === 'Positive' ? 'text-white bg-green-500' :
+                                call.user_sentiment === 'Neutral' ? 'text-white bg-blue-500' :
+                                call.user_sentiment === 'Negative' ? 'text-white bg-red-500' :
+                                'text-gray-600 bg-gray-200'
+                              }`}>
+                                {call.user_sentiment || 'N/A'}
+                              </span>
+                            </div>
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-center">
-                            <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
-                              call.call_successful === true ? 'text-green-600 bg-green-50 border border-green-200' :
-                              call.call_successful === false ? 'text-red-600 bg-red-50 border border-red-200' :
-                              'text-gray-600 bg-gray-50 border border-gray-200'
-                            }`}>
-                              {call.call_successful === true ? 'Success' : 
-                               call.call_successful === false ? 'Failed' : 'Unknown'}
-                            </span>
+                          <td className="px-4 py-5 text-center w-24">
+                            <div className="flex justify-center">
+                              <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${
+                                call.call_successful === true ? 'text-green-600 bg-green-50 border border-green-200' :
+                                call.call_successful === false ? 'text-red-600 bg-red-50 border border-red-200' :
+                                'text-gray-600 bg-gray-50 border border-gray-200'
+                              }`}>
+                                {call.call_successful === true ? 'Success' :
+                                 call.call_successful === false ? 'Failed' : 'Unknown'}
+                              </span>
+                            </div>
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-sm text-gray-600 font-mono text-center">
+                          <td className="px-4 py-5 text-sm text-muted-foreground font-mono text-center w-20">
                             {formatDuration(call.duration_ms)}
                           </td>
-                          <td className="px-4 py-5 whitespace-nowrap text-center">
-                            <button 
-                              onClick={() => setSelectedCall(call)} 
-                              className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
-                            >
-                              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                              </svg>
-                              View Details
-                            </button>
+                          <td className="px-4 py-5 text-center w-32">
+                            <div className="flex justify-center">
+                              <button
+                                onClick={() => setSelectedCall(call)}
+                                className="inline-flex items-center px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-lg hover:bg-primary/20 transition-colors whitespace-nowrap"
+                              >
+                                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                              </button>
+                            </div>
                           </td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 )}
-                {!callsLoading && calls.length === 0 && (
+                {!callsLoading && calls.filter(call => {
+                  if (selectedPhone) {
+                    return call.phone_number && call.phone_number.trim() === selectedPhone;
+                  }
+                  if (selectedProvider) {
+                    return selectedProvider.phones.includes(call.phone_number);
+                  }
+                  return true;
+                }).length === 0 && (
                   <div className="text-center py-12">
-                    <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="mx-auto h-12 w-12 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    <h3 className="mt-2 text-sm font-medium text-gray-900">No calls found</h3>
-                    <p className="mt-1 text-sm text-gray-500">
-                      No calls have been routed to {selectedCategory?.name} phone numbers yet.
+                    <h3 className="mt-2 text-sm font-medium text-foreground">No calls found</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      No calls match the selected filter.
                     </p>
                   </div>
                 )}
@@ -901,7 +1343,7 @@ const Provider = () => {
               {/* Mobile stacked cards (match Calls.jsx style) */}
               <div className="md:hidden px-4 pb-32">
                 <div className="flex items-center justify-between px-4 py-2">
-                  <div className="text-lg font-semibold text-gray-900">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.length})</div>
+                  <div className="text-lg font-semibold text-gray-900">Call History ({selectedPhone ? calls.filter(c => c.phone_number && c.phone_number.trim() === selectedPhone).length : calls.filter(c => selectedProvider && selectedProvider.phones.includes(c.phone_number)).length})</div>
                   <div className="text-xs text-gray-500">Last updated: {new Date().toLocaleTimeString()}</div>
                 </div>
                 {selectedPhone && (
@@ -922,7 +1364,15 @@ const Provider = () => {
                   </div>
                 ) : (
                   calls
-                    .filter(call => !selectedPhone || (call.phone_number && call.phone_number.trim() === selectedPhone))
+                    .filter(call => {
+                      if (selectedPhone) {
+                        return call.phone_number && call.phone_number.trim() === selectedPhone;
+                      }
+                      if (selectedProvider) {
+                        return selectedProvider.phones.includes(call.phone_number);
+                      }
+                      return true;
+                    })
                     .map((call) => (
                       <div key={call.id} className="p-4">
                         <div className="flex items-center justify-between mb-2">

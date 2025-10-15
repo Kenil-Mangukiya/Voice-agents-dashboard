@@ -65,6 +65,10 @@ const callHistorySchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    niche: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
