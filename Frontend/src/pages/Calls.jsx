@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 
 // API base URL - adjust this to match your backend
-const API_BASE_URL = 'https://dashboard.aiyug.us/api';
+const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
 
 // Helper function to format phone numbers
 const formatPhoneNumber = (phone) => {
