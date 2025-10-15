@@ -19,6 +19,32 @@ const Dashboard = () => {
   const [routingData, setRoutingData] = useState([]);
   const [callsOverTime, setCallsOverTime] = useState([]);
 
+  // Phones that indicate a concrete booking made (homeless/basic-needs routing)
+  const HOMELESS_LAST10 = ['5053495340','5058426491','5057244604','5053498861'];
+  const getRoutedNumber = (call) => call?.phone_number || call?.to_number || '';
+  const isBookingPhone = (num) => {
+    const d = String(num || '').replace(/\D/g, '');
+    if (!d) return false;
+    const last10 = d.slice(-10);
+    return HOMELESS_LAST10.includes(last10);
+  };
+  // Derive a short niche label from call.niche when available
+  const getNicheShort = (call) => {
+    const niche = (call?.niche || '').toLowerCase();
+    if (niche) {
+      if (niche.includes('mental')) return 'Mental';
+      if (niche.includes('domestic') || niche.includes('violence') || niche.includes('abuse')) return 'Domestic Violence';
+      if (niche.includes('substance') || niche.includes('alcohol') || niche.includes('addiction')) return 'Substance';
+      if (niche.includes('food / housing') || niche.includes('homeless')) return 'Homelessness';
+      if (niche.includes('youth') || niche.includes('runaway') || niche.includes('family')) return 'Youth';
+      if (niche.includes('lgbtq') || niche.includes('identity') || niche.includes('transgender')) return 'LGBTQ+ Identity';
+      if (niche.includes('elder') || niche.includes('senior') || niche.includes('aging')) return 'Elder Care';
+      if (niche.includes('gambling')) return 'Gambling';
+      if (niche.includes('emergency')) return 'Escalated to Emergency';
+    }
+    return getShortProviderName(call?.provider_name, call);
+  };
+
   // Helper function to get short provider name
   const getShortProviderName = (providerName, callData = null) => {
     if (!providerName) return 'Unknown';
@@ -133,9 +159,8 @@ const Dashboard = () => {
     const redirectedCalls = filteredCalls.filter(call => 
       call.phone_number && call.phone_number.trim() !== ''
     ).length;
-    const bookingMadeCalls = filteredCalls.filter(call => 
-      getShortProviderName(call.provider_name, call).toLowerCase().includes('homeless')
-    ).length;
+    // Bookings Made = calls routed to specific Basic Needs phones
+    const bookingMadeCalls = filteredCalls.filter(call => isBookingPhone(getRoutedNumber(call))).length;
     const escalatedCalls = filteredCalls.filter(call => 
       getShortProviderName(call.provider_name, call).toLowerCase().includes('escalated') || 
       getShortProviderName(call.provider_name, call).toLowerCase().includes('emergency')
@@ -148,12 +173,12 @@ const Dashboard = () => {
       { title: 'Escalated to Emergency', value: escalatedCalls, color: 'text-red-600' }
     ]);
 
-    // Process routing by niche data (exclude 'Unknown')
+    // Process routing by niche data using call.niche when available (exclude 'Unknown')
     const nicheCounts = {};
     filteredCalls.forEach(call => {
-      const niche = getShortProviderName(call.provider_name, call);
-      if (niche && niche !== 'Unknown') {
-        nicheCounts[niche] = (nicheCounts[niche] || 0) + 1;
+      const nicheLabel = getNicheShort(call);
+      if (nicheLabel && nicheLabel !== 'Unknown') {
+        nicheCounts[nicheLabel] = (nicheCounts[nicheLabel] || 0) + 1;
       }
     });
 
@@ -737,9 +762,7 @@ const Dashboard = () => {
                   },
                   { 
                     name: 'Booked', 
-                    value: callsData.filter(call => 
-                      getShortProviderName(call.provider_name, call).toLowerCase().includes('homeless')
-                    ).length,
+                    value: callsData.filter(call => isBookingPhone(getRoutedNumber(call))).length,
                     color: '#10B981',
                     icon: '?'
                   },
