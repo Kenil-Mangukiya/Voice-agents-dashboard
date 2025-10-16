@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import config from "./config/config.js";
 import webhookRoute from "./routes/webhook.route.js";
 import callsRoute from "./routes/calls.route.js";
+import userRoute from "./routes/user.route.js";
 
 const app = express();
 
@@ -17,5 +18,6 @@ app.use(cookieParser());
 
 app.use("/api", webhookRoute);
 app.use("/api/calls", callsRoute);
+app.use("/api/users", userRoute);
 
 export default app;

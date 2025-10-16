@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import ProviderCard from './ProviderCard';
 
 // API base URL - adjust this to match your backend
 const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
@@ -277,7 +278,12 @@ const Provider = () => {
   const tableRef = useRef(null);
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
-  const [activeHomelessTab, setActiveHomelessTab] = useState('providers'); // 'providers' | 'bookings'
+  const [pagination, setPagination] = useState({
+    currentPage: 1,
+    totalPages: 1,
+    totalItems: 0,
+    itemsPerPage: 10
+  });
 
   // Provider phone numbers from storeCalls.js organized by category
   const providerPhoneNumbers = {
@@ -342,7 +348,7 @@ const Provider = () => {
       icon: '🏠',
       color: 'orange',
       phones: [
-        '+15053495340', '+15058426491', '+15057244604', '+15053498861'
+        '+15053495340', '+15058426491', '+15057244604', '+15052468001', '+15053498861'
       ]
     },
     'gambling': {
@@ -462,6 +468,10 @@ const Provider = () => {
       "provider_name": "Storehouse New Mexico"
     },
     "+15057244604": {
+      "issue": "Food / Housing / Money / Basic Needs",
+      "provider_name": "The Rock at Noonday"
+    },
+    "+15052468001": {
       "issue": "Food / Housing / Money / Basic Needs",
       "provider_name": "The Rock at Noonday"
     },
@@ -700,8 +710,8 @@ const Provider = () => {
       setCallsLoading(true);
       
     const params = new URLSearchParams({
-        page: '1',
-        limit: '50',
+        page: pagination.currentPage.toString(),
+        limit: pagination.itemsPerPage.toString(),
         sortBy: 'createdAt',
       sortOrder: 'desc'
       });
@@ -743,6 +753,13 @@ const Provider = () => {
       
       if (data.success) {
         setCalls(data.data.calls || []);
+        setPagination(data.data.pagination || {
+          currentPage: 1,
+          totalPages: 1,
+          totalItems: 0,
+          itemsPerPage: 10
+        });
+        console.log('📊 Provider pagination data received:', data.data.pagination);
       } else {
         throw new Error(data.message || 'Failed to fetch calls');
       }
@@ -781,8 +798,6 @@ const Provider = () => {
     setSelectedCategory(category);
     setCurrentView('specific-providers');
     setLoading(true);
-    // Reset tab when navigating into a category
-    setActiveHomelessTab('providers');
     
     // Get specific providers for this category and fetch their call counts
     const specificProviders = getSpecificProvidersForCategory(category.id);
@@ -830,6 +845,13 @@ const Provider = () => {
       } catch (e) {}
     }
   }, [selectedPhone]);
+
+  // Refetch calls when pagination changes
+  useEffect(() => {
+    if (selectedCategory && currentView === 'provider-details') {
+      fetchCallsForCategory(selectedCategory.id);
+    }
+  }, [pagination.currentPage]);
 
   // Fetch call counts on component mount
   useEffect(() => {
@@ -1045,33 +1067,6 @@ const Provider = () => {
                 </div>
               </div>
 
-              {/* Tabs for Homelessness only */}
-              {selectedCategory.id === 'homelessness' && (
-                <div className="mb-4">
-                  <div className="inline-flex bg-white border border-gray-200 rounded-xl p-1 shadow-sm">
-                    <button
-                      onClick={() => setActiveHomelessTab('providers')}
-                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                        activeHomelessTab === 'providers'
-                          ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow'
-                          : 'text-gray-700 hover:bg-gray-50'
-                      }`}
-                    >
-                      Providers
-                    </button>
-                    <button
-                      onClick={() => setActiveHomelessTab('bookings')}
-                      className={`ml-1 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                        activeHomelessTab === 'bookings'
-                          ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow'
-                          : 'text-gray-700 hover:bg-gray-50'
-                      }`}
-                    >
-                      Bookings
-                    </button>
-                  </div>
-                </div>
-              )}
 
               <div className="mb-6">
                 <div className="relative">
@@ -1080,7 +1075,7 @@ const Provider = () => {
                   </svg>
                   <input
                     type="text"
-                    placeholder={activeHomelessTab === 'bookings' ? 'Search by guest or provider...' : 'Search by name or tags...'}
+                    placeholder="Search by name or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full pl-10 pr-4 py-2 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
@@ -1089,90 +1084,55 @@ const Provider = () => {
               </div>
             </div>
 
-            {/* Content switcher for Homelessness tabs */}
-            {selectedCategory.id === 'homelessness' && activeHomelessTab === 'bookings' ? (
-              (() => {
-                const bookings = [
-                  { name: 'Rohan Mehta', rooms: 2, provider: 'Joy Junction', date: 'Today, 10:30 AM' },
-                  { name: 'Kajal Verma', rooms: 5, provider: 'Good Shepherd Center', date: 'Today, 9:05 AM' },
-                  { name: 'Amir Khan', rooms: 1, provider: 'St. Martin\'s Hospitality Center', date: 'Yesterday, 6:15 PM' },
-                  { name: 'Sofia Martinez', rooms: 3, provider: 'Albuquerque Rescue Mission', date: 'Yesterday, 3:40 PM' }
-                ].filter(b =>
-                  b.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                  b.provider.toLowerCase().includes(searchTerm.toLowerCase())
-                );
-                return (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                    {bookings.map((b, i) => (
-                      <div key={i} className="p-6 rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 shadow-sm hover:shadow-md transition-all">
-                        <div className="flex items-start justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="w-11 h-11 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-semibold shadow">
-                              {b.name.split(' ').map(x=>x[0]).slice(0,2).join('')}
-                            </div>
-                            <div>
-                              <div className="text-base font-semibold text-gray-900">{b.name}</div>
-                              <div className="text-sm text-gray-600">{b.date}</div>
-                            </div>
-                          </div>
-                          <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold text-emerald-700 bg-white border border-emerald-200 shadow-sm">
-                            {b.rooms} {b.rooms === 1 ? 'room' : 'rooms'}
-                          </span>
-                        </div>
-                        <div className="mt-4 flex items-center justify-between">
-                          <div className="flex items-center gap-2 text-sm">
-                            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-orange-100 text-orange-700 border border-orange-200">🏠 Homelessness</span>
-                            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-teal-100 text-teal-700 border border-teal-200">Booking</span>
-                          </div>
-                          <div className="text-sm text-gray-700 font-medium">{b.provider}</div>
-                        </div>
-                      </div>
-                    ))}
-                    {bookings.length === 0 && (
-                      <div className="col-span-full text-center py-12 bg-white rounded-lg border border-gray-200">
-                        <div className="text-sm text-gray-600">No bookings match your search.</div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })()
-            ) : (
-            /* Specific Providers Grid */
-            filteredSpecificProviders.length > 0 ? (
+            {/* Specific Providers Grid */}
+            {filteredSpecificProviders.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {filteredSpecificProviders.map((provider, index) => (
-                  <div
-                    key={index}
-                    className={`p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform ${getCategoryCardBg(selectedCategory.color)} hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] cursor-pointer w-full`}
-                    onClick={() => handleProviderClick(provider)}
-                  >
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{provider.name}</h3>
-                        <p className="text-sm text-gray-600 mb-3">{provider.issue}</p>
-                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-4">
-                          <div className="flex flex-col items-start">
-                            <span className="text-xl font-bold text-gray-900">{provider.phones.length}</span>
-                            <span className="text-xs text-gray-500">Phone Number</span>
-                          </div>
-                          <div className="h-8 w-px bg-gray-300"></div>
-                          <div className="flex flex-col items-start">
-                            <span className="text-xl font-bold text-teal-500">
-                              {countsLoading ? (
-                                <div className="w-6 h-6 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
-                              ) : (
-                                providerCallCounts[provider.name] || 0
-                              )}
-                            </span>
-                            <span className="text-xs text-gray-500">Calls Routed</span>
+                  selectedCategory.id === 'homelessness' ? (
+                    <ProviderCard
+                      key={index}
+                      provider={provider}
+                      selectedCategory={selectedCategory}
+                      getCategoryCardBg={getCategoryCardBg}
+                      getCategoryCardColor={getCategoryCardColor}
+                      providerCallCounts={providerCallCounts}
+                      countsLoading={countsLoading}
+                      onClick={() => handleProviderClick(provider)}
+                    />
+                  ) : (
+                    <div
+                      key={index}
+                      className={`p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform ${getCategoryCardBg(selectedCategory.color)} hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] cursor-pointer w-full`}
+                      onClick={() => handleProviderClick(provider)}
+                    >
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <h3 className="text-lg font-semibold text-gray-900 mb-2">{provider.name}</h3>
+                          <p className="text-sm text-gray-600 mb-3">{provider.issue}</p>
+                          <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-4">
+                            <div className="flex flex-col items-start">
+                              <span className="text-xl font-bold text-gray-900">{provider.phones.length}</span>
+                              <span className="text-xs text-gray-500">Phone Number</span>
+                            </div>
+                            <div className="h-8 w-px bg-gray-300"></div>
+                            <div className="flex flex-col items-start">
+                              <span className="text-xl font-bold text-teal-500">
+                                {countsLoading ? (
+                                  <div className="w-6 h-6 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
+                                ) : (
+                                  providerCallCounts[provider.name] || 0
+                                )}
+                              </span>
+                              <span className="text-xs text-gray-500">Calls Routed</span>
+                            </div>
                           </div>
                         </div>
+                        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
                       </div>
-                      <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
                     </div>
-                  </div>
+                  )
                 ))}
               </div>
             ) : (
@@ -1185,7 +1145,7 @@ const Provider = () => {
                   No providers match your search criteria.
                 </p>
               </div>
-            ))}
+            )}
           </>
         ) : (
           <>
@@ -1498,6 +1458,51 @@ const Provider = () => {
                 )}
                 </div>
               </div>
+
+              {/* Pagination */}
+              {(() => {
+                const filteredCalls = calls.filter(call => {
+                  if (selectedPhone) {
+                    return call.phone_number && call.phone_number.trim() === selectedPhone;
+                  }
+                  if (selectedProvider) {
+                    return selectedProvider.phones.includes(call.phone_number);
+                  }
+                  return true;
+                });
+                const actualTotalItems = filteredCalls.length;
+                const startItem = ((pagination.currentPage - 1) * pagination.itemsPerPage) + 1;
+                const endItem = Math.min(pagination.currentPage * pagination.itemsPerPage, actualTotalItems);
+                
+                return actualTotalItems > 0 && (
+                  <div className="px-6 py-4 border-t border-border bg-muted/30">
+                    <div className="flex items-center justify-between">
+                      <div className="text-sm text-muted-foreground">
+                        Showing {actualTotalItems === 0 ? 0 : startItem} to {endItem} of {actualTotalItems} results
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={() => setPagination(prev => ({ ...prev, currentPage: prev.currentPage - 1 }))}
+                          disabled={pagination.currentPage === 1 || actualTotalItems < 10}
+                          className="px-3 py-1 text-sm border border-border rounded-md hover:bg-muted/50 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                          Previous
+                        </button>
+                        <span className="px-3 py-1 text-sm text-foreground">
+                          Page {pagination.currentPage} of {Math.ceil(actualTotalItems / pagination.itemsPerPage)}
+                        </span>
+                        <button
+                          onClick={() => setPagination(prev => ({ ...prev, currentPage: prev.currentPage + 1 }))}
+                          disabled={pagination.currentPage >= Math.ceil(actualTotalItems / pagination.itemsPerPage) || actualTotalItems < 10}
+                          className="px-3 py-1 text-sm border border-border rounded-md hover:bg-muted/50 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Bottom spacer to prevent last section cut off on mobile */}
               <div className="h-16 md:h-0" />

@@ -11,13 +11,14 @@ const getAllCalls = asyncHandler(async (req, res) => {
   try {
     const {
       page = 1,
-      limit = 20,
+      limit = 10,
       search = '',
       sentiment = '',
       call_successful = '',
       sortBy = 'createdAt',
       sortOrder = 'desc',
-      days = ''
+      days = '',
+      provider = ''
     } = req.query;
 
     const filter = {};
@@ -37,6 +38,30 @@ const getAllCalls = asyncHandler(async (req, res) => {
 
     // Call success filter
     if (call_successful !== '') filter.call_successful = call_successful === 'true';
+
+    // Provider filter
+    if (provider) {
+      // Map frontend provider keys to backend provider names
+      const providerMap = {
+        'mental': ['mental', 'psychiatric', 'crisis', 'suicide'],
+        'domestic': ['domestic', 'violence', 'abuse', 'safe'],
+        'substance': ['substance', 'alcohol', 'addiction', 'detox'],
+        'homeless': ['homeless', 'housing', 'shelter', 'rescue', 'mission', 'food', 'money', 'basic needs'],
+        'youth': ['youth', 'teen', 'child', 'adolescent', 'runaway'],
+        'lgbtq': ['lgbtq', 'identity', 'transgender'],
+        'elder': ['elder', 'senior', 'aging', 'disability'],
+        'gambling': ['gambling', 'financial'],
+        'emergency': ['emergency', 'escalated', '911']
+      };
+      
+      const searchTerms = providerMap[provider] || [provider];
+      filter.$or = searchTerms.map(term => ({
+        $or: [
+          { provider_name: { $regex: term, $options: 'i' } },
+          { niche: { $regex: term, $options: 'i' } }
+        ]
+      }));
+    }
 
     // Fetch all calls matching filters
     let calls = await CallHistory.find(filter)

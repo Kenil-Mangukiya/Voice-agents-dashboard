@@ -255,7 +255,7 @@ const Calls = () => {
     currentPage: 1,
     totalPages: 1,
     totalItems: 0,
-    itemsPerPage: 20
+    itemsPerPage: 10
   });
 
   // Fetch calls from backend
@@ -305,6 +305,10 @@ const Calls = () => {
       if (data.success) {
         setCalls(data.data.calls);
         setPagination(data.data.pagination);
+        console.log('📊 Pagination data received:', data.data.pagination);
+        console.log('📊 Total pages:', data.data.pagination.totalPages);
+        console.log('📊 Current page:', data.data.pagination.currentPage);
+        console.log('📊 Total items:', data.data.pagination.totalItems);
       } else {
         throw new Error(data.message || 'Failed to fetch calls');
       }
@@ -660,16 +664,17 @@ const Calls = () => {
           </div>
 
           {/* Pagination */}
-          {pagination.totalPages > 1 ? (
+          {console.log('🔍 Pagination check:', { totalPages: pagination.totalPages, currentPage: pagination.currentPage, totalItems: pagination.totalItems })}
+          {pagination.totalItems > 0 && (
             <div className="px-6 py-4 border-t border-border bg-muted/30">
               <div className="flex items-center justify-between">
                 <div className="text-sm text-muted-foreground">
-                  Showing {((pagination.currentPage - 1) * pagination.itemsPerPage) + 1} to {Math.min(pagination.currentPage * pagination.itemsPerPage, pagination.totalItems)} of {pagination.totalItems} results
+                  Showing {pagination.totalItems === 0 ? 0 : ((pagination.currentPage - 1) * pagination.itemsPerPage) + 1} to {Math.min(pagination.currentPage * pagination.itemsPerPage, pagination.totalItems)} of {pagination.totalItems} results
                 </div>
                 <div className="flex items-center space-x-2">
                   <button
                     onClick={() => setPagination(prev => ({ ...prev, currentPage: prev.currentPage - 1 }))}
-                    disabled={pagination.currentPage === 1}
+                    disabled={pagination.currentPage === 1 || pagination.totalItems < 10}
                     className="px-3 py-1 text-sm border border-border rounded-md hover:bg-muted/50 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Previous
@@ -679,7 +684,7 @@ const Calls = () => {
                   </span>
                   <button
                     onClick={() => setPagination(prev => ({ ...prev, currentPage: prev.currentPage + 1 }))}
-                    disabled={pagination.currentPage === pagination.totalPages}
+                    disabled={pagination.currentPage === pagination.totalPages || pagination.totalItems < 10}
                     className="px-3 py-1 text-sm border border-border rounded-md hover:bg-muted/50 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Next
@@ -687,7 +692,7 @@ const Calls = () => {
                 </div>
               </div>
             </div>
-          ) : null}
+          )}
         </div>
         </div>
         <div className="h-16 md:h-0" />

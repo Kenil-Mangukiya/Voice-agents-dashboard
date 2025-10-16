@@ -27,6 +27,7 @@ const providerMap = {
   "+18666543219": { provider_name: "Aging & Disability Resource Center (ADRC)", niche: "Elder Concern / Isolation / Neglect" },
   "+15058086325": { provider_name: "Aging & Disability Resource Center (ADRC)", niche: "Elder Concern / Isolation / Neglect" },
   "+15053495340": { provider_name: "Roadrunner Food Bank", niche: "Food / Housing / Money / Basic Needs" },
+  "+15052468001": { provider_name: "The Rock at Noonday", niche: "Food / Housing / Money / Basic Needs" },
   "+15058426491": { provider_name: "Storehouse New Mexico", niche: "Food / Housing / Money / Basic Needs" },
   "+15057244604": { provider_name: "The Rock at Noonday", niche: "Food / Housing / Money / Basic Needs" },
   "+15053498861": { provider_name: "Storehouse New Mexico", niche: "Food / Housing / Money / Basic Needs" },
