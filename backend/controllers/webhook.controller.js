@@ -7,7 +7,7 @@ const webhook = asyncHandler(async (req, res) => {
     console.log("✅ Webhook received : ", req.body);
     if(req.body.event == "call_analyzed")
     {
-        if(req.body.call.agent_id == "agent_f161012a2a16efce54bd187985" || req.body.call.agent_id == "agent_26e25a5a5ee865a437faa06744")
+        if(req.body.call.agent_id == "agent_5f47995e26fc268bce24e778ab" || req.body.call.agent_id == "agent_464bf5d0525e5abd663f5899c7  ")
         {
         try
         {
