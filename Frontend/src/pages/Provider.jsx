@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ProviderCard from './ProviderCard';
 
 // API base URL - adjust this to match your backend
-const API_BASE_URL = 'https://apidashboard.aiyug.us/api';
+const API_BASE_URL = 'http://localhost:5000/api';
 
 // Helper function to format phone numbers
 const formatPhoneNumber = (phone) => {

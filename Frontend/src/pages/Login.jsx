@@ -64,7 +64,7 @@ const Login = ({ onLogin }) => {
     
     try {
       // API call to backend
-      const response = await fetch('https://apidashboard.aiyug.us/api/users/login', {
+      const response = await fetch('http://localhost:5000/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

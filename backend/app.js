@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://dashboard.aiyug.us","https://albuquerquedemo.harm.ai"], 
+    origin: ["https://dashboard.aiyug.us","https://albuquerquedemo.harm.ai","http://localhost:3008"], 
     credentials: true
   })
 );
