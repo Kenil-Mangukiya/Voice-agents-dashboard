@@ -1,0 +1,172 @@
+[
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Alpine County Health & Human Services",
+    "phone": "5306942146",
+    "description": "Alpine County Health & Human Services (Behavioral Health, Crisis Coordination)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "211",
+    "description": "2-1-1 California Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "8669163211",
+    "description": "2-1-1 California toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "2-1-1 California Text",
+    "phone": "898211",
+    "description": "2-1-1 California (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Housing & Homelessness Assistance",
+    "phone": "5306942146",
+    "description": "Housing & Homelessness Assistance (Alpine County HHS)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting / Welfare Services",
+    "phone": "5306942146",
+    "description": "Child Abuse Reporting / Child Welfare Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "5306942146",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "5306942146",
+    "description": "Environmental Health (housing, sanitation, water/septic)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Great Basin Unified Air Pollution Control District",
+    "phone": "7608728211",
+    "description": "Great Basin Unified Air Pollution Control District (air quality)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Planning & Building / Code Enforcement",
+    "phone": "5306942146",
+    "description": "Planning & Building / Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Alpine County Sheriff",
+    "phone": "5306942146",
+    "description": "Alpine County Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "District Attorney / Victim Services",
+    "phone": "5306942146",
+    "description": "District Attorney / Victim Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5306942146",
+    "description": "Public Works (roads, hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALPINE",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
