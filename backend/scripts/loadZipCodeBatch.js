@@ -1,13 +1,7 @@
-import dotenv from "dotenv";
-import connectDB from "../db/index.js";
-import ZipCode from "../models/zip-code.model.js";
 
-dotenv.config({ path: ".env" });
-
-connectDB();
-
-// Batch 1: First 500 rows (90002 - 91748)
-const zipCodeBatch1 = `90002	Los Angeles	Los Angeles
+// Batch 1: First 500 rows (90001 - 91748)
+export const zipCodeBatch1 = `90001	Los Angeles	Los Angeles
+90002	Los Angeles	Los Angeles
 90003	Los Angeles	Los Angeles
 90004	Los Angeles	Los Angeles
 90005	Los Angeles	Los Angeles
@@ -507,45 +501,3 @@ const zipCodeBatch1 = `90002	Los Angeles	Los Angeles
 91746	La Puente	Los Angeles
 91747	La Puente	Los Angeles
 91748	Rowland Heights	Los Angeles`;
-
-function parseZipCodeData(data) {
-  return data
-    .split('\n')
-    .filter(line => line.trim()) // Remove empty lines
-    .map(line => {
-      const [zip, city, county] = line.split('\t').map(item => item.trim());
-      return {
-        zip,
-        city,
-        county,
-        state: 'CA'
-      };
-    });
-}
-
-async function loadZipCodeBatch() {
-  try {
-    console.log('🔄 Parsing zip code data...');
-    const records = parseZipCodeData(zipCodeBatch1);
-    
-    console.log(`📊 Found ${records.length} records to insert`);
-    console.log(`First record: ${JSON.stringify(records[0])}`);
-    console.log(`Last record: ${JSON.stringify(records[records.length - 1])}`);
-    
-    console.log('📥 Inserting into database...');
-    const result = await ZipCode.insertMany(records, { ordered: false });
-    
-    console.log(`✅ Successfully inserted ${result.length} zip code records`);
-    console.log(`📈 Total records in database: ${await ZipCode.countDocuments()}`);
-    process.exit(0);
-  } catch (error) {
-    console.error('❌ Error loading zip codes:', error.message);
-    if (error.writeErrors) {
-      console.log(`⚠️ Inserted ${error.result.insertedCount} records before error`);
-      console.log(`⚠️ ${error.writeErrors.length} duplicate records skipped`);
-    }
-    process.exit(1);
-  }
-}
-
-loadZipCodeBatch();

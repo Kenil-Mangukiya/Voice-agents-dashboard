@@ -1,0 +1,212 @@
+[
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency Police/Fire/Medical",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7 crisis support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Behavioral Health Access Line",
+    "phone": "8886787277",
+    "description": "Contra Costa Behavioral Health Access Line (24/7 behavioral health)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "A3 Miles Hall Behavioral Health Crisis Call Center",
+    "phone": "8448445544",
+    "description": "A3 Miles Hall Behavioral Health Crisis Call Center (Adults)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "211 Contra Costa",
+    "phone": "211",
+    "description": "211 Contra Costa (social services & referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "211 Contra Costa",
+    "phone": "8008305380",
+    "description": "211 Contra Costa toll-free (outside county)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Code Enforcement",
+    "phone": "9256552710",
+    "description": "Contra Costa County Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Code Enforcement",
+    "phone": "8776468314",
+    "description": "Contra Costa Code Enforcement (toll-free)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Dept. of Conservation & Development",
+    "phone": "9256552774",
+    "description": "Contra Costa Dept. of Conservation & Development (building/planning)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Building Code Hotline",
+    "phone": "9256552737",
+    "description": "Contra Costa Building Code Hotline / Debris reporting",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Environmental Health Division",
+    "phone": "9256085500",
+    "description": "Contra Costa Environmental Health Division",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Hazardous Materials Program",
+    "phone": "9256553200",
+    "description": "Contra Costa Hazardous Materials Program",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Hazardous Materials 24-hour Emergency Hotline",
+    "phone": "9256553232",
+    "description": "Hazardous Materials 24-hour Emergency Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Illegal Dumping Reporting",
+    "phone": "8006638674",
+    "description": "Illegal Dumping Reporting (1-800-NO-DUMPING)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Bay Area Air Quality Management District",
+    "phone": "8003346367",
+    "description": "Bay Area Air Quality Management District (air pollution)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Housing Authority of Contra Costa County",
+    "phone": "9259578001",
+    "description": "Housing Authority of Contra Costa County (main)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Housing Authority of Contra Costa County",
+    "phone": "9259577085",
+    "description": "Housing Authority of Contra Costa County (alternate contact)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Public Works / Flood Zones",
+    "phone": "9253132351",
+    "description": "Contra Costa Public Works / Flood Zones",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "Contra Costa Vector Control",
+    "phone": "9257716196",
+    "description": "Contra Costa Vector Control",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "California Poison Control Hotline",
+    "phone": "8002221222",
+    "description": "California Poison Control Hotline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CONTRA COSTA",
+    "state": "CA",
+    "serviceName": "CDC-INFO",
+    "phone": "8002324636",
+    "description": "CDC-INFO (health info)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

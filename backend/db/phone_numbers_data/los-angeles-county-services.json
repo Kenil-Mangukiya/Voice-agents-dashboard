@@ -1,0 +1,502 @@
+[
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency Police/Fire/Medical",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (mental health crisis/emotional support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Mental Health ACCESS",
+    "phone": "8008547771",
+    "description": "LA County Mental Health ACCESS / Crisis / Referrals (behavioral health, crisis teams, substance use linkage)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Veterans Crisis Line",
+    "phone": "988",
+    "description": "Veterans Crisis Line - press 1 after calling 988 (veteran-specific crisis support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line - Text 'LA' to this number (emotional distress support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "211 LA County Info & Referral",
+    "phone": "211",
+    "description": "2-1-1 LA County Info & Referral (housing, food, jobs, services)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "211 LA County Info & Referral",
+    "phone": "8003396993",
+    "description": "2-1-1 LA County Info & Referral - alternate number (housing, food, jobs, services)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Child Protection Hotline",
+    "phone": "8005404000",
+    "description": "Child Protection Hotline (report child abuse/neglect/exploitation)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Adoptions & Foster Care Info Line",
+    "phone": "8888111121",
+    "description": "Adoptions & Foster Care Info Line",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Adult Protective Services / Elder Abuse Hotline",
+    "phone": "8774773646",
+    "description": "Adult Protective Services / Elder Abuse Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Long-Term Care Ombudsman",
+    "phone": "8005102020",
+    "description": "Long-Term Care Ombudsman (facility abuse reporting)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LAHSA Shelter/CES Hotline",
+    "phone": "8005486047",
+    "description": "LAHSA Shelter/CES Hotline (homeless shelter referrals)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LAHSA Info Line",
+    "phone": "2132256581",
+    "description": "LAHSA Info Line",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Domestic Violence Hotline",
+    "phone": "8009783600",
+    "description": "LA County Domestic Violence Hotline (confidential)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Customer Service Center",
+    "phone": "8666133777",
+    "description": "DPSS Customer Service Center (benefits)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Customer Service Center",
+    "phone": "3102587400",
+    "description": "DPSS Customer Service Center - alternate number (benefits)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Customer Service Center",
+    "phone": "6265691399",
+    "description": "DPSS Customer Service Center - alternate number (benefits)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Customer Service Center",
+    "phone": "8187018200",
+    "description": "DPSS Customer Service Center - alternate number (benefits)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Child Care Hotline",
+    "phone": "8772445399",
+    "description": "DPSS Child Care Hotline",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Civil Rights Complaint Line",
+    "phone": "5629085801",
+    "description": "DPSS Civil Rights Complaint Line",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS ADA Info Line",
+    "phone": "8445865550",
+    "description": "DPSS ADA Info Line",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Safely Surrender Baby Info",
+    "phone": "8772229723",
+    "description": "Safely Surrender Baby Info",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Substance Use Disorder Hotline",
+    "phone": "8448047500",
+    "description": "DPSS / SASH Substance Use Disorder Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Welfare Fraud Hotline",
+    "phone": "8003499970",
+    "description": "DPSS Welfare Fraud Hotline",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "DPSS Appeals / State Hearings",
+    "phone": "8009525253",
+    "description": "DPSS Appeals / State Hearings",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Child Health & Disability Prevention Program",
+    "phone": "8009934437",
+    "description": "Child Health & Disability Prevention Program",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "Child Support Hotline",
+    "phone": "8669013212",
+    "description": "Child Support Hotline (State)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "South Coast AQMD Air Quality Complaint",
+    "phone": "8002887664",
+    "description": "South Coast AQMD Air Quality Complaint Hotline (1-800-CUT-SMOG)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "South Coast AQMD General Contact",
+    "phone": "9093962000",
+    "description": "South Coast AQMD General Contact",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Public Health Environmental Health",
+    "phone": "8887009995",
+    "description": "LA County Dept. of Public Health Environmental Health Call Center",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Beach Advisory & Closure",
+    "phone": "8005255662",
+    "description": "LA County Beach Advisory & Closure Hotline",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Lead Hotline",
+    "phone": "8005245323",
+    "description": "LA County Lead Hotline (1-800-LA-4-LEAD)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Toxicology / Quemetco",
+    "phone": "2137383232",
+    "description": "LA County Toxicology / Quemetco Hotline",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Environmental Health (Housing & Habitability)",
+    "phone": "8887009995",
+    "description": "LA County Environmental Health (Housing & Habitability)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Public Works Trash/Debris",
+    "phone": "8888387464",
+    "description": "LA County Public Works Trash/Debris/Illegal Dumping (888-8-DUMPING)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Zoning Enforcement",
+    "phone": "2139746453",
+    "description": "LA County Zoning Enforcement",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "City of LA Municipal Services / Code Enforcement",
+    "phone": "311",
+    "description": "City of LA Municipal Services / Code Enforcement",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": true
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "City of LA Municipal Services / Code Enforcement",
+    "phone": "2134733231",
+    "description": "City of LA Municipal Services / Code Enforcement - alternate number",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA Housing + Community Investment Dept",
+    "phone": "8665577368",
+    "description": "LA Housing + Community Investment Dept (HCIDLA) Rental/Building Code Complaints",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "California Air Resources Board",
+    "phone": "8003637664",
+    "description": "California Air Resources Board Air Quality Complaints (1-800-END-SMOG)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Fire Dept HazMat Division",
+    "phone": "3238904089",
+    "description": "LA County Fire Dept HazMat Division",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Agriculture - Vector Control",
+    "phone": "5626220431",
+    "description": "LA County Agriculture / Insects Vector Control",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Agriculture - Pesticides",
+    "phone": "6265755471",
+    "description": "LA County Agriculture / Pesticides",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA Regional Water Quality Control Board",
+    "phone": "2136206370",
+    "description": "LA Regional Water Quality Control Board",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA Regional Water Quality Control Board",
+    "phone": "2135766600",
+    "description": "LA Regional Water Quality Control Board - alternate number",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Public Works",
+    "phone": "6264581100",
+    "description": "LA County Public Works (Infrastructure & Habitability Issues)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Environmental Health - Street Vending",
+    "phone": "6264305160",
+    "description": "LA County Environmental Health (Street Vending Complaints)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Environmental Health - Street Vending Spanish",
+    "phone": "6264305500",
+    "description": "LA County Environmental Health Spanish Street Vending Complaints",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Environmental Health - Body Art",
+    "phone": "6264305570",
+    "description": "LA County Environmental Health Body Art Program",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "LOS ANGELES",
+    "state": "CA",
+    "serviceName": "LA County Environmental Health - Water Programs",
+    "phone": "6264305290",
+    "description": "LA County Environmental Health Water / Cross-Connection Program",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

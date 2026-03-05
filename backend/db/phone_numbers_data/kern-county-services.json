@@ -1,0 +1,212 @@
+[
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "KernBHRS 24-Hour Crisis Hotline",
+    "phone": "8009915272",
+    "description": "KernBHRS 24-Hour Crisis Hotline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Kern County Mobile Crisis Response",
+    "phone": "6618688200",
+    "description": "Kern County Mobile Crisis Response",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "KernBHRS Substance Use Access Line",
+    "phone": "8662664898",
+    "description": "KernBHRS Substance Use Access Line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "2-1-1 Kern County",
+    "phone": "211",
+    "description": "2-1-1 Kern County (social services referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "2-1-1 Kern County",
+    "phone": "8004369997",
+    "description": "2-1-1 Kern County toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Utility Assistance (CAPK)",
+    "phone": "6613365203",
+    "description": "Utility Assistance (CAPK)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Kern County Public Health",
+    "phone": "6613213000",
+    "description": "Kern County Public Health (general/environmental health referrals)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Kern County Code Compliance",
+    "phone": "6618628603",
+    "description": "Kern County Code Compliance",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Kern County Building Inspection",
+    "phone": "6618628650",
+    "description": "Kern County Building Inspection",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Bakersfield City Code Enforcement",
+    "phone": "6613263712",
+    "description": "Bakersfield City Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Kern County Public Works",
+    "phone": "6618625100",
+    "description": "Kern County Public Works General",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "County Admin Office – Compliance & Accountability",
+    "phone": "6618683151",
+    "description": "County Admin Office – Compliance & Accountability",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Auditor-Controller",
+    "phone": "6618683599",
+    "description": "Auditor-Controller",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Grand Jury",
+    "phone": "6618684800",
+    "description": "Grand Jury",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "NAMI Kern County",
+    "phone": "6618583255",
+    "description": "NAMI Kern County",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "NA Info Line",
+    "phone": "8776296759",
+    "description": "NA Info Line",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "AA Central Office",
+    "phone": "6613224025",
+    "description": "AA Central Office",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "AL-ANON",
+    "phone": "6613221102",
+    "description": "AL-ANON",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "KERN",
+    "state": "CA",
+    "serviceName": "Alliance Against Family Violence & Sexual Assault",
+    "phone": "6613220931",
+    "description": "Alliance Against Family Violence & Sexual Assault",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

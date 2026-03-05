@@ -1,0 +1,322 @@
+[
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "SF 311 Customer Service Center",
+    "phone": "311",
+    "description": "SF 311 Customer Service Center (within SF) — non-emergency municipal services",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "SF 311 Customer Service Center",
+    "phone": "4157012311",
+    "description": "SF 311 Customer Service Center (from outside SF)",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "SF 311 TTY/Speech Impaired",
+    "phone": "4157012323",
+    "description": "311 TTY/Speech Impaired (for hearing or speech impaired callers)",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Behavioral Health Access Center",
+    "phone": "8882463333",
+    "description": "San Francisco Behavioral Health Access Center (24/7 mental health & substance use referrals)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Suicide Prevention Confidential Hotline",
+    "phone": "4157815000",
+    "description": "San Francisco Suicide Prevention Confidential Hotline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Human Services Agency (HSA)",
+    "phone": "4155575000",
+    "description": "San Francisco Human Services Agency (HSA) General Info & Benefits Assistance (food, cash aid, Medi-Cal, etc.)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "HSA Family & Children's Services Child Abuse Reporting",
+    "phone": "8008565553",
+    "description": "HSA Family & Children's Services (FCS) Child Abuse Reporting Line (24 hours)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "SFHSA FCS Child Abuse Reporting",
+    "phone": "6286525791",
+    "description": "Alternate SFHSA FCS Child Abuse Reporting (if main is busy)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "8008140009",
+    "description": "Adult Protective Services (elder/dependent adult abuse reporting)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Safe & Sound TALK Line",
+    "phone": "4154415437",
+    "description": "Safe & Sound TALK Line for parents (support and referrals)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Family Urgent Response System (FURS)",
+    "phone": "8339393877",
+    "description": "Family Urgent Response System (FURS) for foster youth support",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Seneca Mobile Response Team",
+    "phone": "8773058989",
+    "description": "Seneca Mobile Response Team (wraparound services for families/youth involving child welfare)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Housing Authority of San Francisco",
+    "phone": "4157155200",
+    "description": "Housing Authority of the City & County of San Francisco (general housing assistance)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Housing Authority TTY",
+    "phone": "4154676754",
+    "description": "Housing Authority (TTY)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "211 Bay Area",
+    "phone": "211",
+    "description": "211 Bay Area (regional info and referral for food, housing, health, utilities, etc.)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "211 Bay Area",
+    "phone": "8002736222",
+    "description": "211 Bay Area Toll-Free / alternative access for some callers",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Dept. of Building Inspection (DBI)",
+    "phone": "4155586088",
+    "description": "San Francisco Dept. of Building Inspection (DBI) main line",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "DBI General",
+    "phone": "6286523500",
+    "description": "DBI General (alternative)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "DBI Code Enforcement Section",
+    "phone": "6286523430",
+    "description": "DBI Code Enforcement Section (housing/building violations intake)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "DBI Building Inspection Division",
+    "phone": "4155586096",
+    "description": "DBI Building Inspection Division (inspector line)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "DBI Plan Review/Permits",
+    "phone": "6286523780",
+    "description": "DBI Plan Review/Permits counter",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Board of Permit Appeals (BPA)",
+    "phone": "4155756880",
+    "description": "Board of Permit Appeals (BPA)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "DBI Code Enforcement Complaints",
+    "phone": "6286523450",
+    "description": "DBI Code Enforcement Complaints intake for unsafe housing/building conditions",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "SF Department of Public Health Environmental Health",
+    "phone": "4152523800",
+    "description": "SF Department of Public Health, Environmental Health (food, water safety, habitability, pests, nuisance hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Public Works Director's Office",
+    "phone": "6282713160",
+    "description": "San Francisco Public Works Director's Office (general inquiries)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Public Works Bureau of Street Use & Mapping",
+    "phone": "6282712000",
+    "description": "Public Works Bureau of Street Use & Mapping (street use/permits and inspections)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Urban Forestry",
+    "phone": "6286528733",
+    "description": "Urban Forestry (tree care/maintenance questions)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Police Department",
+    "phone": "4155530123",
+    "description": "San Francisco Police Department (non-emergency)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "San Francisco Department of Public Health",
+    "phone": "4155542500",
+    "description": "San Francisco Department of Public Health (main public health line)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Office of the City Administrator",
+    "phone": "4155544851",
+    "description": "Office of the City Administrator (City Hall)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "state": "CA",
+    "serviceName": "Mayor's Office of Legislative & Government Affairs",
+    "phone": "4155546153",
+    "description": "Mayor's Office of Legislative & Government Affairs",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

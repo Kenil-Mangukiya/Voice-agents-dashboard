@@ -1,0 +1,312 @@
+[
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "San Mateo County Crisis Hotline",
+    "phone": "6505790350",
+    "description": "San Mateo County Crisis Hotline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "National Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "National Suicide & Crisis Lifeline (call/text)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text START)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "BHRS ACCESS Call Center",
+    "phone": "8006860101",
+    "description": "BHRS ACCESS Call Center (behavioral health/referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "211",
+    "description": "2-1-1 Bay Area Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "8002736222",
+    "description": "2-1-1 Bay Area toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area Text",
+    "phone": "898211",
+    "description": "2-1-1 referral by text (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Domestic Violence Support Hotline",
+    "phone": "8003001080",
+    "description": "Domestic Violence Support Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "San Mateo County Human Services Agency",
+    "phone": "6508027500",
+    "description": "San Mateo County Human Services Agency (HSA)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "San Mateo County Public Assistance",
+    "phone": "8002238383",
+    "description": "San Mateo County Public Assistance Toll-Free",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "HSA Special Investigations Unit",
+    "phone": "6508027583",
+    "description": "HSA Special Investigations Unit (fraud reporting)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "San Mateo County Public Health",
+    "phone": "6505732222",
+    "description": "San Mateo County Public Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Environmental Health Services",
+    "phone": "6503726200",
+    "description": "Environmental Health Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Environmental Health Housing Complaints",
+    "phone": "6505991112",
+    "description": "Environmental Health Housing Complaints",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Environmental Health Solid Waste/Pests",
+    "phone": "6503634305",
+    "description": "Environmental Health (solid waste/pests)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Household Hazardous Waste Program",
+    "phone": "6503634718",
+    "description": "Household Hazardous Waste Program",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Peninsula Humane Society SPCA",
+    "phone": "6503408200",
+    "description": "Peninsula Humane Society SPCA (animal bites)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "San Mateo County Influenza Hotline",
+    "phone": "6505733927",
+    "description": "San Mateo County Influenza Hotline",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Planning & Building General Info",
+    "phone": "6503631827",
+    "description": "Planning & Building General Info",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Planning Services",
+    "phone": "6503631825",
+    "description": "Planning Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Building Services",
+    "phone": "6505997310",
+    "description": "Building Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Code Compliance",
+    "phone": "6503634825",
+    "description": "Code Compliance (countywide)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Building Inspections",
+    "phone": "6505997311",
+    "description": "Building Inspections",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "City of San Mateo Code Enforcement",
+    "phone": "6505227150",
+    "description": "City of San Mateo Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "City of San Mateo Code Enforcement",
+    "phone": "6505227166",
+    "description": "City of San Mateo Code Enforcement (Español)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "City of San Mateo Building Inspection",
+    "phone": "6505227170",
+    "description": "City of San Mateo Building Inspection Line",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "City of San Mateo Building Permits",
+    "phone": "6505227172",
+    "description": "City of San Mateo Building Permits",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "Poison Control Center",
+    "phone": "8008764766",
+    "description": "Poison Control Center",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "CalHOPE Warmline",
+    "phone": "8333174673",
+    "description": "CalHOPE Warmline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN MATEO",
+    "state": "CA",
+    "serviceName": "CalHOPE Warmline",
+    "phone": "8336427696",
+    "description": "CalHOPE Warmline (Spanish)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

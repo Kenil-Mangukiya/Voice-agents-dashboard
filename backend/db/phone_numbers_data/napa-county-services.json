@@ -1,0 +1,282 @@
+[
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency Response",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "7072530911",
+    "description": "Local 911 (cell)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa County 24-Hour Mental Health Crisis Hotline",
+    "phone": "7072534711",
+    "description": "Napa County 24-Hour Mental Health Crisis Hotline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa County Mental Health Mobile Response Team",
+    "phone": "7072992111",
+    "description": "Napa County Mental Health Mobile Response Team (MRT)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "211",
+    "description": "2-1-1 Bay Area Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "8002736222",
+    "description": "2-1-1 Bay Area toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area Text",
+    "phone": "898211",
+    "description": "2-1-1 Bay Area (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa Child Abuse Hotline",
+    "phone": "7072534261",
+    "description": "Napa Child Abuse Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa Child Abuse Hotline",
+    "phone": "8004644216",
+    "description": "Napa Child Abuse Hotline toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Child Welfare Services",
+    "phone": "7072534744",
+    "description": "Child Welfare Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "7072534398",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "8886196913",
+    "description": "Adult Protective Services toll-free",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa Police Non-Emergency",
+    "phone": "7072579223",
+    "description": "Napa Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa County Sheriff's Office",
+    "phone": "7072534509",
+    "description": "Napa County Sheriff's Office",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "American Canyon Police",
+    "phone": "7076480171",
+    "description": "American Canyon Police",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "St. Helena Police",
+    "phone": "7079678850",
+    "description": "St. Helena Police",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Calistoga Police",
+    "phone": "7079422810",
+    "description": "Calistoga Police",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "CHP Napa Division",
+    "phone": "7072534906",
+    "description": "CHP Napa Division",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa County Public Health",
+    "phone": "7072534270",
+    "description": "Napa County Public Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Mental Health Access",
+    "phone": "7072598151",
+    "description": "Mental Health Access",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Mental Health Access",
+    "phone": "8006488650",
+    "description": "Mental Health Access toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Alcohol & Drug Services",
+    "phone": "7072534063",
+    "description": "Alcohol & Drug Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Self Sufficiency Services",
+    "phone": "7072534511",
+    "description": "Self Sufficiency Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa County Housing Authority",
+    "phone": "7072579543",
+    "description": "Napa County Housing Authority",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Napa Emergency Women's Services",
+    "phone": "7072556397",
+    "description": "Napa Emergency Women's Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "V.O.I.C.E.S.",
+    "phone": "7072519432",
+    "description": "V.O.I.C.E.S.",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "NAPA",
+    "state": "CA",
+    "serviceName": "Poison Information Center",
+    "phone": "8008764766",
+    "description": "Poison Information Center",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Crisis Stabilization Unit",
+    "phone": "4154736666",
+    "description": "Crisis Stabilization Unit (CSU, 24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Mobile Crisis Response Team",
+    "phone": "4154736392",
+    "description": "Mobile Crisis Response Team (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "BHRS Access Line",
+    "phone": "8888181115",
+    "description": "BHRS Access Line (24/7 referrals)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis text line (text MARIN)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "California Peer Warmline",
+    "phone": "8558457415",
+    "description": "California Peer Warmline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Center for Domestic Peace",
+    "phone": "4159246616",
+    "description": "Center for Domestic Peace (DV hotline)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Child Abuse & Neglect Hotline",
+    "phone": "4154737153",
+    "description": "Child Abuse & Neglect Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "211",
+    "description": "2-1-1 Bay Area Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area",
+    "phone": "8002736222",
+    "description": "2-1-1 Bay Area toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "2-1-1 Bay Area Text",
+    "phone": "898211",
+    "description": "2-1-1 Bay Area (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Homelessness & Coordinated Care",
+    "phone": "4154734663",
+    "description": "Homelessness & Coordinated Care (housing support)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Homeward Bound of Marin",
+    "phone": "4154579651",
+    "description": "Homeward Bound of Marin (adults shelter)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Family Shelter Services",
+    "phone": "4154572115",
+    "description": "Family Shelter Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "4154732774",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Environmental Health Services",
+    "phone": "4154736907",
+    "description": "Environmental Health Services (food/water/habitability)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Marin County Code Compliance",
+    "phone": "8666735417",
+    "description": "Marin County Code Compliance",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Building & Safety Division",
+    "phone": "4154736550",
+    "description": "Building & Safety Division",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Long-Term Care Ombudsman",
+    "phone": "4154737446",
+    "description": "Long-Term Care Ombudsman",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Public Assistance",
+    "phone": "8774108817",
+    "description": "Public Assistance (Medi-Cal/CalFresh/CalWORKs)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "General Cash Aid/Assistance",
+    "phone": "4154733450",
+    "description": "General Cash Aid/Assistance",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Aging & Adult Information Line",
+    "phone": "4154574636",
+    "description": "Aging & Adult Information Line",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Marin Housing Authority",
+    "phone": "4154912525",
+    "description": "Marin Housing Authority (general)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Housing Authority Maintenance",
+    "phone": "4153902094",
+    "description": "Housing Authority Maintenance",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Housing Authority Inspections",
+    "phone": "4156662529",
+    "description": "Housing Authority Inspections",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Marin County DA Consumer Protection",
+    "phone": "4154736450",
+    "description": "Marin County DA Consumer Protection",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "DA Fax",
+    "phone": "4154733719",
+    "description": "DA Fax",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Sheriff Communications",
+    "phone": "4154792311",
+    "description": "Sheriff Communications (non-emergency)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Sheriff Main Office",
+    "phone": "4154737250",
+    "description": "Sheriff Main Office",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MARIN",
+    "state": "CA",
+    "serviceName": "Sheriff Civil Division",
+    "phone": "4154737282",
+    "description": "Sheriff Civil Division",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

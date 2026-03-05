@@ -1,0 +1,342 @@
+[
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency Police/Fire/Medical",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7 crisis support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "OC Links Behavioral Health Line",
+    "phone": "8556254657",
+    "description": "OC Links Behavioral Health Line (24/7 behavioral health & crisis navigation)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "2-1-1 Orange County",
+    "phone": "211",
+    "description": "2-1-1 Orange County (social services referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "2-1-1 Orange County",
+    "phone": "8886004357",
+    "description": "2-1-1 Orange County - alternate number (social services referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "2-1-1 Orange County",
+    "phone": "9496464357",
+    "description": "2-1-1 Orange County - HELP line (social services referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Child Abuse Registry",
+    "phone": "8002074464",
+    "description": "Orange County Child Abuse Registry",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Child Abuse Registry",
+    "phone": "7149401000",
+    "description": "Orange County Child Abuse Registry - local number",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Adult/Dependent Adult Abuse Services",
+    "phone": "8004515155",
+    "description": "Adult/Dependent Adult Abuse Services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Waymakers Rape Crisis Hotline",
+    "phone": "7149572737",
+    "description": "Waymakers Rape Crisis Hotline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Waymakers Rape Crisis Hotline",
+    "phone": "9498319110",
+    "description": "Waymakers Rape Crisis Hotline - alternate number",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "NAMI OC WarmLine",
+    "phone": "7149916412",
+    "description": "NAMI OC WarmLine (peer emotional support)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "NAMI OC WarmLine",
+    "phone": "8779109276",
+    "description": "NAMI OC WarmLine - alternate number (peer emotional support)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "California Youth Crisis Line",
+    "phone": "8008435200",
+    "description": "California Youth Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Teen Line",
+    "phone": "8008523336",
+    "description": "Teen Line (youth support)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "CalHOPE Support Line",
+    "phone": "8333174673",
+    "description": "CalHOPE Support Line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Didi Hirsch Suicide Prevention Line",
+    "phone": "8777274747",
+    "description": "Didi Hirsch Suicide Prevention Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Suicide Hotline of Southern California",
+    "phone": "7148944242",
+    "description": "Suicide Hotline of Southern California",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Crisis Stabilization Unit",
+    "phone": "7148346900",
+    "description": "Crisis Stabilization Unit",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "South Coast AQMD General Contact",
+    "phone": "9093962000",
+    "description": "South Coast AQMD (General Contact)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "AQMD Air Quality Complaint Hotline",
+    "phone": "8002887664",
+    "description": "AQMD Air Quality Complaint Hotline (1-800-CUT-SMOG)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "AQMD Spanish Air Quality Complaint Hotline",
+    "phone": "8008763666",
+    "description": "AQMD Spanish Air Quality Complaint Hotline (1-800-876-3666)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "AQMD Check Before You Burn Info Line",
+    "phone": "8669663293",
+    "description": "AQMD Check Before You Burn Info Line",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Environmental Health",
+    "phone": "7144336000",
+    "description": "Orange County Environmental Health (General & Mold/Habitability)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Foodborne Illness Hotline",
+    "phone": "7144336418",
+    "description": "Orange County Foodborne Illness Hotline",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Medical Waste / Illegal Disposal",
+    "phone": "7144336402",
+    "description": "Orange County Medical Waste / Illegal Disposal",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Solid Waste Complaints",
+    "phone": "7144336404",
+    "description": "Orange County Solid Waste Complaints",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Toxics / Illegal Dumping Hotline",
+    "phone": "7144336406",
+    "description": "Orange County Toxics / Illegal Dumping Hotline",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Proposition 65 Hotline",
+    "phone": "7144336403",
+    "description": "Orange County Proposition 65 Hotline",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Beach Closure Info",
+    "phone": "7144336400",
+    "description": "Orange County Beach Closure Info (Environmental)",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "Orange County Waste Tires Hotline",
+    "phone": "7144336249",
+    "description": "Orange County Waste Tires Hotline",
+    "priority": 5,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "City of Irvine Code Enforcement",
+    "phone": "9497246326",
+    "description": "City of Irvine Code Enforcement Hotline",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "City of Orange Code Enforcement",
+    "phone": "7147445244",
+    "description": "City of Orange Code Enforcement (General)",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "ORANGE",
+    "state": "CA",
+    "serviceName": "City of Orange Code Enforcement",
+    "phone": "7147445555",
+    "description": "City of Orange Code Enforcement (Anonymous Complaints)",
+    "priority": 5,
+    "citySpecific": true,
+    "isShortCode": false
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Sonoma County Mobile Crisis Response Services",
+    "phone": "8007468181",
+    "description": "Sonoma County Mobile Crisis Response Services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Behavioral Health Access Line",
+    "phone": "7075656900",
+    "description": "Behavioral Health Access Line (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Behavioral Health Main Line",
+    "phone": "7075654850",
+    "description": "Behavioral Health Main Line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "inRESPONSE Mental Health Support Team",
+    "phone": "7075754357",
+    "description": "inRESPONSE Mental Health Support Team (Santa Rosa)",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "SAFE Team (Cotati)",
+    "phone": "7077924611",
+    "description": "SAFE Team (Cotati / Sonoma State)",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "SAFE Team (Rohnert Park)",
+    "phone": "7075842612",
+    "description": "SAFE Team (Rohnert Park)",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "SAFE Team (Petaluma)",
+    "phone": "7077811234",
+    "description": "SAFE Team (Petaluma)",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "CORE Team (Healdsburg)",
+    "phone": "7074313377",
+    "description": "CORE Team (Healdsburg)",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "2-1-1 Sonoma County",
+    "phone": "211",
+    "description": "2-1-1 Sonoma County (referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "2-1-1 Sonoma County",
+    "phone": "8006670404",
+    "description": "2-1-1 Sonoma County toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "2-1-1 Sonoma County",
+    "phone": "7075655940",
+    "description": "2-1-1 Sonoma County alternate line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "2-1-1 Sonoma County Text",
+    "phone": "898211",
+    "description": "2-1-1 Sonoma County (text for ZIP code referrals)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Fair Housing Resources",
+    "phone": "7075657520",
+    "description": "Sonoma County Fair Housing Resources",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Permit Sonoma Main Line",
+    "phone": "7075651900",
+    "description": "Permit Sonoma Main Line (follow directory)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Permit Sonoma Building Plan Check",
+    "phone": "7075652095",
+    "description": "Permit Sonoma Building Plan Check",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "7075656565",
+    "description": "Sonoma County Environmental Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Cloverdale Code Enforcement",
+    "phone": "7078941701",
+    "description": "City of Cloverdale Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Cotati Code Enforcement",
+    "phone": "7076653636",
+    "description": "City of Cotati Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Healdsburg Code Enforcement",
+    "phone": "7074313346",
+    "description": "City of Healdsburg Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Petaluma Code Enforcement",
+    "phone": "7077784469",
+    "description": "City of Petaluma Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Rohnert Park Code Enforcement",
+    "phone": "7075882240",
+    "description": "City of Rohnert Park Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Santa Rosa Code Enforcement",
+    "phone": "7075433198",
+    "description": "City of Santa Rosa Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Sebastopol Code Enforcement",
+    "phone": "7078238597",
+    "description": "City of Sebastopol Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "City of Sonoma Code Enforcement",
+    "phone": "7079383681",
+    "description": "City of Sonoma Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Town of Windsor Code Enforcement",
+    "phone": "7078381016",
+    "description": "Town of Windsor Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "CalTIP",
+    "phone": "8883342258",
+    "description": "CalTIP (Environmental & Consumer Law reporting)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Sonoma County DA Environmental Assistance",
+    "phone": "7078371781",
+    "description": "Sonoma County DA (Environmental/Consumer assistance)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SONOMA",
+    "state": "CA",
+    "serviceName": "Sonoma County DA Consumer Assistance",
+    "phone": "7078648808",
+    "description": "Sonoma County DA (Environmental/Consumer assistance)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
