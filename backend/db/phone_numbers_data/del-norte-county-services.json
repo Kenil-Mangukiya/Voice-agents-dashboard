@@ -1,0 +1,282 @@
+[
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7, call/text)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Behavioral Health 24/7 Crisis Line",
+    "phone": "7074647224",
+    "description": "Del Norte County Behavioral Health — 24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Behavioral Health Main",
+    "phone": "7074647224",
+    "description": "Del Norte County Behavioral Health — Main",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Child Abuse / Welfare reporting",
+    "phone": "7074643191",
+    "description": "Report Child Abuse / Neglect (24/7 / Child Welfare Services)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "7074463191",
+    "description": "Report Elder / Dependent Adult Abuse (APS)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "2-1-1 Del Norte",
+    "phone": "211",
+    "description": "2-1-1 Del Norte (dial 2-1-1)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "North Coast Opportunities 211",
+    "phone": "7072694357",
+    "description": "North Coast Opportunities / 211 Humboldt–Del Norte",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "2-1-1 Statewide",
+    "phone": "8663463211",
+    "description": "Statewide 211 routing",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance",
+    "phone": "7074647215",
+    "description": "Victim Witness Assistance Program",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "CalVCB Victim Compensation",
+    "phone": "8007779229",
+    "description": "CalVCB — Victim Compensation (statewide)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "DHHS Main",
+    "phone": "7074643191",
+    "description": "Del Norte County Health & Human Services Agency (DHHS)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Housing & Homelessness Services",
+    "phone": "7074643060",
+    "description": "Housing & Homeless Services / Coordinated Entry",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "7074640861",
+    "description": "Del Norte County Public Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "7074640951",
+    "description": "Environmental Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Air Quality Management District",
+    "phone": "7074433093",
+    "description": "North Coast Unified Air Quality Management District (NCUAQMD)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "County Planning & Building",
+    "phone": "7074647205",
+    "description": "Del Norte County Planning & Building / Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Crescent City Community Development",
+    "phone": "7074647483",
+    "description": "City of Crescent City — Community Development / Building / Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "7074644191",
+    "description": "Del Norte County Sheriff — Non-Emergency (24/7)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Crescent City Police",
+    "phone": "7074644115",
+    "description": "Crescent City Police — Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "7074647215",
+    "description": "District Attorney",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "7074648115",
+    "description": "Del Norte Superior Court",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Court Self-Help",
+    "phone": "7074648115",
+    "description": "Court Self-Help / Family Law Facilitator",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "CA Dept of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "7074647204",
+    "description": "Del Norte County Public Works",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Emergency Services",
+    "phone": "7074647217",
+    "description": "Office of Emergency Services (OES)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "DEL NORTE",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road Conditions (dial 5-1-1)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": true
+  }
+]

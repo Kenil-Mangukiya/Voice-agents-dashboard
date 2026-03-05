@@ -1,0 +1,352 @@
+[
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7, call/text)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Behavioral Health 24-Hour Access / Crisis Line",
+    "phone": "8887936580",
+    "description": "Colusa County Behavioral Health — 24-Hour Access / Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Behavioral Health Main",
+    "phone": "5304580520",
+    "description": "Colusa County Behavioral Health — Main",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting / APS",
+    "phone": "5304580280",
+    "description": "Report Child Abuse / Neglect / Elder Abuse (24/7 Social Worker line)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "2-1-1 Colusa County",
+    "phone": "211",
+    "description": "2-1-1 Colusa County (limited availability)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "8663463211",
+    "description": "2-1-1 California (statewide)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Victim Witness Services",
+    "phone": "5304580449",
+    "description": "Victim Witness Services (DA)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "CalVCB Victim Compensation",
+    "phone": "8007779229",
+    "description": "CalVCB — Victim Compensation (statewide)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "HHSA Main",
+    "phone": "5304580250",
+    "description": "Colusa County Health & Human Services (HHSA) — Main / Housing Assistance",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5304580380",
+    "description": "Colusa County Public Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "5304580888",
+    "description": "Environmental Health (sanitation, mold, wells/water, food safety, hazmat)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Air Pollution Control District",
+    "phone": "5304580590",
+    "description": "Colusa County Air Pollution Control District (APCD)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Burn Line",
+    "phone": "5304580581",
+    "description": "Burn Line (Burn Day info)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "County Planning",
+    "phone": "5304580480",
+    "description": "Colusa County Planning (unincorporated)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "County Building",
+    "phone": "5304580481",
+    "description": "Colusa County Building (unincorporated)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "County Code Compliance",
+    "phone": "5304580885",
+    "description": "Colusa County Code Compliance (unincorporated)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Colusa Hall",
+    "phone": "5304584941",
+    "description": "City of Colusa — City Hall / Main",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Colusa Planning & Building",
+    "phone": "5304584941",
+    "description": "City of Colusa — Planning & Building (ext. 3103)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Colusa Code Enforcement",
+    "phone": "5304584941",
+    "description": "City of Colusa — Code Enforcement (ext. 3102)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Williams Hall",
+    "phone": "5302353276",
+    "description": "City of Williams — City Hall",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Williams Building",
+    "phone": "5302353278",
+    "description": "City of Williams — Building / Community Development",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Williams Code Enforcement",
+    "phone": "5304732533",
+    "description": "City of Williams — Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "5304580200",
+    "description": "Colusa County Sheriff — Non-Emergency / Dispatch (24/7)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Colusa Police",
+    "phone": "5304587777",
+    "description": "City of Colusa Police — Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Williams Police",
+    "phone": "5304732661",
+    "description": "City of Williams Police — Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5304580545",
+    "description": "Colusa County District Attorney",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5304585149",
+    "description": "Colusa County Superior Court",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator",
+    "phone": "5304580598",
+    "description": "Family Law Facilitator / Self-Help Center",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "CA Dept of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs (statewide)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "County Public Works",
+    "phone": "5304580466",
+    "description": "Colusa County Public Works",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Colusa Public Works",
+    "phone": "5304587721",
+    "description": "City of Colusa Public Works — After-hours emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "City of Williams Public Works",
+    "phone": "5304732955",
+    "description": "City of Williams Public Works",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "COLUSA",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road Conditions (dial 5-1-1)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": true
+  }
+]

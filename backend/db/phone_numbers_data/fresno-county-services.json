@@ -1,0 +1,372 @@
+[
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Behavioral Health - 24/7 Crisis Line",
+    "phone": "5596006426",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "5596005000",
+    "description": "Main behavioral health line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Central California 211",
+    "phone": "8003732273",
+    "description": "Central California 211 Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County DSS - Main",
+    "phone": "5596001377",
+    "description": "Department of Social Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5596003790",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno Housing Authority",
+    "phone": "5594438400",
+    "description": "Fresno Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5596006011",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5596006020",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Public Health",
+    "phone": "5596003000",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5596003357",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "San Joaquin Valley APCD",
+    "phone": "5592306000",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Burn / Woodsmoke Info",
+    "phone": "8007664464",
+    "description": "Burn and Woodsmoke Information Line",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Planning & Development",
+    "phone": "5596004200",
+    "description": "County Planning & Development",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Building Services",
+    "phone": "5596004078",
+    "description": "County Building Services",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Code Enforcement",
+    "phone": "5596004218",
+    "description": "County Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "City of Fresno Development Services / City Hall",
+    "phone": "5596218003",
+    "description": "Fresno Development Services and City Hall",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "City of Fresno Building & Safety",
+    "phone": "5596218070",
+    "description": "Fresno Building and Safety Services",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "City of Fresno Code Enforcement",
+    "phone": "5596218400",
+    "description": "Fresno Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "City of Clovis Community Development",
+    "phone": "5593242340",
+    "description": "Clovis Community Development",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "City of Clovis Code Enforcement",
+    "phone": "5593242060",
+    "description": "Clovis Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Sheriff - Non-Emergency (24/7)",
+    "phone": "5596003111",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno Police - Non-Emergency",
+    "phone": "5596217000",
+    "description": "Fresno Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Clovis Police - Non-Emergency",
+    "phone": "5593242800",
+    "description": "Clovis Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5596003141",
+    "description": "Fresno County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Center",
+    "phone": "5596003141",
+    "description": "Victim Witness Assistance Center",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Superior Court",
+    "phone": "5594571900",
+    "description": "Fresno County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5594571900",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Fresno County Public Works & Planning",
+    "phone": "5596004259",
+    "description": "Public Works and Planning Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5596004070",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "FRESNO",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

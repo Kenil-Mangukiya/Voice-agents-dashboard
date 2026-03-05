@@ -1,0 +1,332 @@
+[
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Behavioral Health Crisis Line",
+    "phone": "2097543239",
+    "description": "Calaveras County 24/7 Behavioral Health Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Behavioral Health Crisis Line",
+    "phone": "8004993030",
+    "description": "Calaveras County 24/7 Behavioral Health Crisis Line (toll-free)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Behavioral Health Main",
+    "phone": "2097546525",
+    "description": "Calaveras County Behavioral Health (main)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting",
+    "phone": "2097546677",
+    "description": "Report Child Abuse / Child Welfare Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting",
+    "phone": "8446905137",
+    "description": "Report Child/Elder Abuse (toll-free)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Child Welfare Services",
+    "phone": "2097546452",
+    "description": "Child Welfare Services (CWS) main",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "2-1-1 Calaveras County",
+    "phone": "211",
+    "description": "2-1-1 Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "8663463211",
+    "description": "2-1-1 California (statewide)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "2-1-1 Text",
+    "phone": "898211",
+    "description": "2-1-1 (text your ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Calaveras County Housing",
+    "phone": "2097546325",
+    "description": "Calaveras County Housing (screening/housing support)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Coordinated Entry",
+    "phone": "2097366792",
+    "description": "Coordinated Entry (Sierra HOPE / homelessness support)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Calaveras County HHSA",
+    "phone": "2097546448",
+    "description": "Calaveras County HHSA (main office)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Victim Services",
+    "phone": "2097546565",
+    "description": "DA Victim Services / Victim-Witness",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "CalVCB Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board (statewide)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Calaveras County Public Health",
+    "phone": "2097546460",
+    "description": "Calaveras County Public Health",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "2097546399",
+    "description": "Environmental Health / Environmental Management Agency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Air Pollution Control District",
+    "phone": "2097546601",
+    "description": "Calaveras County Air Pollution Control District (APCD)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Burn Day / Burn Info",
+    "phone": "2097546588",
+    "description": "Burn Day / Burn Info (APCD)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Building Department",
+    "phone": "2097546390",
+    "description": "Calaveras County Building Department",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Code Compliance",
+    "phone": "2097546326",
+    "description": "Calaveras County Code Compliance (code enforcement)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "City of Angels Camp",
+    "phone": "2097362181",
+    "description": "City of Angels Camp — City Hall",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "2097546500",
+    "description": "Calaveras County Sheriff — Non-Emergency (24-hour, also after-hours child abuse reporting)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Sheriff Dispatch",
+    "phone": "2097546753",
+    "description": "Sheriff Dispatch (crimes in progress, non-911 line when instructed)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "2097546330",
+    "description": "District Attorney (main)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Calaveras Superior Court",
+    "phone": "2097549800",
+    "description": "Calaveras Superior Court (main)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Court Self-Help Legal Center",
+    "phone": "2097541443",
+    "description": "Court Self-Help Legal Center / Family Law Facilitator",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "CA Dept of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs (statewide)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "2097546401",
+    "description": "Public Works",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Emergency Services",
+    "phone": "2097542890",
+    "description": "Calaveras County OES (Emergency Services)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "CALAVERAS",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road Conditions (dial 5-1-1)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": true
+  }
+]

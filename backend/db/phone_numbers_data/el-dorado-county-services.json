@@ -1,0 +1,342 @@
+[
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County Behavioral Health - 24/7 Crisis Line",
+    "phone": "5306268121",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "5306216290",
+    "description": "Main behavioral health line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "211 El Dorado / Community Services",
+    "phone": "5306216185",
+    "description": "Community Services Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County HHSA - Main",
+    "phone": "5306216300",
+    "description": "Health and Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5306216300",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Community Services Housing Programs",
+    "phone": "5306216100",
+    "description": "Community Services Housing Programs",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5306215340",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5306215340",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5306216100",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Environmental Health / Environmental Management",
+    "phone": "5306215300",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County AQMD",
+    "phone": "5306217501",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County Planning",
+    "phone": "5306215355",
+    "description": "County Planning Department",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County Building Services",
+    "phone": "5306215315",
+    "description": "County Building Services",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County Code Enforcement",
+    "phone": "5306215355",
+    "description": "County Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "City of Placerville Community Development / Building / Code Enforcement",
+    "phone": "5306425222",
+    "description": "Placerville Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "City of South Lake Tahoe Development Services / Building",
+    "phone": "5305427417",
+    "description": "South Lake Tahoe Development Services and Building",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "City of South Lake Tahoe Code Enforcement",
+    "phone": "5305426020",
+    "description": "South Lake Tahoe Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado County Sheriff - Non-Emergency (24/7)",
+    "phone": "5306216600",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Placerville Police - Non-Emergency",
+    "phone": "5306425280",
+    "description": "Placerville Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "South Lake Tahoe Police - Non-Emergency",
+    "phone": "5305426100",
+    "description": "South Lake Tahoe Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5306216472",
+    "description": "El Dorado County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "5306215620",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "El Dorado Superior Court",
+    "phone": "5306215611",
+    "description": "El Dorado County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5306215611",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Public Works / DOT",
+    "phone": "5306215900",
+    "description": "Public Works and Department of Transportation",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5306215895",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "EL DORADO",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
