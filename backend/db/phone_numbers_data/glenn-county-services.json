@@ -1,0 +1,312 @@
+[
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Behavioral Health - 24/7 Crisis Line",
+    "phone": "8005073530",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "5309346510",
+    "description": "Main behavioral health line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "North Valley 211",
+    "phone": "8005283738",
+    "description": "North Valley 211 Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County HHSA - Main / Intake",
+    "phone": "5309346514",
+    "description": "Health and Human Services Agency main line and intake",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5309346514",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Housing Authority",
+    "phone": "5309343400",
+    "description": "Glenn County Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5309346514",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5309346514",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5309346514",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5309346540",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County APCD",
+    "phone": "5309346500",
+    "description": "Air Pollution Control District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Planning / Building / Code Enforcement",
+    "phone": "5309346540",
+    "description": "County Planning, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "City of Orland Community Development / Building / Code Enforcement",
+    "phone": "5308651610",
+    "description": "Orland Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "City of Willows Community Development / Building / Code Enforcement",
+    "phone": "5309347041",
+    "description": "Willows Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Sheriff - Non-Emergency (24/7)",
+    "phone": "5309346441",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Orland Police - Non-Emergency",
+    "phone": "5308651610",
+    "description": "Orland Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Willows Police - Non-Emergency",
+    "phone": "5309343300",
+    "description": "Willows Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5309346500",
+    "description": "Glenn County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "5309346500",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Superior Court",
+    "phone": "5309346446",
+    "description": "Glenn County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5309346446",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Glenn County Public Works",
+    "phone": "5309346530",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5309346540",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "GLENN",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
