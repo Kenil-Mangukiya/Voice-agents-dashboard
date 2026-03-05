@@ -1,0 +1,292 @@
+[
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Solano County Behavioral Health ACCESS Line",
+    "phone": "8005470495",
+    "description": "Solano County Behavioral Health ACCESS Line (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Mobile Crisis Team",
+    "phone": "7077847245",
+    "description": "Mobile Crisis Team",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting Hotline",
+    "phone": "7077848000",
+    "description": "Child Abuse Reporting Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Child Welfare Services",
+    "phone": "7077847310",
+    "description": "Child Welfare Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "2-1-1 Solano County",
+    "phone": "211",
+    "description": "2-1-1 Solano County Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "2-1-1 Solano County",
+    "phone": "8665727587",
+    "description": "2-1-1 Solano County toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "2-1-1 Solano County Text",
+    "phone": "898211",
+    "description": "2-1-1 Solano County (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Homeless Services Division",
+    "phone": "7077846765",
+    "description": "Homeless Services Division",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Solano County Housing Authority",
+    "phone": "7077846856",
+    "description": "Solano County Housing Authority",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "7077848259",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "7077846844",
+    "description": "Victim-Witness Assistance",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "7077847200",
+    "description": "Environmental Health (housing, mold, sanitation)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Bay Area Air Quality Management District",
+    "phone": "8003346367",
+    "description": "Bay Area Air Quality Management District",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "County Planning & Code Enforcement",
+    "phone": "7077846760",
+    "description": "County Planning & Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Vallejo Code Enforcement",
+    "phone": "7076484527",
+    "description": "Vallejo Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Fairfield Code Enforcement",
+    "phone": "7074287400",
+    "description": "Fairfield Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Vacaville Code Enforcement",
+    "phone": "7074495474",
+    "description": "Vacaville Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Suisun City Code Enforcement",
+    "phone": "7074217300",
+    "description": "Suisun City Code Enforcement",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "7077847100",
+    "description": "Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Vallejo Police Non-Emergency",
+    "phone": "7076484321",
+    "description": "Vallejo Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Fairfield Police Non-Emergency",
+    "phone": "7074287300",
+    "description": "Fairfield Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Vacaville Police Non-Emergency",
+    "phone": "7074495200",
+    "description": "Vacaville Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "7077846800",
+    "description": "District Attorney (general)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "DA Consumer & Environmental Protection",
+    "phone": "7077846840",
+    "description": "DA Consumer & Environmental Protection",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SOLANO",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "7077846765",
+    "description": "Public Works (hazards/drainage)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

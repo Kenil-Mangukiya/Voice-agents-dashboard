@@ -1,0 +1,272 @@
+[
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Alameda County Behavioral Health ACCESS Line",
+    "phone": "8004919099",
+    "description": "Alameda County Behavioral Health ACCESS Line (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Mobile Crisis Response Team",
+    "phone": "5108915600",
+    "description": "Mobile Crisis Response Team",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting Hotline",
+    "phone": "5102591800",
+    "description": "Child Abuse Reporting Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "2-1-1 Alameda County",
+    "phone": "211",
+    "description": "2-1-1 Alameda County Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "2-1-1 Alameda County",
+    "phone": "8662114443",
+    "description": "2-1-1 Alameda County toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "2-1-1 Alameda County Text",
+    "phone": "898211",
+    "description": "2-1-1 Alameda County (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Children & Family Services",
+    "phone": "5102591801",
+    "description": "Children & Family Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Housing & Community Development",
+    "phone": "5106706000",
+    "description": "Housing & Community Development",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Coordinated Entry",
+    "phone": "5105388879",
+    "description": "Coordinated Entry (homeless services)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Housing Authority of Alameda County",
+    "phone": "5108741650",
+    "description": "Housing Authority of Alameda County",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "5105773500",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "5102678000",
+    "description": "Environmental Health (housing, mold, sanitation)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Bay Area Air Quality Management District",
+    "phone": "8003346367",
+    "description": "Bay Area Air Quality Management District",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "County Planning & Code Enforcement",
+    "phone": "5106705400",
+    "description": "County Planning & Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Oakland 311",
+    "phone": "311",
+    "description": "Oakland 311 (code enforcement & habitability)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": true
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Oakland 311",
+    "phone": "5104443322",
+    "description": "Oakland 311 (code enforcement & habitability)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Oakland Building Department",
+    "phone": "5102383891",
+    "description": "Oakland Building Department",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "5106677721",
+    "description": "Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Oakland Police Non-Emergency",
+    "phone": "5107773333",
+    "description": "Oakland Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5102726222",
+    "description": "District Attorney (general)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "DA Consumer & Environmental Protection",
+    "phone": "5102726272",
+    "description": "DA Consumer & Environmental Protection",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "5102726180",
+    "description": "Victim-Witness Assistance",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5106705480",
+    "description": "Public Works (hazards, drainage)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "ALAMEDA",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

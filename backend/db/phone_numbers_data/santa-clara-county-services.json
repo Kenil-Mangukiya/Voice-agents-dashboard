@@ -1,0 +1,292 @@
+[
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "SCC Behavioral Health Services Call Center",
+    "phone": "8007040900",
+    "description": "SCC Behavioral Health Services Call Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Mobile Crisis Response Team",
+    "phone": "4088857855",
+    "description": "Mobile Crisis Response Team",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting Hotline",
+    "phone": "4082992071",
+    "description": "Child Abuse Reporting Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "2-1-1 Santa Clara County",
+    "phone": "211",
+    "description": "2-1-1 Santa Clara County Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "2-1-1 Santa Clara County",
+    "phone": "8008332900",
+    "description": "2-1-1 Santa Clara County toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "2-1-1 Santa Clara County Text",
+    "phone": "898211",
+    "description": "2-1-1 Santa Clara County (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Family & Children's Services",
+    "phone": "4082992101",
+    "description": "Family & Children's Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Office of Supportive Housing",
+    "phone": "4089754444",
+    "description": "Office of Supportive Housing",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Housing Authority of Santa Clara County",
+    "phone": "4089754500",
+    "description": "Housing Authority of Santa Clara County",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "San José Housing Department",
+    "phone": "4089933000",
+    "description": "San José Housing Department",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "4089754900",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "4089183400",
+    "description": "Environmental Health (housing, mold, sanitation)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Bay Area Air Quality Management District",
+    "phone": "8003346367",
+    "description": "Bay Area Air Quality Management District",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Planning & Development",
+    "phone": "4082995700",
+    "description": "Planning & Development (County)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "County Code Enforcement",
+    "phone": "4082995740",
+    "description": "County Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "San José 311",
+    "phone": "311",
+    "description": "San José 311 (code enforcement & habitability)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "San José 311",
+    "phone": "4085353500",
+    "description": "San José 311 (code enforcement & habitability)",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "San José Building Division",
+    "phone": "4085357770",
+    "description": "San José Building Division",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "4082992311",
+    "description": "Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "San José Police Non-Emergency",
+    "phone": "4082778900",
+    "description": "San José Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "4087922880",
+    "description": "District Attorney (general)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "DA Consumer Protection",
+    "phone": "4087922414",
+    "description": "DA Consumer Protection",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Victim Services",
+    "phone": "4082952656",
+    "description": "Victim Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Roads & Airports",
+    "phone": "4082992501",
+    "description": "Roads & Airports (hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "County Fire",
+    "phone": "4082996920",
+    "description": "County Fire (admin/hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CLARA",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
