@@ -1,0 +1,172 @@
+[
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Amador County Behavioral Health Crisis Line",
+    "phone": "2092236412",
+    "description": "Amador County Behavioral Health Crisis Line (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "211",
+    "description": "2-1-1 California Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "8669163211",
+    "description": "2-1-1 California toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "2-1-1 California Text",
+    "phone": "898211",
+    "description": "2-1-1 California (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting / Welfare Services",
+    "phone": "2092236550",
+    "description": "Child Abuse Reporting / Child Welfare Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Health & Human Services",
+    "phone": "2092236550",
+    "description": "Health & Human Services (Housing, CPS, APS)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "2092236550",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "2092236407",
+    "description": "Environmental Health (housing, sanitation, water/septic)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Northern Sierra Air Quality Management District",
+    "phone": "5306217501",
+    "description": "Northern Sierra Air Quality Management District (air quality)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Planning & Building / Code Enforcement",
+    "phone": "2092233383",
+    "description": "Planning & Building / Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "2092235500",
+    "description": "Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "District Attorney / Victim Services",
+    "phone": "2092236474",
+    "description": "District Attorney / Victim Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "AMADOR",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "2092236429",
+    "description": "Public Works (roads, hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

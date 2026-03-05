@@ -1,0 +1,202 @@
+[
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency (Police/Fire/Medical)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Butte County Behavioral Health Crisis Line",
+    "phone": "8003346622",
+    "description": "Butte County Behavioral Health Crisis Line (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Crisis Text Line",
+    "phone": "741741",
+    "description": "Crisis Text Line (text HOME)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "211",
+    "description": "2-1-1 California Info & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "2-1-1 California",
+    "phone": "8669163211",
+    "description": "2-1-1 California toll-free",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "2-1-1 California Text",
+    "phone": "898211",
+    "description": "2-1-1 California (text ZIP code)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Child Abuse Reporting Hotline",
+    "phone": "5305387471",
+    "description": "Child Abuse Reporting Hotline",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Poison Control",
+    "phone": "8002221222",
+    "description": "Poison Control",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Employment & Social Services",
+    "phone": "5305387711",
+    "description": "Employment & Social Services (Housing, CPS, APS coordination)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Adult Protective Services",
+    "phone": "5305387471",
+    "description": "Adult Protective Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Environmental Health",
+    "phone": "5305387281",
+    "description": "Environmental Health (housing, sanitation, water/septic)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Feather River Air Quality Management District",
+    "phone": "5308912882",
+    "description": "Feather River Air Quality Management District (air quality)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Development Services",
+    "phone": "5305387111",
+    "description": "Development Services (Planning & Building)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "County Code Enforcement",
+    "phone": "5305387711",
+    "description": "County Code Enforcement",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Sheriff Non-Emergency",
+    "phone": "5305387331",
+    "description": "Sheriff Non-Emergency",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Chico Police Non-Emergency",
+    "phone": "5308974911",
+    "description": "Chico Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Oroville Police Non-Emergency",
+    "phone": "5305382448",
+    "description": "Oroville Police Non-Emergency",
+    "priority": 4,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "District Attorney / Victim Services",
+    "phone": "5305387201",
+    "description": "District Attorney / Victim Services",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "BUTTE",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5305387681",
+    "description": "Public Works (roads, hazards)",
+    "priority": 4,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
