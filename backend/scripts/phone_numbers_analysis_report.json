@@ -1,0 +1,1917 @@
+{
+  "summary": {
+    "totalUniquePhoneNumbers": 1089,
+    "statewide": 8,
+    "regional": 4,
+    "countyPairs": 28,
+    "uniqueDuplicates": 15,
+    "singleCounty": 1049
+  },
+  "statewide": [
+    {
+      "phone": "911",
+      "countyCount": 58,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "calaveras county",
+        "colusa county",
+        "contra costa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "los angeles county",
+        "madera county",
+        "marin county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "napa county",
+        "nevada county",
+        "orange county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san francisco county",
+        "san joaquin county",
+        "san luis obispo county",
+        "san mateo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "solano county",
+        "sonoma county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Emergency",
+          "countyCount": 58,
+          "counties": [
+            "alameda county",
+            "alpine county",
+            "amador county",
+            "butte county",
+            "calaveras county",
+            "colusa county",
+            "contra costa county",
+            "del norte county",
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "los angeles county",
+            "madera county",
+            "marin county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "napa county",
+            "nevada county",
+            "orange county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san francisco county",
+            "san joaquin county",
+            "san luis obispo county",
+            "san mateo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "solano county",
+            "sonoma county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "211",
+      "countyCount": 58,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "calaveras county",
+        "colusa county",
+        "contra costa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "los angeles county",
+        "madera county",
+        "marin county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "napa county",
+        "nevada county",
+        "orange county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san francisco county",
+        "san joaquin county",
+        "san luis obispo county",
+        "san mateo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "solano county",
+        "sonoma county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 Alameda County",
+          "countyCount": 1,
+          "counties": [
+            "alameda county"
+          ]
+        },
+        {
+          "name": "2-1-1 California",
+          "countyCount": 3,
+          "counties": [
+            "alpine county",
+            "amador county",
+            "butte county"
+          ]
+        },
+        {
+          "name": "2-1-1 Calaveras County",
+          "countyCount": 1,
+          "counties": [
+            "calaveras county"
+          ]
+        },
+        {
+          "name": "2-1-1 Colusa County",
+          "countyCount": 1,
+          "counties": [
+            "colusa county"
+          ]
+        },
+        {
+          "name": "211 Contra Costa",
+          "countyCount": 1,
+          "counties": [
+            "contra costa county"
+          ]
+        },
+        {
+          "name": "2-1-1 Del Norte",
+          "countyCount": 1,
+          "counties": [
+            "del norte county"
+          ]
+        },
+        {
+          "name": "Information & Referral - 211",
+          "countyCount": 42,
+          "counties": [
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        },
+        {
+          "name": "211 LA County Info & Referral",
+          "countyCount": 1,
+          "counties": [
+            "los angeles county"
+          ]
+        },
+        {
+          "name": "2-1-1 Bay Area",
+          "countyCount": 3,
+          "counties": [
+            "marin county",
+            "napa county",
+            "san mateo county"
+          ]
+        },
+        {
+          "name": "2-1-1 Orange County",
+          "countyCount": 1,
+          "counties": [
+            "orange county"
+          ]
+        },
+        {
+          "name": "211 Bay Area",
+          "countyCount": 1,
+          "counties": [
+            "san francisco county"
+          ]
+        },
+        {
+          "name": "2-1-1 Solano County",
+          "countyCount": 1,
+          "counties": [
+            "solano county"
+          ]
+        },
+        {
+          "name": "2-1-1 Sonoma County",
+          "countyCount": 1,
+          "counties": [
+            "sonoma county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "988",
+      "countyCount": 57,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "calaveras county",
+        "colusa county",
+        "contra costa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "los angeles county",
+        "madera county",
+        "marin county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "napa county",
+        "nevada county",
+        "orange county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "san mateo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "solano county",
+        "sonoma county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Suicide & Crisis Lifeline",
+          "countyCount": 56,
+          "counties": [
+            "alameda county",
+            "alpine county",
+            "amador county",
+            "butte county",
+            "calaveras county",
+            "colusa county",
+            "contra costa county",
+            "del norte county",
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "los angeles county",
+            "madera county",
+            "marin county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "napa county",
+            "nevada county",
+            "orange county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "solano county",
+            "sonoma county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        },
+        {
+          "name": "Veterans Crisis Line",
+          "countyCount": 1,
+          "counties": [
+            "los angeles county"
+          ]
+        },
+        {
+          "name": "National Suicide & Crisis Lifeline",
+          "countyCount": 1,
+          "counties": [
+            "san mateo county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8002221222",
+      "countyCount": 51,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "calaveras county",
+        "colusa county",
+        "contra costa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "madera county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "nevada county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "solano county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Poison Control",
+          "countyCount": 8,
+          "counties": [
+            "alameda county",
+            "alpine county",
+            "amador county",
+            "butte county",
+            "calaveras county",
+            "colusa county",
+            "del norte county",
+            "solano county"
+          ]
+        },
+        {
+          "name": "California Poison Control Hotline",
+          "countyCount": 1,
+          "counties": [
+            "contra costa county"
+          ]
+        },
+        {
+          "name": "Poison Control (24/7)",
+          "countyCount": 42,
+          "counties": [
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8007779229",
+      "countyCount": 45,
+      "counties": [
+        "calaveras county",
+        "colusa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "madera county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "nevada county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "CalVCB Victim Compensation",
+          "countyCount": 3,
+          "counties": [
+            "calaveras county",
+            "colusa county",
+            "del norte county"
+          ]
+        },
+        {
+          "name": "CalVCB — Victim Compensation",
+          "countyCount": 42,
+          "counties": [
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8009525210",
+      "countyCount": 45,
+      "counties": [
+        "calaveras county",
+        "colusa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "madera county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "nevada county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "CA Dept of Consumer Affairs",
+          "countyCount": 3,
+          "counties": [
+            "calaveras county",
+            "colusa county",
+            "del norte county"
+          ]
+        },
+        {
+          "name": "CA Dept. of Consumer Affairs",
+          "countyCount": 42,
+          "counties": [
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "511",
+      "countyCount": 45,
+      "counties": [
+        "calaveras county",
+        "colusa county",
+        "del norte county",
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "madera county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "nevada county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Road Conditions",
+          "countyCount": 45,
+          "counties": [
+            "calaveras county",
+            "colusa county",
+            "del norte county",
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8663462211",
+      "countyCount": 42,
+      "counties": [
+        "el dorado county",
+        "fresno county",
+        "glenn county",
+        "humboldt county",
+        "imperial county",
+        "inyo county",
+        "kern county",
+        "kings county",
+        "lake county",
+        "lassen county",
+        "madera county",
+        "mariposa county",
+        "mendocino county",
+        "merced county",
+        "modoc county",
+        "mono county",
+        "monterey county",
+        "nevada county",
+        "placer county",
+        "plumas county",
+        "riverside county",
+        "sacramento county",
+        "san benito county",
+        "san bernardino county",
+        "san diego county",
+        "san joaquin county",
+        "san luis obispo county",
+        "santa barbara county",
+        "santa clara county",
+        "santa cruz county",
+        "shasta county",
+        "sierra county",
+        "siskiyou county",
+        "stanislaus county",
+        "sutter county",
+        "tehama county",
+        "trinity county",
+        "tulare county",
+        "tuolumne county",
+        "ventura county",
+        "yolo county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Statewide 211 Routing",
+          "countyCount": 42,
+          "counties": [
+            "el dorado county",
+            "fresno county",
+            "glenn county",
+            "humboldt county",
+            "imperial county",
+            "inyo county",
+            "kern county",
+            "kings county",
+            "lake county",
+            "lassen county",
+            "madera county",
+            "mariposa county",
+            "mendocino county",
+            "merced county",
+            "modoc county",
+            "mono county",
+            "monterey county",
+            "nevada county",
+            "placer county",
+            "plumas county",
+            "riverside county",
+            "sacramento county",
+            "san benito county",
+            "san bernardino county",
+            "san diego county",
+            "san joaquin county",
+            "san luis obispo county",
+            "santa barbara county",
+            "santa clara county",
+            "santa cruz county",
+            "shasta county",
+            "sierra county",
+            "siskiyou county",
+            "stanislaus county",
+            "sutter county",
+            "tehama county",
+            "trinity county",
+            "tulare county",
+            "tuolumne county",
+            "ventura county",
+            "yolo county",
+            "yuba county"
+          ]
+        }
+      ]
+    }
+  ],
+  "regional": [
+    {
+      "phone": "898211",
+      "countyCount": 10,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "calaveras county",
+        "marin county",
+        "napa county",
+        "san mateo county",
+        "solano county",
+        "sonoma county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 Alameda County Text",
+          "countyCount": 1,
+          "counties": [
+            "alameda county"
+          ]
+        },
+        {
+          "name": "2-1-1 California Text",
+          "countyCount": 3,
+          "counties": [
+            "alpine county",
+            "amador county",
+            "butte county"
+          ]
+        },
+        {
+          "name": "2-1-1 Text",
+          "countyCount": 1,
+          "counties": [
+            "calaveras county"
+          ]
+        },
+        {
+          "name": "2-1-1 Bay Area Text",
+          "countyCount": 3,
+          "counties": [
+            "marin county",
+            "napa county",
+            "san mateo county"
+          ]
+        },
+        {
+          "name": "2-1-1 Solano County Text",
+          "countyCount": 1,
+          "counties": [
+            "solano county"
+          ]
+        },
+        {
+          "name": "2-1-1 Sonoma County Text",
+          "countyCount": 1,
+          "counties": [
+            "sonoma county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "741741",
+      "countyCount": 8,
+      "counties": [
+        "alameda county",
+        "alpine county",
+        "amador county",
+        "butte county",
+        "los angeles county",
+        "marin county",
+        "san mateo county",
+        "solano county"
+      ],
+      "services": [
+        {
+          "name": "Crisis Text Line",
+          "countyCount": 8,
+          "counties": [
+            "alameda county",
+            "alpine county",
+            "amador county",
+            "butte county",
+            "los angeles county",
+            "marin county",
+            "san mateo county",
+            "solano county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8007664464",
+      "countyCount": 8,
+      "counties": [
+        "fresno county",
+        "kern county",
+        "kings county",
+        "madera county",
+        "merced county",
+        "san joaquin county",
+        "stanislaus county",
+        "tulare county"
+      ],
+      "services": [
+        {
+          "name": "Burn / Woodsmoke Info",
+          "countyCount": 1,
+          "counties": [
+            "fresno county"
+          ]
+        },
+        {
+          "name": "Burn / Air Quality Info",
+          "countyCount": 7,
+          "counties": [
+            "kern county",
+            "kings county",
+            "madera county",
+            "merced county",
+            "san joaquin county",
+            "stanislaus county",
+            "tulare county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8003732273",
+      "countyCount": 5,
+      "counties": [
+        "fresno county",
+        "madera county",
+        "mariposa county",
+        "merced county",
+        "tulare county"
+      ],
+      "services": [
+        {
+          "name": "Central California 211",
+          "countyCount": 3,
+          "counties": [
+            "fresno county",
+            "madera county",
+            "mariposa county"
+          ]
+        },
+        {
+          "name": "211 Merced / Central California",
+          "countyCount": 1,
+          "counties": [
+            "merced county"
+          ]
+        },
+        {
+          "name": "211 Tulare County / Central Valley",
+          "countyCount": 1,
+          "counties": [
+            "tulare county"
+          ]
+        }
+      ]
+    }
+  ],
+  "countyPairs": [
+    {
+      "phone": "8002370984",
+      "countyCount": 4,
+      "counties": [
+        "lassen county",
+        "modoc county",
+        "plumas county",
+        "sierra county"
+      ],
+      "services": [
+        {
+          "name": "Northeastern CA 211 (regional)",
+          "countyCount": 1,
+          "counties": [
+            "lassen county"
+          ]
+        },
+        {
+          "name": "Northeastern CA 211",
+          "countyCount": 2,
+          "counties": [
+            "modoc county",
+            "plumas county"
+          ]
+        },
+        {
+          "name": "Northeastern CA 211 (Regional)",
+          "countyCount": 1,
+          "counties": [
+            "sierra county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8002887664",
+      "countyCount": 4,
+      "counties": [
+        "los angeles county",
+        "orange county",
+        "riverside county",
+        "san bernardino county"
+      ],
+      "services": [
+        {
+          "name": "South Coast AQMD Air Quality Complaint",
+          "countyCount": 1,
+          "counties": [
+            "los angeles county"
+          ]
+        },
+        {
+          "name": "AQMD Air Quality Complaint Hotline",
+          "countyCount": 1,
+          "counties": [
+            "orange county"
+          ]
+        },
+        {
+          "name": "South Coast AQMD (West County)",
+          "countyCount": 1,
+          "counties": [
+            "riverside county"
+          ]
+        },
+        {
+          "name": "South Coast AQMD",
+          "countyCount": 1,
+          "counties": [
+            "san bernardino county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8002736222",
+      "countyCount": 4,
+      "counties": [
+        "marin county",
+        "napa county",
+        "san francisco county",
+        "san mateo county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 Bay Area",
+          "countyCount": 3,
+          "counties": [
+            "marin county",
+            "napa county",
+            "san mateo county"
+          ]
+        },
+        {
+          "name": "211 Bay Area",
+          "countyCount": 1,
+          "counties": [
+            "san francisco county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5302255555",
+      "countyCount": 4,
+      "counties": [
+        "shasta county",
+        "siskiyou county",
+        "tehama county",
+        "trinity county"
+      ],
+      "services": [
+        {
+          "name": "211 NorCal (Shasta)",
+          "countyCount": 1,
+          "counties": [
+            "shasta county"
+          ]
+        },
+        {
+          "name": "211 NorCal (Siskiyou)",
+          "countyCount": 1,
+          "counties": [
+            "siskiyou county"
+          ]
+        },
+        {
+          "name": "211 NorCal (Tehama)",
+          "countyCount": 1,
+          "counties": [
+            "tehama county"
+          ]
+        },
+        {
+          "name": "211 NorCal (Trinity)",
+          "countyCount": 1,
+          "counties": [
+            "trinity county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8003346367",
+      "countyCount": 3,
+      "counties": [
+        "alameda county",
+        "contra costa county",
+        "solano county"
+      ],
+      "services": [
+        {
+          "name": "Bay Area Air Quality Management District",
+          "countyCount": 3,
+          "counties": [
+            "alameda county",
+            "contra costa county",
+            "solano county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "311",
+      "countyCount": 3,
+      "counties": [
+        "alameda county",
+        "los angeles county",
+        "san francisco county"
+      ],
+      "services": [
+        {
+          "name": "Oakland 311",
+          "countyCount": 1,
+          "counties": [
+            "alameda county"
+          ]
+        },
+        {
+          "name": "City of LA Municipal Services / Code Enforcement",
+          "countyCount": 1,
+          "counties": [
+            "los angeles county"
+          ]
+        },
+        {
+          "name": "SF 311 Customer Service Center",
+          "countyCount": 1,
+          "counties": [
+            "san francisco county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8669163211",
+      "countyCount": 3,
+      "counties": [
+        "alpine county",
+        "amador county",
+        "butte county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 California",
+          "countyCount": 3,
+          "counties": [
+            "alpine county",
+            "amador county",
+            "butte county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "7608728211",
+      "countyCount": 3,
+      "counties": [
+        "alpine county",
+        "inyo county",
+        "mono county"
+      ],
+      "services": [
+        {
+          "name": "Great Basin Unified Air Pollution Control District",
+          "countyCount": 1,
+          "counties": [
+            "alpine county"
+          ]
+        },
+        {
+          "name": "Great Basin Unified APCD",
+          "countyCount": 2,
+          "counties": [
+            "inyo county",
+            "mono county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8003346622",
+      "countyCount": 3,
+      "counties": [
+        "butte county",
+        "sutter county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Butte County Behavioral Health Crisis Line",
+          "countyCount": 1,
+          "counties": [
+            "butte county"
+          ]
+        },
+        {
+          "name": "Sutter-Yuba 24/7 Crisis Line",
+          "countyCount": 1,
+          "counties": [
+            "sutter county"
+          ]
+        },
+        {
+          "name": "Sutter–Yuba 24/7 Crisis Line",
+          "countyCount": 1,
+          "counties": [
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8663463211",
+      "countyCount": 3,
+      "counties": [
+        "calaveras county",
+        "colusa county",
+        "del norte county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 California",
+          "countyCount": 2,
+          "counties": [
+            "calaveras county",
+            "colusa county"
+          ]
+        },
+        {
+          "name": "2-1-1 Statewide",
+          "countyCount": 1,
+          "counties": [
+            "del norte county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "7074433093",
+      "countyCount": 3,
+      "counties": [
+        "del norte county",
+        "humboldt county",
+        "trinity county"
+      ],
+      "services": [
+        {
+          "name": "Air Quality Management District",
+          "countyCount": 1,
+          "counties": [
+            "del norte county"
+          ]
+        },
+        {
+          "name": "North Coast Unified AQMD",
+          "countyCount": 2,
+          "counties": [
+            "humboldt county",
+            "trinity county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8003396993",
+      "countyCount": 3,
+      "counties": [
+        "inyo county",
+        "los angeles county",
+        "mono county"
+      ],
+      "services": [
+        {
+          "name": "Eastern Sierra 211 / Regional Routing",
+          "countyCount": 1,
+          "counties": [
+            "inyo county"
+          ]
+        },
+        {
+          "name": "211 LA County Info & Referral",
+          "countyCount": 1,
+          "counties": [
+            "los angeles county"
+          ]
+        },
+        {
+          "name": "Eastern Sierra 211",
+          "countyCount": 1,
+          "counties": [
+            "mono county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8002314024",
+      "countyCount": 3,
+      "counties": [
+        "merced county",
+        "monterey county",
+        "san benito county"
+      ],
+      "services": [
+        {
+          "name": "Merced County Behavioral Health - 24/7 Crisis Line",
+          "countyCount": 1,
+          "counties": [
+            "merced county"
+          ]
+        },
+        {
+          "name": "211 Monterey County",
+          "countyCount": 1,
+          "counties": [
+            "monterey county"
+          ]
+        },
+        {
+          "name": "211 San Benito / Central Coast",
+          "countyCount": 1,
+          "counties": [
+            "san benito county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5306217501",
+      "countyCount": 2,
+      "counties": [
+        "amador county",
+        "el dorado county"
+      ],
+      "services": [
+        {
+          "name": "Northern Sierra Air Quality Management District",
+          "countyCount": 1,
+          "counties": [
+            "amador county"
+          ]
+        },
+        {
+          "name": "El Dorado County AQMD",
+          "countyCount": 1,
+          "counties": [
+            "el dorado county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "7072694357",
+      "countyCount": 2,
+      "counties": [
+        "del norte county",
+        "humboldt county"
+      ],
+      "services": [
+        {
+          "name": "North Coast Opportunities 211",
+          "countyCount": 1,
+          "counties": [
+            "del norte county"
+          ]
+        },
+        {
+          "name": "Humboldt–Del Norte 211 (North Coast Opportunities)",
+          "countyCount": 1,
+          "counties": [
+            "humboldt county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8002732273",
+      "countyCount": 2,
+      "counties": [
+        "kern county",
+        "kings county"
+      ],
+      "services": [
+        {
+          "name": "2-1-1 Kern County",
+          "countyCount": 1,
+          "counties": [
+            "kern county"
+          ]
+        },
+        {
+          "name": "2-1-1 Kings / Central California",
+          "countyCount": 1,
+          "counties": [
+            "kings county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "9093962000",
+      "countyCount": 2,
+      "counties": [
+        "los angeles county",
+        "orange county"
+      ],
+      "services": [
+        {
+          "name": "South Coast AQMD General Contact",
+          "countyCount": 2,
+          "counties": [
+            "los angeles county",
+            "orange county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "2095576400",
+      "countyCount": 2,
+      "counties": [
+        "merced county",
+        "stanislaus county"
+      ],
+      "services": [
+        {
+          "name": "San Joaquin Valley APCD (Merced)",
+          "countyCount": 1,
+          "counties": [
+            "merced county"
+          ]
+        },
+        {
+          "name": "San Joaquin Valley APCD",
+          "countyCount": 1,
+          "counties": [
+            "stanislaus county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8316479411",
+      "countyCount": 2,
+      "counties": [
+        "monterey county",
+        "santa cruz county"
+      ],
+      "services": [
+        {
+          "name": "Monterey Bay Unified APCD",
+          "countyCount": 2,
+          "counties": [
+            "monterey county",
+            "santa cruz county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8008764766",
+      "countyCount": 2,
+      "counties": [
+        "napa county",
+        "san mateo county"
+      ],
+      "services": [
+        {
+          "name": "Poison Information Center",
+          "countyCount": 1,
+          "counties": [
+            "napa county"
+          ]
+        },
+        {
+          "name": "Poison Control Center",
+          "countyCount": 1,
+          "counties": [
+            "san mateo county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5302747928",
+      "countyCount": 2,
+      "counties": [
+        "nevada county",
+        "sierra county"
+      ],
+      "services": [
+        {
+          "name": "Northern Sierra AQMD",
+          "countyCount": 2,
+          "counties": [
+            "nevada county",
+            "sierra county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "8333174673",
+      "countyCount": 2,
+      "counties": [
+        "orange county",
+        "san mateo county"
+      ],
+      "services": [
+        {
+          "name": "CalHOPE Support Line",
+          "countyCount": 1,
+          "counties": [
+            "orange county"
+          ]
+        },
+        {
+          "name": "CalHOPE Warmline",
+          "countyCount": 1,
+          "counties": [
+            "san mateo county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "7602451661",
+      "countyCount": 2,
+      "counties": [
+        "riverside county",
+        "san bernardino county"
+      ],
+      "services": [
+        {
+          "name": "Mojave Desert AQMD (East County)",
+          "countyCount": 1,
+          "counties": [
+            "riverside county"
+          ]
+        },
+        {
+          "name": "Mojave Desert AQMD",
+          "countyCount": 1,
+          "counties": [
+            "san bernardino county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "9164981000",
+      "countyCount": 2,
+      "counties": [
+        "sacramento county",
+        "yolo county"
+      ],
+      "services": [
+        {
+          "name": "211 Sacramento (United Way)",
+          "countyCount": 1,
+          "counties": [
+            "sacramento county"
+          ]
+        },
+        {
+          "name": "211 Yolo / Greater Sacramento",
+          "countyCount": 1,
+          "counties": [
+            "yolo county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "4157495000",
+      "countyCount": 2,
+      "counties": [
+        "san benito county",
+        "santa clara county"
+      ],
+      "services": [
+        {
+          "name": "Bay Area AQMD",
+          "countyCount": 2,
+          "counties": [
+            "san benito county",
+            "santa clara county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5308227200",
+      "countyCount": 2,
+      "counties": [
+        "sutter county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Behavioral Health — Main",
+          "countyCount": 2,
+          "counties": [
+            "sutter county",
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5307496500",
+      "countyCount": 2,
+      "counties": [
+        "sutter county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "211 Yuba-Sutter",
+          "countyCount": 1,
+          "counties": [
+            "sutter county"
+          ]
+        },
+        {
+          "name": "211 Yuba–Sutter",
+          "countyCount": 1,
+          "counties": [
+            "yuba county"
+          ]
+        }
+      ]
+    },
+    {
+      "phone": "5306347659",
+      "countyCount": 2,
+      "counties": [
+        "sutter county",
+        "yuba county"
+      ],
+      "services": [
+        {
+          "name": "Feather River AQMD",
+          "countyCount": 2,
+          "counties": [
+            "sutter county",
+            "yuba county"
+          ]
+        }
+      ]
+    }
+  ]
+}
