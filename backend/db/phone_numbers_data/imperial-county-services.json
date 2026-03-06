@@ -1,0 +1,332 @@
+[
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Behavioral Health - 24/7 Crisis Line",
+    "phone": "8008175292",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "4422651700",
+    "description": "Main behavioral health line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "211 Imperial County",
+    "phone": "8004433000",
+    "description": "Imperial County 211 Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County DSS - Main",
+    "phone": "4422651300",
+    "description": "Department of Social Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "4422651700",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Housing Authority",
+    "phone": "4422657100",
+    "description": "Imperial County Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "8008175292",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "4422651900",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "4422651444",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "4422651414",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County APCD",
+    "phone": "4422651400",
+    "description": "Air Pollution Control District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Planning / Building / Code Enforcement",
+    "phone": "4422651736",
+    "description": "County Planning, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "City of El Centro Community Development / Building / Code Enforcement",
+    "phone": "7603374543",
+    "description": "El Centro Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "City of Calexico Community Development / Building / Code Enforcement",
+    "phone": "7607682105",
+    "description": "Calexico Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "City of Brawley Community Development / Building / Code Enforcement",
+    "phone": "7603517470",
+    "description": "Brawley Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Sheriff - Non-Emergency (24/7)",
+    "phone": "4422652021",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "El Centro Police - Non-Emergency",
+    "phone": "7603374527",
+    "description": "El Centro Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Calexico Police - Non-Emergency",
+    "phone": "7607682140",
+    "description": "Calexico Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Brawley Police - Non-Emergency",
+    "phone": "7603517777",
+    "description": "Brawley Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "4422651130",
+    "description": "Imperial County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "4422651140",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Superior Court",
+    "phone": "7604822200",
+    "description": "Imperial County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "7604822200",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Imperial County Public Works",
+    "phone": "4422651810",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "4422651400",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "IMPERIAL",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

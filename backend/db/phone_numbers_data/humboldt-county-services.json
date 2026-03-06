@@ -1,0 +1,312 @@
+[
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County Behavioral Health - 24/7 Crisis Line",
+    "phone": "7074457715",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "7074457715",
+    "description": "Main behavioral health line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt–Del Norte 211 (North Coast Opportunities)",
+    "phone": "7072694357",
+    "description": "Humboldt-Del Norte 211 Information & Referral",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County DHHS - Main",
+    "phone": "7074456211",
+    "description": "Department of Health and Human Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "7074457715",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt Housing Authority",
+    "phone": "7074434583",
+    "description": "Humboldt Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "7074456180",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "7074456180",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "7074456200",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "7074456215",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "North Coast Unified AQMD",
+    "phone": "7074433093",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County Planning & Building / Code Enforcement",
+    "phone": "7074457245",
+    "description": "County Planning, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "City of Eureka Development Services / Building / Code Enforcement",
+    "phone": "7074414160",
+    "description": "Eureka Development Services, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "City of Arcata Community Development / Code Enforcement",
+    "phone": "7078228184",
+    "description": "Arcata Community Development and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County Sheriff - Non-Emergency (24/7)",
+    "phone": "7074457251",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Eureka Police - Non-Emergency",
+    "phone": "7074414060",
+    "description": "Eureka Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Arcata Police - Non-Emergency",
+    "phone": "7078222424",
+    "description": "Arcata Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "7074457411",
+    "description": "Humboldt County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "7074457411",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County Superior Court",
+    "phone": "7074457256",
+    "description": "Humboldt County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "7074457256",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Humboldt County Public Works",
+    "phone": "7074457651",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "7074457246",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "HUMBOLDT",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
