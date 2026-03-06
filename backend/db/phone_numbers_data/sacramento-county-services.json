@@ -1,0 +1,312 @@
+[
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Mental Health Access Team (MHAT) - 24/7 Crisis Line",
+    "phone": "9168751055",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Behavioral Health Services - Main",
+    "phone": "9168751000",
+    "description": "Behavioral Health Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "211 Sacramento (United Way)",
+    "phone": "9164981000",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Department of Human Assistance (DHA)",
+    "phone": "9168742072",
+    "description": "Department of Human Assistance main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Coordinated Entry / Sacramento Steps Forward",
+    "phone": "9165779770",
+    "description": "Housing Coordinated Entry and Sacramento Steps Forward",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Sacramento Housing & Redevelopment Agency (SHRA)",
+    "phone": "9164401300",
+    "description": "Sacramento Housing and Redevelopment Agency",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "9168755437",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "9168749377",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "9168755881",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "9168758440",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Sacramento Metropolitan AQMD",
+    "phone": "9168744800",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "County Planning & Environmental Review",
+    "phone": "9168756141",
+    "description": "County Planning and Environmental Review",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "County Building Inspection",
+    "phone": "9168755296",
+    "description": "County Building Inspection Services",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "County Code Enforcement",
+    "phone": "9168756611",
+    "description": "County Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "City of Sacramento Community Development / Building / Code Enforcement",
+    "phone": "9168085011",
+    "description": "Sacramento Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Sacramento County Sheriff - Non-Emergency (24/7)",
+    "phone": "9168745115",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Sacramento Police - Non-Emergency",
+    "phone": "9168085471",
+    "description": "Sacramento Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "9168746218",
+    "description": "Sacramento County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "9168745701",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Sacramento County Superior Court",
+    "phone": "9168745522",
+    "description": "Sacramento County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "9168745522",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Department of Transportation",
+    "phone": "9168755171",
+    "description": "Public Works and Transportation Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "9168744670",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SACRAMENTO",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "San Bernardino County DBH - 24/7 Crisis Line",
+    "phone": "8887431478",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Behavioral Health (DBH) - Main",
+    "phone": "8887431478",
+    "description": "Behavioral Health main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "211 Inland SoCal",
+    "phone": "9093831700",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Transitional Assistance Department (TAD)",
+    "phone": "8774108829",
+    "description": "Transitional Assistance Department for social services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Office of Homeless Services / Coordinated Entry",
+    "phone": "9095010700",
+    "description": "Homeless Services and Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Housing Authority of the County of San Bernardino",
+    "phone": "9098900644",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "8008278724",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Children & Family Services (CFS)",
+    "phone": "9098913900",
+    "description": "Children and Family Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "8775652020",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "8007824264",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "8004422283",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "South Coast AQMD",
+    "phone": "8002887664",
+    "description": "Air Quality Management District (west county)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Mojave Desert AQMD",
+    "phone": "7602451661",
+    "description": "Air Quality Management District (High Desert)",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "County Building & Safety (Land Use Services)",
+    "phone": "9093878311",
+    "description": "County Building and Safety",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "County Code Enforcement",
+    "phone": "9098844056",
+    "description": "County Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "City of San Bernardino Building / Community Development",
+    "phone": "9093845057",
+    "description": "San Bernardino Building and Community Development",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "City of San Bernardino Code Enforcement",
+    "phone": "9093847272",
+    "description": "San Bernardino Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "City of Ontario Building / Code Enforcement",
+    "phone": "9093952026",
+    "description": "Ontario Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "San Bernardino County Sheriff — Non-Emergency",
+    "phone": "9093878313",
+    "description": "County Sheriff Non-Emergency line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "San Bernardino Police — Non-Emergency",
+    "phone": "9093845742",
+    "description": "San Bernardino Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Ontario Police — Non-Emergency",
+    "phone": "9099866711",
+    "description": "Ontario Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "9093823800",
+    "description": "San Bernardino County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Victim Services / Victim-Witness",
+    "phone": "9093878400",
+    "description": "Victim Services and Victim-Witness Assistance",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "9097088678",
+    "description": "San Bernardino County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "9097088678",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "9093877900",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "9093563900",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

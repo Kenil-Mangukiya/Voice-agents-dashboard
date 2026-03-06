@@ -1,0 +1,292 @@
+[
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Behavioral Health - 24/7 Crisis Line",
+    "phone": "8008220109",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "5302836300",
+    "description": "Behavioral Health main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Northeastern CA 211",
+    "phone": "8002370984",
+    "description": "Regional 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Social Services - Main / Intake",
+    "phone": "5302836350",
+    "description": "Social Services main intake line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5302836350",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Housing Authority",
+    "phone": "5302832466",
+    "description": "Plumas County Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5302836350",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5302836350",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5302836337",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5302836350",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County APCD",
+    "phone": "5302836250",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Enforcement",
+    "phone": "5302837010",
+    "description": "County Planning, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "City of Quincy Community Development / Building / Code Enforcement",
+    "phone": "5302837022",
+    "description": "Quincy Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Sheriff - Non-Emergency (24/7)",
+    "phone": "5302836300",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Quincy Police - Non-Emergency",
+    "phone": "5302831212",
+    "description": "Quincy Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5302836302",
+    "description": "Plumas County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "5302836302",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Superior Court",
+    "phone": "5302836305",
+    "description": "Plumas County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5302836305",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Plumas County Public Works",
+    "phone": "5302836268",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5302836350",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "PLUMAS",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

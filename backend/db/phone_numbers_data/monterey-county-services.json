@@ -1,0 +1,322 @@
+[
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County Behavioral Health - 24/7 Crisis Line",
+    "phone": "8882586029",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Behavioral Health - Main",
+    "phone": "8317554500",
+    "description": "Behavioral Health main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "211 Monterey County",
+    "phone": "8002314024",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County DSS - Main",
+    "phone": "8317554500",
+    "description": "Department of Social Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "8317554500",
+    "description": "Housing and Homeless Services through Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Housing Authority of the County of Monterey",
+    "phone": "8317755000",
+    "description": "Housing Authority of the County of Monterey",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "8006066618",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "CPS - Main",
+    "phone": "8317554660",
+    "description": "Child Protective Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "8317554660",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "8317554500",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "8317554505",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey Bay Unified APCD",
+    "phone": "8316479411",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County Resource Management Agency / Building / Code Enforcement",
+    "phone": "8317555025",
+    "description": "Resource Management Agency, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "City of Salinas Community Development / Building / Code Enforcement",
+    "phone": "8317587201",
+    "description": "Salinas Community Development, Building, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "City of Seaside Building & Planning / Code Enforcement",
+    "phone": "8318996707",
+    "description": "Seaside Building, Planning, and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County Sheriff - Non-Emergency (24/7)",
+    "phone": "8317553700",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Salinas Police - Non-Emergency",
+    "phone": "8317587090",
+    "description": "Salinas Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Seaside Police - Non-Emergency",
+    "phone": "8318996740",
+    "description": "Seaside Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "8317555072",
+    "description": "Monterey County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "8317555072",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County Superior Court",
+    "phone": "8317755400",
+    "description": "Monterey County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "8317755400",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Monterey County Public Works / Facilities & Parks",
+    "phone": "8317554800",
+    "description": "Public Works, Facilities, and Parks Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "8317554636",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "MONTEREY",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
