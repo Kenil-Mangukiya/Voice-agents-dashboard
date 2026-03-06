@@ -1,0 +1,332 @@
+[
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Santa Cruz County 24/7 Crisis Line",
+    "phone": "8009522335",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Behavioral Health Services - Main",
+    "phone": "8314544170",
+    "description": "Behavioral Health main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "2-1-1 Santa Cruz County",
+    "phone": "8316629990",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Human Services Department - Main",
+    "phone": "8314544000",
+    "description": "Human Services Department main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Housing for Health / Coordinated Entry",
+    "phone": "8314544170",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Housing Authority of Santa Cruz County",
+    "phone": "8314549455",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "8314544222",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "8314544101",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "8314544114",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "8314542022",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Monterey Bay Unified APCD",
+    "phone": "8316479411",
+    "description": "Air Quality Control District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "County Planning",
+    "phone": "8314542580",
+    "description": "County Planning",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "County Building & Safety",
+    "phone": "8314543900",
+    "description": "County Building and Safety",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "County Code Compliance",
+    "phone": "8314542130",
+    "description": "County Code Compliance",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "City of Santa Cruz Planning / Building / Code Enforcement",
+    "phone": "8314205100",
+    "description": "Santa Cruz Planning, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "City of Watsonville Community Development / Building / Code Enforcement",
+    "phone": "8317683010",
+    "description": "Watsonville Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Sheriff — Non-Emergency (24/7)",
+    "phone": "8314711121",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Santa Cruz Police — Non-Emergency",
+    "phone": "8314711131",
+    "description": "Santa Cruz Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Watsonville Police — Non-Emergency",
+    "phone": "8317683355",
+    "description": "Watsonville Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "8314542400",
+    "description": "Santa Cruz County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "8314542010",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "8314542200",
+    "description": "Santa Cruz Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "8314542200",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "8314542160",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "8314542350",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SANTA CRUZ",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

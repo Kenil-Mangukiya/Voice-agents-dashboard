@@ -1,0 +1,332 @@
+[
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Stanislaus County 24/7 Crisis Line",
+    "phone": "8002738255",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Behavioral Health & Recovery Services — Main",
+    "phone": "8883766246",
+    "description": "Behavioral Health and Recovery Services main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "211 Stanislaus / Central Valley",
+    "phone": "8772117826",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Community Services Agency — Main",
+    "phone": "2095582500",
+    "description": "Community Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "2095582500",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Housing Authority of Stanislaus County",
+    "phone": "2095572000",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "2095582650",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "2095582630",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "2095587700",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "2095587450",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "San Joaquin Valley APCD",
+    "phone": "2095576400",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Burn / Air Quality Info",
+    "phone": "8007664464",
+    "description": "Burn and Air Quality Information",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Enforcement",
+    "phone": "2095256330",
+    "description": "County Planning, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "City of Modesto Planning / Building",
+    "phone": "2095775267",
+    "description": "Modesto Planning and Building",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "City of Modesto Code Enforcement",
+    "phone": "2095775232",
+    "description": "Modesto Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "City of Turlock Community Development / Building / Code Enforcement",
+    "phone": "2096685560",
+    "description": "Turlock Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Sheriff — Non-Emergency (24/7)",
+    "phone": "2095522468",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Modesto Police — Non-Emergency",
+    "phone": "2095729500",
+    "description": "Modesto Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Turlock Police — Non-Emergency",
+    "phone": "2096686570",
+    "description": "Turlock Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "2095255550",
+    "description": "Stanislaus County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Victim Services / Victim-Witness",
+    "phone": "2095255541",
+    "description": "Victim Services and Victim-Witness Assistance",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "2095303100",
+    "description": "Stanislaus Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "2095303100",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "2095254130",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "2095523600",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "STANISLAUS",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

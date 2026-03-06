@@ -1,0 +1,292 @@
+[
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County Behavioral Health — 24/7 Crisis Line",
+    "phone": "5302893711",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main / Intake",
+    "phone": "5302893711",
+    "description": "Behavioral Health main and intake services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Northeastern CA 211 (Regional)",
+    "phone": "8002370984",
+    "description": "Regional 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County HHS - Main",
+    "phone": "5302893711",
+    "description": "Health and Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5302893711",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County Housing Authority",
+    "phone": "5302893269",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5302893711",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5302893711",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5302893711",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5302893711",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Northern Sierra AQMD",
+    "phone": "5302747928",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Enforcement",
+    "phone": "5302893269",
+    "description": "County Planning, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "City of Loyalton City Hall / Building / Code Enforcement",
+    "phone": "5309936721",
+    "description": "Loyalton City Hall, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County Sheriff — Non-Emergency (24/7)",
+    "phone": "5302893700",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Loyalton Police — Non-Emergency",
+    "phone": "5309936721",
+    "description": "Loyalton Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5302893698",
+    "description": "Sierra County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Victim Witness Assistance Program",
+    "phone": "5302893698",
+    "description": "Victim Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County Superior Court",
+    "phone": "5302893698",
+    "description": "Sierra County Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5302893698",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Sierra County Public Works",
+    "phone": "5302893269",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5302893700",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SIERRA",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

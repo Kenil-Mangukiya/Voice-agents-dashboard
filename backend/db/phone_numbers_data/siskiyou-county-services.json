@@ -1,0 +1,312 @@
+[
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Siskiyou County 24/7 Crisis Line",
+    "phone": "5308414200",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "5308414100",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "211 NorCal (Siskiyou)",
+    "phone": "5302255555",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Siskiyou County HHSA - Main",
+    "phone": "5308414100",
+    "description": "Health and Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5308414100",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Housing Authority of Siskiyou County",
+    "phone": "5308425117",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5308414200",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5308414200",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5308414090",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5308414010",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Siskiyou County APCD",
+    "phone": "5308414020",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Enforcement",
+    "phone": "5308412100",
+    "description": "County Planning, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "City of Yreka Community Development / Building / Code Enforcement",
+    "phone": "5308412110",
+    "description": "Yreka Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "City of Mount Shasta Community Development / Building / Code Enforcement",
+    "phone": "5309267540",
+    "description": "Mount Shasta Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Siskiyou County Sheriff — Non-Emergency (24/7)",
+    "phone": "5308412900",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Yreka Police — Non-Emergency",
+    "phone": "5308412300",
+    "description": "Yreka Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Mount Shasta Police — Non-Emergency",
+    "phone": "5309267540",
+    "description": "Mount Shasta Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5308428125",
+    "description": "Siskiyou County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "5308428125",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5308428100",
+    "description": "Siskiyou Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5308428100",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5308428340",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5308412920",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SISKIYOU",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
