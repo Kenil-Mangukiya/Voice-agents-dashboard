@@ -1,0 +1,342 @@
+[
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Behavioral Health Access Line (24/7)",
+    "phone": "8669982243",
+    "description": "24/7 Behavioral Health Access Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "8059812273",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "211 Ventura County",
+    "phone": "8056521320",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Ventura County HSA — Main",
+    "phone": "8053854000",
+    "description": "Health Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "8053854000",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Housing Authority (Ventura)",
+    "phone": "8056485008",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "8004617014",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "8056543200",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "8059815201",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "8056542432",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Ventura County APCD",
+    "phone": "8053033689",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Compliance",
+    "phone": "8056542488",
+    "description": "County Planning, Building and Code Compliance",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "City of Ventura Community Development / Building / Code Enforcement",
+    "phone": "8056547800",
+    "description": "Ventura Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "City of Oxnard Development Services / Building",
+    "phone": "8053857850",
+    "description": "Oxnard Development Services and Building",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "City of Oxnard Code Enforcement",
+    "phone": "8053857896",
+    "description": "Oxnard Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "City of Thousand Oaks Community Development / Building / Code Enforcement",
+    "phone": "8054492300",
+    "description": "Thousand Oaks Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Sheriff — Non-Emergency (24/7)",
+    "phone": "8056549511",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Ventura Police — Non-Emergency",
+    "phone": "8053394400",
+    "description": "Ventura Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Oxnard Police — Non-Emergency",
+    "phone": "8053857740",
+    "description": "Oxnard Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Thousand Oaks Police — Non-Emergency",
+    "phone": "8054942200",
+    "description": "Thousand Oaks Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "8056542500",
+    "description": "Ventura County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "8056543622",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "8052898662",
+    "description": "Ventura Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "8052898662",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Public Works Agency",
+    "phone": "8056542018",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "8056542551",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "VENTURA",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Sutter–Yuba 24/7 Crisis Line",
+    "phone": "8003346622",
+    "description": "24/7 Crisis Line for Sutter-Yuba region",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "5308227200",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "211 Yuba–Sutter",
+    "phone": "5307496500",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Yuba County HHS — Main",
+    "phone": "5307496440",
+    "description": "Health and Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5307496440",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Yuba County Housing Authority",
+    "phone": "5307496515",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5307496440",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5307496440",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5307496550",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5307495450",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Feather River AQMD",
+    "phone": "5306347659",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "County Building / Code Enforcement",
+    "phone": "5307495470",
+    "description": "County Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "City of Marysville Community Development / Building / Code Enforcement",
+    "phone": "5307493900",
+    "description": "Marysville Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "City of Wheatland City Hall / Building / Code Enforcement",
+    "phone": "5306334321",
+    "description": "Wheatland City Hall, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Yuba County Sheriff — Non-Emergency (24/7)",
+    "phone": "5307494700",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Marysville Police — Non-Emergency",
+    "phone": "5307493900",
+    "description": "Marysville Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Wheatland Police — Non-Emergency",
+    "phone": "5306334321",
+    "description": "Wheatland Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5307497780",
+    "description": "Yuba County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance Program",
+    "phone": "5307497780",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5307495700",
+    "description": "Yuba Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5307495700",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5307495420",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5307494700",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "YUBA",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
