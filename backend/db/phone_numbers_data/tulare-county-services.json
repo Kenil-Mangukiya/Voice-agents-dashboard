@@ -1,0 +1,332 @@
+[
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Tulare County 24/7 Crisis Line",
+    "phone": "8003201616",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "5597336300",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "211 Tulare County / Central Valley",
+    "phone": "8003732273",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Tulare County HHSA — Main",
+    "phone": "5596248000",
+    "description": "Health and Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5596248000",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Housing Authority of Tulare County",
+    "phone": "5598029400",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5597336666",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5597336666",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5597336441",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5597336441",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "San Joaquin Valley APCD",
+    "phone": "5597336441",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Burn / Air Quality Info",
+    "phone": "8007664464",
+    "description": "Burn and Air Quality Information",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "County Resource Management / Building / Code Enforcement",
+    "phone": "5596247000",
+    "description": "County Resource Management, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "City of Visalia Community Development / Building",
+    "phone": "5597134400",
+    "description": "Visalia Community Development and Building",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "City of Visalia Code Enforcement",
+    "phone": "5597134500",
+    "description": "Visalia Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "City of Tulare Community Development / Building / Code Enforcement",
+    "phone": "5596844200",
+    "description": "Tulare Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Tulare County Sheriff — Non-Emergency (24/7)",
+    "phone": "5597336218",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Visalia Police — Non-Emergency",
+    "phone": "5597348116",
+    "description": "Visalia Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Tulare Police — Non-Emergency",
+    "phone": "5596844290",
+    "description": "Tulare Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5596365494",
+    "description": "Tulare County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "5596365494",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5597305000",
+    "description": "Tulare Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5597305000",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5596247000",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5596247000",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TULARE",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

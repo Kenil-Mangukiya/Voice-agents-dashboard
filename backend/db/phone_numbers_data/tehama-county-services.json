@@ -1,0 +1,312 @@
+[
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Tehama County 24/7 Crisis Line",
+    "phone": "5305275637",
+    "description": "24/7 Crisis Line",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "5305277893",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "211 NorCal (Tehama)",
+    "phone": "5302255555",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Tehama County Health Services Agency — Main",
+    "phone": "5305277893",
+    "description": "Health Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5305277893",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Tehama County Housing Authority",
+    "phone": "5305276159",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5305271911",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5305271911",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5305276824",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5305276824",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Tehama County APCD",
+    "phone": "5305273717",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "County Planning / Building / Code Enforcement",
+    "phone": "5305272200",
+    "description": "County Planning, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "City of Red Bluff Community Development / Building / Code Enforcement",
+    "phone": "5305272605",
+    "description": "Red Bluff Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "City of Corning Community Development / Building / Code Enforcement",
+    "phone": "5308247036",
+    "description": "Corning Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Tehama County Sheriff — Non-Emergency (24/7)",
+    "phone": "5305299900",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Red Bluff Police — Non-Emergency",
+    "phone": "5305273131",
+    "description": "Red Bluff Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Corning Police — Non-Emergency",
+    "phone": "5308245000",
+    "description": "Corning Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5305274243",
+    "description": "Tehama County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "5305274243",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5305273484",
+    "description": "Tehama Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5305273484",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5305273171",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5305271120",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "TEHAMA",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]

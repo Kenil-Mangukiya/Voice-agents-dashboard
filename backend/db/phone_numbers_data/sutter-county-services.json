@@ -1,0 +1,292 @@
+[
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Emergency",
+    "phone": "911",
+    "description": "Emergency services",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Suicide & Crisis Lifeline",
+    "phone": "988",
+    "description": "Suicide & Crisis Lifeline (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Sutter-Yuba 24/7 Crisis Line",
+    "phone": "8003346622",
+    "description": "24/7 Crisis Line for Sutter-Yuba region",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Behavioral Health — Main",
+    "phone": "5308227200",
+    "description": "Behavioral Health main services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Information & Referral - 211",
+    "phone": "211",
+    "description": "Dial 2-1-1 for Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "211 Yuba-Sutter",
+    "phone": "5307496500",
+    "description": "Local 211 Information & Referral Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Statewide 211 Routing",
+    "phone": "8663462211",
+    "description": "Statewide 211 routing service",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Road Conditions",
+    "phone": "511",
+    "description": "Road conditions and traffic information",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": true
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Sutter County Human Services — Main",
+    "phone": "5308227500",
+    "description": "Human Services Agency main line",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Housing & Homeless Services / Coordinated Entry",
+    "phone": "5308227500",
+    "description": "Housing and Homeless Services Coordinated Entry",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Sutter County Housing Authority",
+    "phone": "5308227510",
+    "description": "Housing Authority",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Report Child Abuse / Neglect (24/7)",
+    "phone": "5308227127",
+    "description": "24/7 hotline to report child abuse or neglect",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Report Elder / Dependent Adult Abuse (APS)",
+    "phone": "5308227127",
+    "description": "Adult Protective Services - Report elder or dependent adult abuse",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Public Health",
+    "phone": "5308227215",
+    "description": "Public Health Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Environmental Health / CUPA",
+    "phone": "5308227400",
+    "description": "Environmental Health and Habitability Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Feather River AQMD",
+    "phone": "5306347659",
+    "description": "Air Quality Management District",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "County Development Services / Building / Code Enforcement",
+    "phone": "5308227400",
+    "description": "County Development Services, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "City of Yuba City Community Development / Building / Code Enforcement",
+    "phone": "5308224611",
+    "description": "Yuba City Community Development, Building and Code Enforcement",
+    "priority": 3,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Sutter County Sheriff — Non-Emergency (24/7)",
+    "phone": "5308227307",
+    "description": "County Sheriff Non-Emergency line (24/7)",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Yuba City Police — Non-Emergency",
+    "phone": "5308224660",
+    "description": "Yuba City Police Non-Emergency",
+    "priority": 2,
+    "citySpecific": true,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "District Attorney",
+    "phone": "5308227330",
+    "description": "Sutter County District Attorney",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Victim-Witness Assistance",
+    "phone": "5308227330",
+    "description": "Victim-Witness Assistance Program",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Superior Court",
+    "phone": "5308223300",
+    "description": "Sutter Superior Court",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Family Law Facilitator / Self-Help",
+    "phone": "5308223300",
+    "description": "Family Law Facilitator and Self-Help Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "CA Dept. of Consumer Affairs",
+    "phone": "8009525210",
+    "description": "California Department of Consumer Affairs",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "CalVCB — Victim Compensation",
+    "phone": "8007779229",
+    "description": "California Victim Compensation Board",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Public Works",
+    "phone": "5308227450",
+    "description": "Public Works Services",
+    "priority": 3,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Office of Emergency Services (OES)",
+    "phone": "5308227515",
+    "description": "Office of Emergency Services",
+    "priority": 2,
+    "citySpecific": false,
+    "isShortCode": false
+  },
+  {
+    "county": "SUTTER",
+    "state": "CA",
+    "serviceName": "Poison Control (24/7)",
+    "phone": "8002221222",
+    "description": "Poison Control Center (24/7)",
+    "priority": 1,
+    "citySpecific": false,
+    "isShortCode": false
+  }
+]
